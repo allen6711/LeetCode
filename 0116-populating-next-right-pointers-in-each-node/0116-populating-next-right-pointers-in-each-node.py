@@ -10,23 +10,45 @@ class Node:
 
 class Solution:
     def connect(self, root: 'Optional[Node]') -> 'Optional[Node]':
+        # O(1) method
         if root is None:
             return root
-        
-        queue = deque([root])
 
-        while queue:
-            prev = None
-            for _ in range(len(queue)):
-                node = queue.popleft()
-                if prev:
-                    prev.next = node
-                prev = node
-                if node.left:
-                    queue.append(node.left)
-                if node.right:
-                    queue.append(node.right)
+        leftMost = root
+
+        while leftMost.left:
+            currNode = leftMost
+
+            while currNode:
+                currNode.left.next = currNode.right
+
+                if currNode.next:
+                    currNode.right.next = currNode.next.left
+                
+                currNode = currNode.next
+
+            leftMost = leftMost.left
         
         return root
+
+        # BFS
+        # if root is None:
+        #     return root
+        
+        # queue = deque([root])
+
+        # while queue:
+        #     prev = None
+        #     for _ in range(len(queue)):
+        #         node = queue.popleft()
+        #         if prev:
+        #             prev.next = node
+        #         prev = node
+        #         if node.left:
+        #             queue.append(node.left)
+        #         if node.right:
+        #             queue.append(node.right)
+        
+        # return root
             
             
