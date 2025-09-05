@@ -11,7 +11,7 @@ class Solution:
         
         queue = deque([root])
         result = []
-        left_to_right = False
+        left_to_right = True
 
         while queue:
             level = []
@@ -26,33 +26,13 @@ class Solution:
                 if node.right:
                     queue.append(node.right)
                 
-            if left_to_right:
+            if not left_to_right:
                 level.reverse()
 
             left_to_right = not left_to_right
             result.append(level)
 
         return result
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
 
 
         # if root is None:
