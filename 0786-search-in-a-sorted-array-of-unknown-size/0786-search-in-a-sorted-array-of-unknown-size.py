@@ -9,7 +9,7 @@ class Solution:
     def search(self, reader: 'ArrayReader', target: int) -> int:
         index = 0
 
-        while reader.get(index) <= target:
+        while reader.get(index) < target:
             index = index * 2 + 1
         
         start, end = 0, index
