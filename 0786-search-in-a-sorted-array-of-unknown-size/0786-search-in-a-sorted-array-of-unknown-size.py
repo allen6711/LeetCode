@@ -7,10 +7,10 @@
 
 class Solution:
     def search(self, reader: 'ArrayReader', target: int) -> int:
-        index = 0
+        index = 1
 
         while reader.get(index) < target:
-            index = index * 2 + 1
+            index = index * 2
         
         start, end = 0, index
         
