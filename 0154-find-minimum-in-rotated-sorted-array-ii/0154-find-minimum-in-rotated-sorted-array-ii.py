@@ -8,6 +8,7 @@ class Solution:
         while start + 1 < end:
             mid = (start + end) // 2
 
+            # since the nums[-1] might be same as other element, we should dynamic update
             if nums[mid] < nums[end]:
                 end = mid
             
