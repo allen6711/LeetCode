@@ -32,9 +32,12 @@ class Solution:
             else:
                 start = mid
         
+        # If all num in arr are greater than x, then this condiiton
+        # [2, 3, 4], x = 1
         if arr[start] >= x:
             return start
-        
+            
+        # Generally is this
         if arr[end] >= x:
             return end
         
