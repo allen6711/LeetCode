@@ -40,7 +40,8 @@ class Solution:
         # Generally is this
         if arr[end] >= x:
             return end
-        
+            
+        # All elements are < x, so the insertion index is len(arr)
         return len(arr)
 
     def is_left_closer(self, arr, x, left, right):
