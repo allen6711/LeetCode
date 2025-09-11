@@ -8,14 +8,11 @@ class Solution:
         while start + 1 < end:
             mid = (start + end) // 2
 
-            if nums[mid] < nums[-1]:
+            if nums[mid] <= nums[-1]:
                 end = mid
-            
-            elif nums[mid] > nums[-1]:
-                start = mid
             
             else:
-                end = mid
+                start = mid
 
         return min(nums[start], nums[end])
 
