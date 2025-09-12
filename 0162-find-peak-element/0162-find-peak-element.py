@@ -8,11 +8,11 @@ class Solution:
         while start + 1 < end:
             mid = (start + end) // 2
 
-            # Peak on the right
+            # Peak is on the right
             if nums[mid] < nums[mid + 1]:
                 start = mid
             
-            # Peak on the left
+            # Peak is on the left
             elif nums[mid] < nums[mid - 1]:
                 end = mid
             
