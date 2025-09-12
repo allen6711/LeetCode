@@ -8,21 +8,15 @@ class Solution:
         while start + 1 < end:
             mid = (start + end) // 2
 
-            # 12345 4321  or  1234 54321
-            # use 1234 54321
-            if arr[mid] < arr[mid + 1]:
-                start = mid
-            
-            elif arr[mid] > arr[mid + 1]:
+            # Find the first index on the right slope (descending side)
+            if arr[mid] >= arr[mid + 1]:
                 end = mid
-
-            # First position of lists
+            
             else:
                 start = mid
-
+                
         if arr[start] > arr[end]:
             return start
-        
         else:
             return end
 
@@ -49,7 +43,27 @@ class Solution:
 
 
 
+        # if not arr:
+        #     return -1
+        
+        # start, end = 0, len(arr) - 1
 
+        # while start + 1 < end:
+        #     mid = (start + end) // 2
+
+        #     # 12345 4321  or  1234 54321
+        #     # use 1234 54321
+        #     if arr[mid] <= arr[mid + 1]:
+        #         start = mid
+            
+        #     else:
+        #         end = mid
+
+        # if arr[start] > arr[end]:
+        #     return start
+        
+        # else:
+        #     return end
 
 
         # if not arr:
