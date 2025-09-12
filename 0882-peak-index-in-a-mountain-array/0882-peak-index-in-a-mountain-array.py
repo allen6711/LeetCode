@@ -5,18 +5,26 @@ class Solution:
         
         start, end = 0, len(arr) - 1
 
-        # find the first i so that arr[i] > arr[i + 1]
         while start + 1 < end:
             mid = (start + end) // 2
 
-            if arr[mid] > arr[mid + 1]:
-                    # Keep the answer at end
-                end = mid
+            # 12345 4321  or  1234 54321
+            # use 1234 54321
+            if arr[mid] < arr[mid + 1]:
+                start = mid
             
+            elif arr[mid] > arr[mid + 1]:
+                end = mid
+
+            # First position of lists
             else:
                 start = mid
+
+        if arr[start] > arr[end]:
+            return start
         
-        return end
+        else:
+            return end
 
 
 
@@ -41,6 +49,26 @@ class Solution:
 
 
 
+
+
+
+        # if not arr:
+        #     return -1
+        
+        # start, end = 0, len(arr) - 1
+
+        # # find the first i so that arr[i] > arr[i + 1]
+        # while start + 1 < end:
+        #     mid = (start + end) // 2
+
+        #     if arr[mid] > arr[mid + 1]:
+        #         # Keep the answer at end
+        #         end = mid
+            
+        #     else:
+        #         start = mid
+        
+        # return end
 
 
 
