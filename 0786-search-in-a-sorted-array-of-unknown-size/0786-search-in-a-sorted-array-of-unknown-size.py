@@ -13,11 +13,11 @@ class Solution:
             index = index * 2
         
         start, end = 0, index
-        
+
         while start + 1 < end:
             mid = (start + end) // 2
 
-            if reader.get(mid) < target:
+            if reader.get(mid) <= target:
                 start = mid
             
             else:
@@ -30,3 +30,48 @@ class Solution:
             return end
         
         return -1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        # index = 1
+
+        # while reader.get(index) < target:
+        #     index = index * 2
+        
+        # start, end = 0, index
+        
+        # while start + 1 < end:
+        #     mid = (start + end) // 2
+
+        #     if reader.get(mid) < target:
+        #         start = mid
+            
+        #     else:
+        #         end = mid
+        
+        # if reader.get(start) == target:
+        #     return start
+
+        # if reader.get(end) == target:
+        #     return end
+        
+        # return -1
