@@ -24,12 +24,12 @@ class Solution:
                 else:
                     start = mid
 
-            else: # target > nums[-1]
-                # nums[mid] > nums[-1]
+            # target > nums[-1]
+            else:
                 if nums[-1] < nums[mid] <= target:
                     start = mid
                 
-                # target < nums[mid]
+                # target < nums[mid] or 
                 # nums[mid] <= nums[-1]
                 else:
                     end = mid
@@ -39,7 +39,7 @@ class Solution:
         
         if nums[end] == target:
             return end
-            
+
         return -1
 
 
