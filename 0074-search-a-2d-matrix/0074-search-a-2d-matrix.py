@@ -16,7 +16,6 @@ class Solution:
             else:
                 end = mid
 
-        print(start, end)
         if matrix[start // n][start % n] == target:
             return True
 
