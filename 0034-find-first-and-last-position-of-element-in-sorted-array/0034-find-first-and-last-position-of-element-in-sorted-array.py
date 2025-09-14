@@ -5,47 +5,118 @@ class Solution:
         
         first_position, last_position = -1, -1
         
-        # first position
+        # first position:
         start, end = 0, len(nums) - 1
+        
         while start + 1 < end:
             mid = (start + end) // 2
 
-            if nums[mid] < target:
-                start = mid
-            
-            elif nums[mid] > target:
+            if nums[mid] >= target:
                 end = mid
             
             else:
-                end = mid
-        
+                start = mid
+
         if nums[start] == target:
             first_position = start
         
         elif nums[end] == target:
             first_position = end
-        
-        # last position
+
+        # end position:
         start, end = 0, len(nums) - 1
+
         while start + 1 < end:
             mid = (start + end) // 2
 
-            if nums[mid] < target:
+            if nums[mid] <= target:
                 start = mid
-
-            elif nums[mid] > target:
-                end = mid
             
             else:
-                start = mid
+                end = mid
         
         if nums[end] == target:
             last_position = end
 
         elif nums[start] == target:
             last_position = start
-        
+
         return [first_position, last_position]
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        # if not nums:
+        #     return [-1, -1]
+        
+        # first_position, last_position = -1, -1
+        
+        # # first position
+        # start, end = 0, len(nums) - 1
+        # while start + 1 < end:
+        #     mid = (start + end) // 2
+
+        #     if nums[mid] < target:
+        #         start = mid
+            
+        #     elif nums[mid] > target:
+        #         end = mid
+            
+        #     else:
+        #         end = mid
+        
+        # if nums[start] == target:
+        #     first_position = start
+        
+        # elif nums[end] == target:
+        #     first_position = end
+        
+        # # last position
+        # start, end = 0, len(nums) - 1
+        # while start + 1 < end:
+        #     mid = (start + end) // 2
+
+        #     if nums[mid] < target:
+        #         start = mid
+
+        #     elif nums[mid] > target:
+        #         end = mid
+            
+        #     else:
+        #         start = mid
+        
+        # if nums[end] == target:
+        #     last_position = end
+
+        # elif nums[start] == target:
+        #     last_position = start
+        
+        # return [first_position, last_position]
 
 
 
