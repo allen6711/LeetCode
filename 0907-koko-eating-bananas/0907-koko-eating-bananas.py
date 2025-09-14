@@ -28,6 +28,8 @@ class Solution:
 
         if self.countHours(piles, end) <= h:
             return end
+        
+        return -1
 
 
     def countHours(self, piles, speed):
