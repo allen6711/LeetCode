@@ -47,30 +47,6 @@ class Solution:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         # if not nums:
         #     return [-1, -1]
         
