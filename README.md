@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0226-invert-binary-tree](https://github.com/allen6711/LeetCode/tree/master/0226-invert-binary-tree) |
 | [0261-graph-valid-tree](https://github.com/allen6711/LeetCode/tree/master/0261-graph-valid-tree) |
 | [0269-alien-dictionary](https://github.com/allen6711/LeetCode/tree/master/0269-alien-dictionary) |
+| [0302-smallest-rectangle-enclosing-black-pixels](https://github.com/allen6711/LeetCode/tree/master/0302-smallest-rectangle-enclosing-black-pixels) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/allen6711/LeetCode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 ## Breadth-First Search
 |  |
@@ -44,6 +45,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0226-invert-binary-tree](https://github.com/allen6711/LeetCode/tree/master/0226-invert-binary-tree) |
 | [0261-graph-valid-tree](https://github.com/allen6711/LeetCode/tree/master/0261-graph-valid-tree) |
 | [0269-alien-dictionary](https://github.com/allen6711/LeetCode/tree/master/0269-alien-dictionary) |
+| [0302-smallest-rectangle-enclosing-black-pixels](https://github.com/allen6711/LeetCode/tree/master/0302-smallest-rectangle-enclosing-black-pixels) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/allen6711/LeetCode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 ## Binary Tree
 |  |
@@ -68,6 +70,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0162-find-peak-element](https://github.com/allen6711/LeetCode/tree/master/0162-find-peak-element) |
 | [0200-number-of-islands](https://github.com/allen6711/LeetCode/tree/master/0200-number-of-islands) |
 | [0269-alien-dictionary](https://github.com/allen6711/LeetCode/tree/master/0269-alien-dictionary) |
+| [0302-smallest-rectangle-enclosing-black-pixels](https://github.com/allen6711/LeetCode/tree/master/0302-smallest-rectangle-enclosing-black-pixels) |
 | [0444-sequence-reconstruction](https://github.com/allen6711/LeetCode/tree/master/0444-sequence-reconstruction) |
 | [0658-find-k-closest-elements](https://github.com/allen6711/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0786-search-in-a-sorted-array-of-unknown-size](https://github.com/allen6711/LeetCode/tree/master/0786-search-in-a-sorted-array-of-unknown-size) |
@@ -85,6 +88,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0074-search-a-2d-matrix](https://github.com/allen6711/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0200-number-of-islands](https://github.com/allen6711/LeetCode/tree/master/0200-number-of-islands) |
+| [0302-smallest-rectangle-enclosing-black-pixels](https://github.com/allen6711/LeetCode/tree/master/0302-smallest-rectangle-enclosing-black-pixels) |
 ## Linked List
 |  |
 | ------- |
@@ -119,6 +123,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/allen6711/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/allen6711/LeetCode/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
 | [0162-find-peak-element](https://github.com/allen6711/LeetCode/tree/master/0162-find-peak-element) |
+| [0302-smallest-rectangle-enclosing-black-pixels](https://github.com/allen6711/LeetCode/tree/master/0302-smallest-rectangle-enclosing-black-pixels) |
 | [0658-find-k-closest-elements](https://github.com/allen6711/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0786-search-in-a-sorted-array-of-unknown-size](https://github.com/allen6711/LeetCode/tree/master/0786-search-in-a-sorted-array-of-unknown-size) |
 | [0792-binary-search](https://github.com/allen6711/LeetCode/tree/master/0792-binary-search) |
