@@ -8,6 +8,8 @@ class Solution:
         # k: 1,         2, 3, ..., 8
         # h: 19=sum(piles),        3
         # condition: smaller than h
+        if not piles:
+            return -1
 
         start, end = 1, max(piles)
 
@@ -20,6 +22,7 @@ class Solution:
             else:
                 start = mid
         
+        # Test the smaller one first
         if self.countHours(piles, start) <= h:
             return start
 
@@ -34,33 +37,6 @@ class Solution:
             hours += ceil(pile / speed)
         
         return hours
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
