@@ -3,55 +3,136 @@ class Solution:
         if not arr:
             return []
         
+        # find the index of x
         index = self.binarySearch(arr, x)
-
+        # print(index)
         left, right = index - 1, index
-
+        # print(left, right)
         for _ in range(k):
-            if self.is_most_left(arr, left, right, x):
+            # start: index - 1 and index + 1
+            # check |a - x| < |b - x| & |a - x| == |b - x| and a < b
+            if self.is_left(arr, x, left, right):
                 left -= 1
                 print(left)
+            
             else:
                 right += 1
                 print(right)
         
         return arr[left + 1: right]
-        
-    # Find the position of target(x)
-    def binarySearch(self, arr, x) -> int:
-        if not arr:
-             return -1
 
+    
+    def binarySearch(self, arr, x) -> int:
         start, end = 0, len(arr) - 1
 
         while start + 1 < end:
             mid = (start + end) // 2
 
-            # Find the first position 
             if arr[mid] >= x:
                 end = mid
-                
+            
             else:
                 start = mid
-            
-        if arr[end] >= x:
-            return end
-            
+        
         if arr[start] >= x:
             return start
         
-        # Since we plane to find the first position, if x < all elements, we could find the end at index: 0
-        # else: if x > all elements, we could find the end at index: len(arr), out of arr
+        if arr[end] >= x:
+            return end
+        
+        # if all elements are less than x
         return len(arr)
-
-    def is_most_left(self, arr, left, right, x) -> bool:
+        
+    
+    def is_left(self, arr, x, left, right) -> bool:
         if left < 0:
             return False
-            
+        
         if right >= len(arr):
             return True
-            
+        
         return x - arr[left] <= arr[right] - x
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #     if not arr:
+    #         return []
+        
+    #     index = self.binarySearch(arr, x)
+
+    #     left, right = index - 1, index
+
+    #     for _ in range(k):
+    #         if self.is_most_left(arr, left, right, x):
+    #             left -= 1
+    #             print(left)
+    #         else:
+    #             right += 1
+    #             print(right)
+        
+    #     return arr[left + 1: right]
+        
+    # # Find the position of target(x)
+    # def binarySearch(self, arr, x) -> int:
+    #     if not arr:
+    #          return -1
+
+    #     start, end = 0, len(arr) - 1
+
+    #     while start + 1 < end:
+    #         mid = (start + end) // 2
+
+    #         # Find the first position 
+    #         if arr[mid] >= x:
+    #             end = mid
+                
+    #         else:
+    #             start = mid
+            
+    #     if arr[end] >= x:
+    #         return end
+            
+    #     if arr[start] >= x:
+    #         return start
+        
+    #     # Since we plane to find the first position, if x < all elements, we could find the end at index: 0
+    #     # else: if x > all elements, we could find the end at index: len(arr), out of arr
+    #     return len(arr)
+
+    # def is_most_left(self, arr, left, right, x) -> bool:
+    #     if left < 0:
+    #         return False
+            
+    #     if right >= len(arr):
+    #         return True
+            
+    #     return x - arr[left] <= arr[right] - x
 
 
 
