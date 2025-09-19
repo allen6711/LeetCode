@@ -16,11 +16,15 @@ class Solution:
         
         balanced, left_h = self.validate(root.left)
         if not balanced:
-            return balanced, left_h
+            # return balanced, left_h
+                             # it's not important for the left height
+            return balanced, 0
 
         balanced, right_h = self.validate(root.right)
         if not balanced:
-            return balanced, right_h
+            # return balanced, right_h
+                             # it's not important for the left height
+            return balanced, 0
 
         return abs(left_h - right_h) <= 1, max(left_h, right_h) + 1
 
