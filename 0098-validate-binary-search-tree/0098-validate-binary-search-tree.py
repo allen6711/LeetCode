@@ -6,25 +6,80 @@
 #         self.right = right
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
-        self.preVal = None
-        self.isBST = True
-        self.validate(root)
 
-        return self.isBST
+        isBST, min, max = self.helper(root)
 
-    def validate(self, root):
-        if root is None:
-            return
+        return isBST
         
-        self.validate(root.left)
-        if self.preVal is not None and self.preVal >= root.val:
-            self.isBST = False
-            # Early termination if BST property is violated
-            return
+    def helper(self, node: Optional[TreeNode]):
+        if node is None:
+            return True, float('inf'), float('-inf')
 
-        self.preVal = root.val
+        leftIsBST, leftMin, leftMax = self.helper(node.left)
+        rightIsBST, rightMin, rightMax = self.helper(node.right)
 
-        self.validate(root.right)
+        # Check left < root < right
+        if not leftIsBST or not rightIsBST:
+            return False, 0, 0
+        
+        if node.left and leftMax >= node.val:
+            return False, 0, 0
+
+        if node.right and rightMin <= node.val:
+            return False, 0, 0
+        
+        minVal = min(leftMin, node.val)
+        maxVal = max(rightMax, node.val)
+
+        return True, minVal, maxVal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #     # in-order traversal
+    #     self.preVal = None
+    #     self.isBST = True
+    #     self.validate(root)
+
+    #     return self.isBST
+
+    # def validate(self, root):
+    #     if root is None:
+    #         return
+        
+    #     self.validate(root.left)
+    #     if self.preVal is not None and self.preVal >= root.val:
+    #         self.isBST = False
+    #         # Early termination if BST property is violated
+    #         return
+
+    #     self.preVal = root.val
+
+    #     self.validate(root.right)
 
 
 
