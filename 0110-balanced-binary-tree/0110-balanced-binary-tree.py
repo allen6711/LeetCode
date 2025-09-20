@@ -10,23 +10,63 @@ class Solution:
 
         return balanced
 
+    
     def validate(self, root):
         if root is None:
             return True, 0
         
-        balanced, left_h = self.validate(root.left)
+        balanced, left_height = self.validate(root.left)
         if not balanced:
-            # return balanced, left_h
-                             # it's not important for the left height
-            return balanced, 0
+            return False, 0
 
-        balanced, right_h = self.validate(root.right)
+        balanced, right_height = self.validate(root.right)
         if not balanced:
-            # return balanced, right_h
-                             # it's not important for the left height
-            return balanced, 0
+            return False, 0
 
-        return abs(left_h - right_h) <= 1, max(left_h, right_h) + 1
+        return abs(left_height - right_height) <= 1, max(left_height, right_height) + 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #     balanced, _ = self.validate(root)
+
+    #     return balanced
+
+    # def validate(self, root):
+    #     if root is None:
+    #         return True, 0
+        
+    #     balanced, left_h = self.validate(root.left)
+    #     if not balanced:
+    #         # return balanced, left_h
+    #                          # it's not important for the left height
+    #         return balanced, 0
+
+    #     balanced, right_h = self.validate(root.right)
+    #     if not balanced:
+    #         # return balanced, right_h
+    #                          # it's not important for the left height
+    #         return balanced, 0
+
+    #     return abs(left_h - right_h) <= 1, max(left_h, right_h) + 1
 
 
 
