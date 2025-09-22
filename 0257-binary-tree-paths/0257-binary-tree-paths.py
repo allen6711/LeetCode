@@ -10,25 +10,24 @@ class Solution:
         if root is None:
             return []
 
+        paths = []
         results = []
-
         self.dfs(root, [str(root.val)], results)
 
         return results
 
-    def dfs(self, node, path, results):
+    def dfs(self, node, paths, results):
         if node.left is None and node.right is None:
-            results.append('->'.join(path))
+            results.append('->'.join(paths))
             return
-        
+
         if node.left:
-            path.append(str(node.left.val))
-            self.dfs(node.left, path, results)
-            path.pop()
-        
+            paths.append(str(node.left.val))
+            self.dfs(node.left, paths, results)
+            paths.pop()
+
         if node.right:
-            path.append(str(node.right.val))
-            self.dfs(node.right, path, results)
-            path.pop()
-        
-        
+            paths.append(str(node.right.val))
+            self.dfs(node.right, paths, results)
+            paths.pop()
+                
