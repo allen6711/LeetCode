@@ -15,7 +15,7 @@ class Solution:
         self.dfs(root, [str(root.val)], results)
 
         return results
-    
+
     def dfs(self, node, paths, results):
         if node.left is None and node.right is None:
             results.append('->'.join(paths))
@@ -30,7 +30,37 @@ class Solution:
             paths.append(str(node.right.val))
             self.dfs(node.right, paths, results)
             paths.pop()
+        
 
+
+
+
+
+
+        # Traversal
+    #     if root is None:
+    #         return []
+        
+    #     results = []
+    #     paths = []
+    #     self.dfs(root, [str(root.val)], results)
+
+    #     return results
+    
+    # def dfs(self, node, paths, results):
+    #     if node.left is None and node.right is None:
+    #         results.append('->'.join(paths))
+    #         return
+        
+    #     if node.left:
+    #         paths.append(str(node.left.val))
+    #         self.dfs(node.left, paths, results)
+    #         paths.pop()
+        
+    #     if node.right:
+    #         paths.append(str(node.right.val))
+    #         self.dfs(node.right, paths, results)
+    #         paths.pop()
 
 
         # Divide and Conquer
