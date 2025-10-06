@@ -12,17 +12,16 @@ class Solution:
 
         if root.left is None and root.right is None:
             return [str(root.val)]
-        
+
         leftPaths = self.binaryTreePaths(root.left)
         rightPaths = self.binaryTreePaths(root.right)
 
         paths = []
 
         for path in leftPaths + rightPaths:
-            paths.append(str(root.val) + '->' + path)
-        
-        return paths
+            paths.append(str(root.val) + "->" + path)
 
+        return paths
 
 
 
