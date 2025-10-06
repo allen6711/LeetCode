@@ -9,19 +9,18 @@ class Solution:
         # Traversal
         if root is None:
             return []
-
+        
         results = []
         paths = []
         self.dfs(root, [str(root.val)], results)
 
         return results
-        
     
     def dfs(self, node, paths, results):
         if node.left is None and node.right is None:
             results.append('->'.join(paths))
             return
-
+        
         if node.left:
             paths.append(str(node.left.val))
             self.dfs(node.left, paths, results)
