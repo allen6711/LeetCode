@@ -6,36 +6,47 @@
 #         self.right = right
 class Solution:
     def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:
-        # Traversal
+        # Divide and conquer
         if root is None:
             return []
         
-        results = []
+        if root.left is None and root.right is None:
+            return [str(root.val)]
+        
+        leftPaths = self.binaryTreePaths(root.left)
+        rightPaths = self.binaryTreePaths(root.right)
+
         paths = []
-        self.dfs(root, [str(root.val)], results)
 
-        return results
-
-    def dfs(self, node, paths, results):
-        if node.left is None and node.right is None:
-            results.append('->'.join(paths))
-            return
+        for path in leftPaths + rightPaths:
+            paths.append(str(root.val) + '->' + path)
         
-        if node.left:
-            paths.append(str(node.left.val))
-            self.dfs(node.left, paths, results)
-            paths.pop()
+        return paths
+
+        # Traversal
+    #     if root is None:
+    #         return []
         
-        if node.right:
-            paths.append(str(node.right.val))
-            self.dfs(node.right, paths, results)
-            paths.pop()
+    #     results = []
+    #     paths = []
+    #     self.dfs(root, [str(root.val)], results)
+
+    #     return results
+
+    # def dfs(self, node, paths, results):
+    #     if node.left is None and node.right is None:
+    #         results.append('->'.join(paths))
+    #         return
         
-
-
-
-
-
+    #     if node.left:
+    #         paths.append(str(node.left.val))
+    #         self.dfs(node.left, paths, results)
+    #         paths.pop()
+        
+    #     if node.right:
+    #         paths.append(str(node.right.val))
+    #         self.dfs(node.right, paths, results)
+    #         paths.pop()
 
         # Traversal
     #     if root is None:
