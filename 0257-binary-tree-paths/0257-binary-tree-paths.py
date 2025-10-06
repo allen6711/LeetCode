@@ -23,9 +23,47 @@ class Solution:
         
         return paths
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        # Divide and Conquer
+        # if root is None:
+        #     return []
+
+        # if root.left is None and root.right is None:
+        #     return [str(root.val)]
+        
+        # leftPaths = self.binaryTreePaths(root.left)
+        # rightPaths = self.binaryTreePaths(root.right)
+
+        # paths = []
+
+        # for path in leftPaths + rightPaths:
+        #     paths.append(str(root.val) + '->' + path)
+        
+        # return paths
+
         # # Traverse
         # if root is None:
-    #         return []
+    #         return []fir
 
     #     paths = []
     #     results = []
