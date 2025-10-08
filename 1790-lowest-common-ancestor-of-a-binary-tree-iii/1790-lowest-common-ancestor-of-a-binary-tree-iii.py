@@ -11,7 +11,6 @@ class Node:
 class Solution:
     def lowestCommonAncestor(self, p: 'Node', q: 'Node') -> 'Node':
         parent_set = set()
-
         curr = p
 
         while curr is not None:
@@ -23,7 +22,38 @@ class Solution:
         while curr is not None:
             if curr in parent_set:
                 return curr
-
+            
             curr = curr.parent
         
         return None
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        # parent_set = set()
+
+        # curr = p
+
+        # while curr is not None:
+        #     parent_set.add(curr)
+        #     curr = curr.parent
+        
+        # curr = q
+
+        # while curr is not None:
+        #     if curr in parent_set:
+        #         return curr
+
+        #     curr = curr.parent
+        
+        # return None
