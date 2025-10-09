@@ -12,7 +12,7 @@ class Solution:
         self.helper(root)
     
     def helper(self, node):
-        if node is None: 
+        if node is None:
             return None
 
         left_last = self.helper(node.left)
@@ -28,6 +28,35 @@ class Solution:
 
         if left_last is not None:
             return left_last
-        
+
         return node
+
+
+
+
+
+
+
+
+    #     self.helper(root)
+    
+    # def helper(self, node):
+    #     if node is None: 
+    #         return None
+
+    #     left_last = self.helper(node.left)
+    #     right_last = self.helper(node.right)
+
+    #     if left_last is not None:
+    #         left_last.right = node.right
+    #         node.right = node.left
+    #         node.left = None
+        
+    #     if right_last is not None:
+    #         return right_last
+
+    #     if left_last is not None:
+    #         return left_last
+        
+    #     return node
         
