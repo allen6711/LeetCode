@@ -6,7 +6,7 @@
 #         self.right = right
 class Solution:
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
-        # Use stack to in-order traversal
+        # Use stack to inorder traversal
         if root is None:
             return []
         
@@ -20,21 +20,46 @@ class Solution:
 
             if node.right:
                 node = node.right
-            
+
                 while node:
                     stack.append(node)
                     node = node.left
-                
+            
             if stack:
                 inorder.append(stack[-1].val)
         
         return inorder
+            
 
 
 
 
 
 
+
+        # Use stack to in-order traversal
+        # if root is None:
+        #     return []
+        
+        # dummy = TreeNode(0)
+        # dummy.right = root
+        # stack = [dummy]
+        # inorder = []
+
+        # while stack:
+        #     node = stack.pop()
+
+        #     if node.right:
+        #         node = node.right
+            
+        #         while node:
+        #             stack.append(node)
+        #             node = node.left
+                
+        #     if stack:
+        #         inorder.append(stack[-1].val)
+        
+        # return inorder
 
 
 
