@@ -24,7 +24,7 @@ class Solution:
                     node = node.left
             
             if not stack:
-                break
+                return None
         
         return stack[-1].val
 
