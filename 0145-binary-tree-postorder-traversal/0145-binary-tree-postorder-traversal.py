@@ -16,7 +16,7 @@ class Solution:
         while stack:
             node = stack.pop()
             postorder.append(node.val)
-            
+
             if node.left:
                 stack.append(node.left)
 
@@ -24,3 +24,31 @@ class Solution:
                 stack.append(node.right)
         
         return postorder[::-1]
+
+
+
+
+
+
+
+
+
+
+        # Use stack to apply postorder traversal
+        # if root is None:
+        #     return []
+
+        # stack = [root]
+        # postorder = []
+
+        # while stack:
+        #     node = stack.pop()
+        #     postorder.append(node.val)
+            
+        #     if node.left:
+        #         stack.append(node.left)
+
+        #     if node.right:
+        #         stack.append(node.right)
+        
+        # return postorder[::-1]
