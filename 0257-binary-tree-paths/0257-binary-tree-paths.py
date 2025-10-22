@@ -12,12 +12,12 @@ class Solution:
         if root.left is None and root.right is None:
             return [str(root.val)]
         
-        left_paths = self.binaryTreePaths(root.left)
-        right_paths = self.binaryTreePaths(root.right)
+        left_path = self.binaryTreePaths(root.left)
+        right_path = self.binaryTreePaths(root.right)
 
         paths = []
 
-        for path in left_paths + right_paths:
+        for path in left_path + right_path:
             paths.append(str(root.val) + "->" + path)
         
         return paths
@@ -26,6 +26,25 @@ class Solution:
 
 
 
+
+
+
+
+        # if root is None:
+        #     return []
+
+        # if root.left is None and root.right is None:
+        #     return [str(root.val)]
+        
+        # left_paths = self.binaryTreePaths(root.left)
+        # right_paths = self.binaryTreePaths(root.right)
+
+        # paths = []
+
+        # for path in left_paths + right_paths:
+        #     paths.append(str(root.val) + "->" + path)
+        
+        # return paths
 
 
 
