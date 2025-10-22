@@ -12,19 +12,20 @@ class Solution:
         
         if root is p or root is q:
             return root
-        
+
         left_node = self.lowestCommonAncestor(root.left, p, q)
         right_node = self.lowestCommonAncestor(root.right, p, q)
 
         if left_node and right_node:
             return root
-
+        
         if left_node:
             return left_node
-
+        
         if right_node:
             return right_node
         
+
         return None
 
 
@@ -33,6 +34,28 @@ class Solution:
 
 
 
+
+
+
+        # if root is None:
+        #     return None
+        
+        # if root is p or root is q:
+        #     return root
+        
+        # left_node = self.lowestCommonAncestor(root.left, p, q)
+        # right_node = self.lowestCommonAncestor(root.right, p, q)
+
+        # if left_node and right_node:
+        #     return root
+
+        # if left_node:
+        #     return left_node
+
+        # if right_node:
+        #     return right_node
+        
+        # return None
 
 
         # if root is None:
@@ -113,26 +136,6 @@ class Solution:
         #     return right
 
         # return None
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         # if root is None:
         #     return None
