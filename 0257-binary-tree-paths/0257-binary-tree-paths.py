@@ -21,13 +21,24 @@ class Solution:
             paths.append(str(root.val) + "->" + path)
         
         return paths
+        
 
 
+        # if root is None:
+        #     return []
 
+        # if root.left is None and root.right is None:
+        #     return [str(root.val)]
+        
+        # left_path = self.binaryTreePaths(root.left)
+        # right_path = self.binaryTreePaths(root.right)
 
+        # paths = []
 
-
-
+        # for path in left_path + right_path:
+        #     paths.append(str(root.val) + "->" + path)
+        
+        # return paths
 
 
         # if root is None:
