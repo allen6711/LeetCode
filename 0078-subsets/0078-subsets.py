@@ -1,6 +1,5 @@
 class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:
-        nums = sorted(nums)
         combinations = []
         self.dfs(nums, 0, [], combinations)
 
@@ -14,7 +13,6 @@ class Solution:
             self.dfs(nums, i + 1, subset, combinations)
             subset.pop()
 
-        
 
 
 
@@ -28,6 +26,20 @@ class Solution:
 
 
 
+
+    #     nums = sorted(nums)
+    #     combinations = []
+    #     self.dfs(nums, 0, [], combinations)
+
+    #     return combinations
+    
+    # def dfs(self, nums, index, subset, combinations):
+    #     combinations.append(list(subset))
+
+    #     for i in range(index, len(nums)):
+    #         subset.append(nums[i])
+    #         self.dfs(nums, i + 1, subset, combinations)
+    #         subset.pop()
 
     #     nums = sorted(nums)
     #     combinations = []
