@@ -13,16 +13,15 @@ class Solution:
         parent_set = set()
         curr = p
 
-        while curr is not None:
+        while curr:
             parent_set.add(curr)
             curr = curr.parent
         
         curr = q
 
-        while curr is not None:
+        while curr:
             if curr in parent_set:
                 return curr
-            
             curr = curr.parent
         
         return None
@@ -34,11 +33,22 @@ class Solution:
 
 
 
+        # parent_set = set()
+        # curr = p
 
+        # while curr is not None:
+        #     parent_set.add(curr)
+        #     curr = curr.parent
+        
+        # curr = q
 
-
-
-
+        # while curr is not None:
+        #     if curr in parent_set:
+        #         return curr
+            
+        #     curr = curr.parent
+        
+        # return None
 
         # parent_set = set()
 
