@@ -9,19 +9,43 @@ class Solution:
         if root is None:
             return []
         
-        if root.left is None and root.right is None:
-            return [str(root.val)]
-        
         left_paths = self.binaryTreePaths(root.left)
         right_paths = self.binaryTreePaths(root.right)
-        paths = []
 
+        if left_paths == [] and right_paths == []:
+            return [str(root.val)]
+
+        paths = []
+        
         for path in left_paths + right_paths:
             paths.append(str(root.val) + "->" + path)
         
         return paths
-        
 
+
+
+
+
+
+
+
+
+
+
+        # if root is None:
+        #     return []
+        
+        # if root.left is None and root.right is None:
+        #     return [str(root.val)]
+        
+        # left_paths = self.binaryTreePaths(root.left)
+        # right_paths = self.binaryTreePaths(root.right)
+        # paths = []
+
+        # for path in left_paths + right_paths:
+        #     paths.append(str(root.val) + "->" + path)
+        
+        # return paths
 
         # if root is None:
         #     return []
