@@ -4,7 +4,7 @@ class Solution:
         self.dfs(nums, 0, [], combinations)
 
         return combinations
-    
+
     def dfs(self, nums, index, subset, combinations):
         combinations.append(list(subset))
 
@@ -25,6 +25,19 @@ class Solution:
 
 
 
+
+    #     combinations = []
+    #     self.dfs(nums, 0, [], combinations)
+
+    #     return combinations
+    
+    # def dfs(self, nums, index, subset, combinations):
+    #     combinations.append(list(subset))
+
+    #     for i in range(index, len(nums)):
+    #         subset.append(nums[i])
+    #         self.dfs(nums, i + 1, subset, combinations)
+    #         subset.pop()
 
     #     combinations = []
     #     self.dfs(nums, 0, [], combinations)
