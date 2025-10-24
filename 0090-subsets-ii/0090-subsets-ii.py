@@ -2,19 +2,22 @@ class Solution:
     def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
         nums.sort()
         combinations = []
-        self.visited = set()
+        # self.visited = set()
         self.dfs(nums, 0, [], combinations)
 
         return combinations
 
     def dfs(self, nums, index, subset, combinations):
-        key = tuple(subset)
+        # key = tuple(subset)
 
-        if key not in self.visited:
-            combinations.append(list(subset))
-            self.visited.add(key)
+        # if key not in self.visited:
+        #     combinations.append(list(subset))
+        #     self.visited.add(key)
+        combinations.append(list(subset))
         
         for i in range(index, len(nums)):
+            if i > index and nums[i - 1] == nums[i]:
+                continue
             subset.append(nums[i])
             self.dfs(nums, i + 1, subset, combinations)
             subset.pop()
