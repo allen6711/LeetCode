@@ -7,10 +7,12 @@
 
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', nodes: 'List[TreeNode]') -> 'TreeNode':
+        targets = set(nodes)
+
         if root is None:
             return None
 
-        if root in nodes:
+        if root in targets:
             return root
         
         left_node = self.lowestCommonAncestor(root.left, nodes)
