@@ -8,15 +8,15 @@ class Solution:
     def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:
         if root is None:
             return []
-        
+
+        if root.left is None and root.right is None:
+            return [str(root.val)]
+
         left_paths = self.binaryTreePaths(root.left)
         right_paths = self.binaryTreePaths(root.right)
 
-        if left_paths == [] and right_paths == []:
-            return [str(root.val)]
-
         paths = []
-        
+
         for path in left_paths + right_paths:
             paths.append(str(root.val) + "->" + path)
         
@@ -29,6 +29,25 @@ class Solution:
 
 
 
+
+
+
+
+        # if root is None:
+        #     return []
+        
+        # left_paths = self.binaryTreePaths(root.left)
+        # right_paths = self.binaryTreePaths(root.right)
+
+        # if left_paths == [] and right_paths == []:
+        #     return [str(root.val)]
+
+        # paths = []
+        
+        # for path in left_paths + right_paths:
+        #     paths.append(str(root.val) + "->" + path)
+        
+        # return paths
 
 
 
