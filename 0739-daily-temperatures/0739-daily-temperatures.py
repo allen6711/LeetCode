@@ -8,7 +8,6 @@ class Solution:
             while index_stack and temp > temperatures[index_stack[-1]]:
                 j = index_stack.pop()
                 answer[j] = i - j
-
             index_stack.append(i)
         
         return answer
@@ -25,8 +24,18 @@ class Solution:
 
 
 
+        n = len(temperatures)
+        answer = [0] * n
+        index_stack = []
 
+        for i, temp in enumerate(temperatures):
+            while index_stack and temp > temperatures[index_stack[-1]]:
+                j = index_stack.pop()
+                answer[j] = i - j
 
+            index_stack.append(i)
+        
+        return answer
 
         # n = len(temperatures)
         # index_stack = []
