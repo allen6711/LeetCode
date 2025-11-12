@@ -1,5 +1,8 @@
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
+        if len(s) != len(t):
+            return False
+            
         cnt = [0] * 26
         base = ord('a')
 
@@ -10,19 +13,6 @@ class Solution:
             cnt[ord(ch) - base] -= 1
         
         return all(x == 0 for x in cnt)
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         # if len(s) != len(t):
         #     return False
