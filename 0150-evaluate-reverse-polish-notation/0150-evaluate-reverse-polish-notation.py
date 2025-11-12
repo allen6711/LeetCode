@@ -23,32 +23,21 @@ class Solution:
                 
         return num_stack[-1]
 
-
-
-
-
-
-
-
-
-
-
-
-        stack = []
-        for token in tokens:
-            if token not in {"+", "-", "*", "/"}:
-                stack.append(int(token))
+        # stack = []
+        # for token in tokens:
+        #     if token not in {"+", "-", "*", "/"}:
+        #         stack.append(int(token))
             
-            else:
-                b = stack.pop()
-                a = stack.pop()
-                if token == "+":
-                    stack.append(a + b)
-                if token == "-":
-                    stack.append(a - b)
-                if token == "*":
-                    stack.append(a * b)
-                if token == "/":
-                    stack.append(int(a / b))
+        #     else:
+        #         b = stack.pop()
+        #         a = stack.pop()
+        #         if token == "+":
+        #             stack.append(a + b)
+        #         if token == "-":
+        #             stack.append(a - b)
+        #         if token == "*":
+        #             stack.append(a * b)
+        #         if token == "/":
+        #             stack.append(int(a / b))
         
-        return stack[-1]
+        # return stack[-1]
