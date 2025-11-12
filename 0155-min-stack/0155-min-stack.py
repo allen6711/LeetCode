@@ -18,29 +18,7 @@ class MinStack:
     
     def getMin(self) -> int:
         return self.minimum[-1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
     # def __init__(self):
     #     self.stack = []
     #     self.minimum = []
