@@ -8,11 +8,26 @@ class Solution:
                 stack.append(char)
             
             else:
-                if not stack or stack[-1] != expected_dict[char]:
+                if not stack or stack[-1] != expected_dict.get(char, None):
                     return False
                 stack.pop()
         
         return not stack
+
+
+        # expected_dict = {")": "(", "]": "[", "}": "{"}
+        # stack = []
+
+        # for char in s:
+        #     if char in "([{":
+        #         stack.append(char)
+            
+        #     else:
+        #         if not stack or stack[-1] != expected_dict[char]:
+        #             return False
+        #         stack.pop()
+        
+        # return not stack
 
         # expected_dict = {")": "(", "]": "[", "}": "{"}
         # stack = []
