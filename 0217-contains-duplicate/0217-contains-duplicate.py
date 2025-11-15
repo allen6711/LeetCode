@@ -1,14 +1,38 @@
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        visited = set()
+        num_set = set()
 
         for num in nums:
-            if num in visited:
+            if num in num_set:
                 return True
             
-            visited.add(num)
+            num_set.add(num)
         
         return False
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        # visited = set()
+
+        # for num in nums:
+        #     if num in visited:
+        #         return True
+            
+        #     visited.add(num)
+        
+        # return False
 
         # visited = set()
 
