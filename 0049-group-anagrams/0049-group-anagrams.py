@@ -15,31 +15,18 @@ class Solution:
 
         return list(word_dict.values())
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        base = ord('a')
-        answer = defaultdict(list)
-
-        for char in strs:
-            cnt = [0] * 26
-            for ch in char:
-                cnt[ord(ch) - base] += 1
-            key = tuple(cnt)
-            answer[key].append(char)
         
-        return list(answer.values())
+        # base = ord('a')
+        # answer = defaultdict(list)
+
+        # for char in strs:
+        #     cnt = [0] * 26
+        #     for ch in char:
+        #         cnt[ord(ch) - base] += 1
+        #     key = tuple(cnt)
+        #     answer[key].append(char)
+        
+        # return list(answer.values())
 
         # cnt = [0] * 26
         # base = ord('a')
