@@ -28,20 +28,6 @@ class Solution:
                 boxes[box_index].add(val)
             
         return True
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         
         # rows = [set() for _ in range(9)]
         # cols = [set() for _ in range(9)]
