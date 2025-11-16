@@ -11,6 +11,18 @@ class Solution:
         
         return all(x == 0 for x in cnt)
 
+
+        # cnt = [0] * 26
+        # base = ord('a')
+
+        # for char in s:
+        #     cnt[ord(char) - base] += 1
+        
+        # for char in t:
+        #     cnt[ord(char) - base] -= 1
+        
+        # return all(x == 0 for x in cnt)
+
         # if len(s) != len(t):
         #     return False
             
