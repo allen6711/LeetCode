@@ -175,6 +175,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0003-longest-substring-without-repeating-characters](https://github.com/allen6711/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0020-valid-parentheses](https://github.com/allen6711/LeetCode/tree/master/0020-valid-parentheses) |
 | [0049-group-anagrams](https://github.com/allen6711/LeetCode/tree/master/0049-group-anagrams) |
+| [0125-valid-palindrome](https://github.com/allen6711/LeetCode/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/allen6711/LeetCode/tree/master/0242-valid-anagram) |
 | [0257-binary-tree-paths](https://github.com/allen6711/LeetCode/tree/master/0257-binary-tree-paths) |
 | [0269-alien-dictionary](https://github.com/allen6711/LeetCode/tree/master/0269-alien-dictionary) |
@@ -206,6 +207,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0125-valid-palindrome](https://github.com/allen6711/LeetCode/tree/master/0125-valid-palindrome) |
 | [0658-find-k-closest-elements](https://github.com/allen6711/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/allen6711/LeetCode/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
 ## Sliding Window
