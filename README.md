@@ -115,6 +115,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/allen6711/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/allen6711/LeetCode/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
 | [0162-find-peak-element](https://github.com/allen6711/LeetCode/tree/master/0162-find-peak-element) |
+| [0170-two-sum-iii-data-structure-design](https://github.com/allen6711/LeetCode/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0200-number-of-islands](https://github.com/allen6711/LeetCode/tree/master/0200-number-of-islands) |
 | [0217-contains-duplicate](https://github.com/allen6711/LeetCode/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/allen6711/LeetCode/tree/master/0238-product-of-array-except-self) |
@@ -209,6 +210,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0125-valid-palindrome](https://github.com/allen6711/LeetCode/tree/master/0125-valid-palindrome) |
+| [0170-two-sum-iii-data-structure-design](https://github.com/allen6711/LeetCode/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0658-find-k-closest-elements](https://github.com/allen6711/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0680-valid-palindrome-ii](https://github.com/allen6711/LeetCode/tree/master/0680-valid-palindrome-ii) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/allen6711/LeetCode/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
@@ -260,6 +262,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0036-valid-sudoku](https://github.com/allen6711/LeetCode/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/allen6711/LeetCode/tree/master/0049-group-anagrams) |
 | [0128-longest-consecutive-sequence](https://github.com/allen6711/LeetCode/tree/master/0128-longest-consecutive-sequence) |
+| [0170-two-sum-iii-data-structure-design](https://github.com/allen6711/LeetCode/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0217-contains-duplicate](https://github.com/allen6711/LeetCode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/allen6711/LeetCode/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/allen6711/LeetCode/tree/master/0347-top-k-frequent-elements) |
@@ -287,6 +290,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0155-min-stack](https://github.com/allen6711/LeetCode/tree/master/0155-min-stack) |
+| [0170-two-sum-iii-data-structure-design](https://github.com/allen6711/LeetCode/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0271-encode-and-decode-strings](https://github.com/allen6711/LeetCode/tree/master/0271-encode-and-decode-strings) |
 ## Monotonic Stack
 |  |
@@ -317,4 +321,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0680-valid-palindrome-ii](https://github.com/allen6711/LeetCode/tree/master/0680-valid-palindrome-ii) |
+## Data Stream
+|  |
+| ------- |
+| [0170-two-sum-iii-data-structure-design](https://github.com/allen6711/LeetCode/tree/master/0170-two-sum-iii-data-structure-design) |
 <!---LeetCode Topics End-->
