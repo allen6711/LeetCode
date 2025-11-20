@@ -27,23 +27,7 @@ class Solution:
             
             else:
                 right -= 1
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                
         # nums.sort()
         # n = len(nums)
         # triplets = []
