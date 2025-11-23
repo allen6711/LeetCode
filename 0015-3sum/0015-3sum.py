@@ -7,6 +7,49 @@ class Solution:
         for i in range(0, n - 2):
             if i > 0 and nums[i] == nums[i - 1]:
                 continue
+            
+            left = i + 1
+            right = n - 1
+            while left < right:
+                target = -nums[i]
+                if nums[left] + nums[right] == target:
+                    results.append([-target, nums[left], nums[right]])
+                    left += 1
+                    right -= 1
+                    while left < right and nums[left] == nums[left - 1]:
+                        left += 1
+                    while left < right and nums[right] == nums[right + 1]:
+                        right -= 1
+                elif nums[left] + nums[right] > target:
+                    right -= 1
+                else:
+                    left += 1
+        
+        return results
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        n = len(nums)
+        results = []
+        nums.sort()
+
+        for i in range(0, n - 2):
+            if i > 0 and nums[i] == nums[i - 1]:
+                continue
             self.findTwoSum(nums, i + 1, n - 1, -nums[i], results)
         
         return results
