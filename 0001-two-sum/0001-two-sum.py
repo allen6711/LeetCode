@@ -1,16 +1,26 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        visited = set()
-        num_index = defaultdict(int)
+        visited = {}
 
         for i, num in enumerate(nums):
             if target - num in visited:
-                return [num_index[target - num], i]
+                return [visited[target - num], i]
             
-            visited.add(num)
-            num_index[num] = i
+            visited[num] = i
         
-        return False
+        return []
+
+        # visited = set()
+        # num_index = defaultdict(int)
+
+        # for i, num in enumerate(nums):
+        #     if target - num in visited:
+        #         return [num_index[target - num], i]
+            
+        #     visited.add(num)
+        #     num_index[num] = i
+        
+        # return False
 
         # visited = set()
         # num_index = {}
