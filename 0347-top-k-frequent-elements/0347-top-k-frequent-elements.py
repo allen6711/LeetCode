@@ -7,33 +7,17 @@ class Solution:
 
         for num, count in freq.items():
             buckets[count].append(num)
-
+        
         for i in range(n, 0, -1):
             if not buckets[i]:
                 continue
-
+            
             for num in buckets[i]:
                 answer.append(num)
                 if len(answer) == k:
                     return answer
         
         return answer
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         # freq = Counter(nums)
         # n = len(nums)
