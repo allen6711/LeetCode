@@ -3,21 +3,55 @@ class Solution:
         n = len(nums)
         answer = []
         freq = Counter(nums)
-        buckets = [[] for _ in range(n + 1)]
+        blankets = [[] for _ in range(n + 1)]
 
         for num, count in freq.items():
-            buckets[count].append(num)
-        
+            blankets[count].append(num)
+
         for i in range(n, 0, -1):
-            if not buckets[i]:
+            if not blankets[i]:
                 continue
-            
-            for num in buckets[i]:
+
+            for num in blankets[i]:
                 answer.append(num)
                 if len(answer) == k:
                     return answer
         
         return answer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        # n = len(nums)
+        # answer = []
+        # freq = Counter(nums)
+        # buckets = [[] for _ in range(n + 1)]
+
+        # for num, count in freq.items():
+        #     buckets[count].append(num)
+        
+        # for i in range(n, 0, -1):
+        #     if not buckets[i]:
+        #         continue
+            
+        #     for num in buckets[i]:
+        #         answer.append(num)
+        #         if len(answer) == k:
+        #             return answer
+        
+        # return answer
 
         # freq = Counter(nums)
         # n = len(nums)
