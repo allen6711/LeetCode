@@ -7,8 +7,15 @@ class Codec:
             result.append(str(len(char)))
             result.append("#")
             result.append(char)
-
         return "".join(result)
+
+        # result = []
+        # for char in strs:
+        #     result.append(str(len(char)))
+        #     result.append("#")
+        #     result.append(char)
+
+        # return "".join(result)
 
         # result = []
         # for char in strs:
@@ -38,22 +45,42 @@ class Codec:
         """Decodes a single string to a list of strings.
         """
         left = 0
-        result =[]
+        results = []
         n = len(s)
-
         while left < n:
             right = left
-
             while right < n and s[right] != "#":
                 right += 1
-            
             length = int(s[left: right])
             left = right + 1
             word = s[left: left + length]
-            result.append(word)
+            results.append(word)
             left = left + length
         
-        return result
+        return results
+
+
+
+
+
+
+        # left = 0
+        # result =[]
+        # n = len(s)
+
+        # while left < n:
+        #     right = left
+
+        #     while right < n and s[right] != "#":
+        #         right += 1
+            
+        #     length = int(s[left: right])
+        #     left = right + 1
+        #     word = s[left: left + length]
+        #     result.append(word)
+        #     left = left + length
+        
+        # return result
 
         # left = 0
         # n = len(s)
