@@ -16,19 +16,12 @@ class Solution:
             else:
                 tail.next = p2
                 p2 = p2.next
-                
+
             tail = tail.next
         
         tail.next = p1 if p1 else p2
 
         return dummy.next
-
-
-
-
-
-
-
 
         # dummy = ListNode()
         # tail = dummy
