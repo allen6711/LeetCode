@@ -15,18 +15,7 @@ class Solution:
             cur = next_node
         
         return prev
-
-
-
-
-
-
-
-
-
-
-
-
+        
         # prev = None
         # cur = head
 
