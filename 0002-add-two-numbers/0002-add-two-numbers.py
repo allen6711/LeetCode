@@ -26,18 +26,6 @@ class Solution:
         
         return dummy.next
 
-
-
-
-
-
-
-
-
-
-
-
-
         # dummy_head = ListNode()
         # carry, current = 0, dummy_head
 
