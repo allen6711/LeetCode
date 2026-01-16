@@ -25,17 +25,7 @@ class Solution:
                 p2 = p2.next
         
         return dummy.next
-
-
-
-
-
-
-
-
-
-
-
+        
         # dummy = ListNode(0)
         # tail = dummy
         # p1, p2 = l1, l2
