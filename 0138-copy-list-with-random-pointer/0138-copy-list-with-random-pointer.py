@@ -31,18 +31,15 @@ class Solution:
         copy_tail = dummy
         while cur:
             copy = cur.next
+            next_node = copy.next
+
             copy_tail.next = copy
             copy_tail = copy
-            cur = copy.next
+            
+            cur.next = next_node
+            cur = next_node
         
         return dummy.next
-
-
-
-
-
-
-
 
         # if not head:
         #     return None
