@@ -11,12 +11,11 @@ class Solution:
     def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
         if not head:
             return None
-        
         # 1. Clone and interleave
         cur = head
         while cur:
-            next_node = cur.next
             copy = Node(cur.val)
+            next_node = cur.next
             cur.next = copy
             copy.next = next_node
             cur = next_node
@@ -27,20 +26,56 @@ class Solution:
             copy.random = cur.random.next if cur.random else None
             cur = copy.next
         # 3. Split into two lists
+        cur = head
         dummy = Node(0)
         copy_tail = dummy
-        cur = head
         while cur:
             copy = cur.next
-            next_node = copy.next
-
             copy_tail.next = copy
             copy_tail = copy
-            
-            cur.next = next_node
-            cur = next_node
+            cur = copy.next
         
         return dummy.next
+
+
+
+
+
+
+
+
+        # if not head:
+        #     return None
+        
+        # # 1. Clone and interleave
+        # cur = head
+        # while cur:
+        #     next_node = cur.next
+        #     copy = Node(cur.val)
+        #     cur.next = copy
+        #     copy.next = next_node
+        #     cur = next_node
+        # # 2. Assign random for clone nodes
+        # cur = head
+        # while cur:
+        #     copy = cur.next
+        #     copy.random = cur.random.next if cur.random else None
+        #     cur = copy.next
+        # # 3. Split into two lists
+        # dummy = Node(0)
+        # copy_tail = dummy
+        # cur = head
+        # while cur:
+        #     copy = cur.next
+        #     next_node = copy.next
+
+        #     copy_tail.next = copy
+        #     copy_tail = copy
+            
+        #     cur.next = next_node
+        #     cur = next_node
+        
+        # return dummy.next
         
         # if not head:
         #     return None
