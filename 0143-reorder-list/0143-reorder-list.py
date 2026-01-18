@@ -8,41 +8,67 @@ class Solution:
         """
         Do not return anything, modify head in-place instead.
         """
-        if not head or not head.next:
-            return
-        # Find the middle by two pointers
         slow, fast = head, head
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
+            if slow == fast:
+                break
         
-        # Reverse the second list
-        prev = None
-        cur = slow.next
+        second = slow.next
         slow.next = None
+        # reverse the second list
+        prev = None
+        cur = second
         while cur:
             next_node = cur.next
             cur.next = prev
             prev = cur
             cur = next_node
-        # Merge two halves
+
+        # Merge two lists
         first = head
         second = prev
         while second:
-            temp1 = first.next
-            temp2 = second.next
+            next_node1 = first.next
+            next_node2 = second.next
+
             first.next = second
-            second.next = temp1
-            first = temp1
-            second = temp2
+            second.next = next_node1
+
+            first = next_node1
+            second = next_node2
+            
 
 
 
-
-
-
-
-
+        # if not head or not head.next:
+        #     return
+        # # Find the middle by two pointers
+        # slow, fast = head, head
+        # while fast and fast.next:
+        #     slow = slow.next
+        #     fast = fast.next.next
+        
+        # # Reverse the second list
+        # prev = None
+        # cur = slow.next
+        # slow.next = None
+        # while cur:
+        #     next_node = cur.next
+        #     cur.next = prev
+        #     prev = cur
+        #     cur = next_node
+        # # Merge two halves
+        # first = head
+        # second = prev
+        # while second:
+        #     temp1 = first.next
+        #     temp2 = second.next
+        #     first.next = second
+        #     second.next = temp1
+        #     first = temp1
+        #     second = temp2
 
 
         # if not head or not head.next:
