@@ -39,9 +39,6 @@ class Solution:
             first = next_node1
             second = next_node2
             
-
-
-
         # if not head or not head.next:
         #     return
         # # Find the middle by two pointers
