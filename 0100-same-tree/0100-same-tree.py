@@ -6,30 +6,41 @@
 #         self.right = right
 class Solution:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
-        if not p and not q:
+        # DFS
+        if p is None and q is None:
             return True
-
-        if not p or not q:
+        if p is None or q is None:
             return False
-        
-        queue = deque([(p, q)])
+        if p.val != q.val:
+            return False
 
-        while queue:
-            node_p, node_q = queue.popleft()
+        return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
 
-            if not node_p and not node_q:
-                continue
-            
-            if not node_p or not node_q:
-                return False
-            
-            if node_p.val != node_q.val:
-                return False
-            
-            queue.append((node_p.left, node_q.left))
-            queue.append((node_p.right, node_q.right))
+
+        # if not p and not q:
+        #     return True
+
+        # if not p or not q:
+        #     return False
         
-        return True
+        # queue = deque([(p, q)])
+
+        # while queue:
+        #     node_p, node_q = queue.popleft()
+
+        #     if not node_p and not node_q:
+        #         continue
+            
+        #     if not node_p or not node_q:
+        #         return False
+            
+        #     if node_p.val != node_q.val:
+        #         return False
+            
+        #     queue.append((node_p.left, node_q.left))
+        #     queue.append((node_p.right, node_q.right))
+        
+        # return True
         # DFS
         # if not p and not q:
         #     return True
