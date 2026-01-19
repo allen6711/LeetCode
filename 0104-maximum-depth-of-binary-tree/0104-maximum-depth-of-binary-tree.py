@@ -27,7 +27,6 @@ class Solution:
                     q.append(node.left)
                 if node.right:
                     q.append(node.right)
-            
             depth += 1
         return depth
 
