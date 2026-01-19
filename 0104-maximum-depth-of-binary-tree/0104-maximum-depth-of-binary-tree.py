@@ -7,14 +7,22 @@
 # from typing import Optional
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
-        # Divide and Conquer
+        # DFS
         if root is None:
             return 0
         
-        left_h = self.maxDepth(root.left)
-        right_h = self.maxDepth(root.right)
+        return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
 
-        return 1 + max(left_h, right_h)
+
+
+        # Divide and Conquer
+        # if root is None:
+        #     return 0
+        
+        # left_h = self.maxDepth(root.left)
+        # right_h = self.maxDepth(root.right)
+
+        # return 1 + max(left_h, right_h)
         
 
         # DFS
