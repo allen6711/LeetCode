@@ -1,5 +1,20 @@
 class Solution:
     def findDuplicate(self, nums: List[int]) -> int:
+        slow, fast = 0, 0
+        # Find the circle
+        while True:
+            slow = nums[slow]
+            fast = nums[nums[fast]]
+            if slow == fast:
+                break
+        
+        finder = 0
+        while True:
+            finder = nums[finder]
+            fast = nums[fast]
+            if finder == fast:
+                return finder
+                
         # Floyd Cycle Detection
         slow = 0
         fast = 0
