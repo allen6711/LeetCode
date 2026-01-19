@@ -18,8 +18,6 @@ class Solution:
 
         # BFS
         from collections import deque
-        if root is None:
-            return None
         q = deque([root])
         while q:
             node = q.popleft()
@@ -31,7 +29,30 @@ class Solution:
         
         return root
 
+        # DFS
+        # if root is None:
+        #     return None
+        
+        # root.left, root.right = root.right, root.left
+        # self.invertTree(root.left)
+        # self.invertTree(root.right)
 
+        # return root
+
+        # BFS
+        # from collections import deque
+        # if root is None:
+        #     return None
+        # q = deque([root])
+        # while q:
+        #     node = q.popleft()
+        #     node.left, node.right = node.right, node.left
+        #     if node.left:
+        #         q.append(node.left)
+        #     if node.right:
+        #         q.append(node.right)
+        
+        # return root
 
 
         # BFS
