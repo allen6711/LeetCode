@@ -7,49 +7,58 @@
 class Solution:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         # DFS
-        if p is None and q is None:
-            return True
-        if p is None or q is None:
-            return False
-        if p.val != q.val:
-            return False
-            
-        return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
+        # if p is None and q is None:
+        #     return True
+        # if p is None or q is None:
+        #     return False
+        # if p.val != q.val:
+        #     return False
 
-
-
-
-
-
-
-
-
-        # DFS
-        if p is None and q is None:
-            return True
-        if p is None or q is None:
-            return False
-        if p.val != q.val:
-            return False
-
-        return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
+        # return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
 
         # BFS
         from collections import deque
-        dq = deque([(p, q)])
-        while dq:
-            a, b = dq.popleft()
-            if a is None and b is None:
+    
+        pq = deque([(p, q)])
+        while pq:
+            p, q = pq.popleft()
+            if p is None and q is None:
                 continue
-            if a is None or b is None:
+            if p is None or q is None:
                 return False
-            if a.val != b.val:
+            if p.val != q.val:
                 return False
-            
-            dq.append((a.left, b.left))
-            dq.append((a.right, b.right))
-        
+            pq.append((p.left, q.left))
+            pq.append((p.right, q.right))
+
         return True
+
+        # DFS
+        # if p is None and q is None:
+        #     return True
+        # if p is None or q is None:
+        #     return False
+        # if p.val != q.val:
+        #     return False
+
+        # return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
+
+        # BFS
+        # from collections import deque
+        # dq = deque([(p, q)])
+        # while dq:
+        #     a, b = dq.popleft()
+        #     if a is None and b is None:
+        #         continue
+        #     if a is None or b is None:
+        #         return False
+        #     if a.val != b.val:
+        #         return False
+            
+        #     dq.append((a.left, b.left))
+        #     dq.append((a.right, b.right))
+        
+        # return True
 
 
         # if not p and not q:
