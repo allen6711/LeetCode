@@ -9,27 +9,27 @@ class Solution:
                 break
         
         finder = 0
-        while True:
+        while finder != fast:
             finder = nums[finder]
             fast = nums[fast]
-            if finder == fast:
-                return finder
-                
-        # Floyd Cycle Detection
-        slow = 0
-        fast = 0
-        while True:
-            slow = nums[slow]
-            fast = nums[nums[fast]]
-            if slow == fast:
-                break
-        
-        slow = 0
-        while slow != fast:
-            slow = nums[slow]
-            fast = nums[fast]
 
-        return slow
+        return finder
+
+        # Floyd Cycle Detection
+        # slow = 0
+        # fast = 0
+        # while True:
+        #     slow = nums[slow]
+        #     fast = nums[nums[fast]]
+        #     if slow == fast:
+        #         break
+        
+        # slow = 0
+        # while slow != fast:
+        #     slow = nums[slow]
+        #     fast = nums[fast]
+
+        # return slow
 
         # slow = nums[0]
         # fast = nums[0]
