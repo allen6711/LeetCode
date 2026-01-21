@@ -27,57 +27,49 @@ class Solution:
         return dummy.next
 
 
+        # p1, p2 = l1, l2
+        # carry = 0
+        # dummy = ListNode(0)
+        # prev = dummy
 
+        # while p1 or p2 or carry:
+        #     x = p1.val if p1 else 0
+        #     y = p2.val if p2 else 0
+        #     total = x + y + carry
+        #     carry = total // 10
+        #     remain = total % 10
 
+        #     prev.next = ListNode(remain)
+        #     prev = prev.next
 
+        #     if p1:
+        #         p1 = p1.next
 
-
-
-
-
-        p1, p2 = l1, l2
-        carry = 0
-        dummy = ListNode(0)
-        prev = dummy
-
-        while p1 or p2 or carry:
-            x = p1.val if p1 else 0
-            y = p2.val if p2 else 0
-            total = x + y + carry
-            carry = total // 10
-            remain = total % 10
-
-            prev.next = ListNode(remain)
-            prev = prev.next
-
-            if p1:
-                p1 = p1.next
-
-            if p2:
-                p2 = p2.next
+        #     if p2:
+        #         p2 = p2.next
         
-        return dummy.next
+        # return dummy.next
 
-        dummy = ListNode(0)
-        cur = dummy
-        p1, p2 = l1, l2
-        carry = 0
+        # dummy = ListNode(0)
+        # cur = dummy
+        # p1, p2 = l1, l2
+        # carry = 0
 
-        while p1 or p2 or carry:
-            x = p1.val if p1 else 0
-            y = p2.val if p2 else 0
-            total = x + y + carry
-            carry = total // 10
-            retain = total % 10
-            cur.next = ListNode(retain)
-            cur = cur.next
+        # while p1 or p2 or carry:
+        #     x = p1.val if p1 else 0
+        #     y = p2.val if p2 else 0
+        #     total = x + y + carry
+        #     carry = total // 10
+        #     retain = total % 10
+        #     cur.next = ListNode(retain)
+        #     cur = cur.next
 
-            if p1:
-                p1 = p1.next
-            if p2:
-                p2 = p2.next
+        #     if p1:
+        #         p1 = p1.next
+        #     if p2:
+        #         p2 = p2.next
         
-        return dummy.next
+        # return dummy.next
         
         # dummy = ListNode(0)
         # tail = dummy
