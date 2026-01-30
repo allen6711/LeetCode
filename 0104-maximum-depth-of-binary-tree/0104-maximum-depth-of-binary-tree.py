@@ -7,6 +7,7 @@
 # from typing import Optional
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
+        # DFS
         if root is None:
             return 0
         
