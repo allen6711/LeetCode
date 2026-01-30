@@ -19,6 +19,22 @@ class Solution:
         if a.val != b.val:
             return False
         return self.isMirror(a.left, b.right) and self.isMirror(a.right, b.left)
+
+        # BFS
+        from collections import deque
+        q = deque([(root.left, root.right)])
+        while q:
+            a, b = q.popleft()
+            if a is None and b is None:
+                continue
+            if a is None or b is None:
+                return False
+            if a.val != b.val:
+                return False
+            q.append(a.left, b.right)
+            q.append(a.right, b.left)
+        return True
+
         #DFS
     #     return self.isMirror(root.left, root.right)
     
@@ -33,20 +49,20 @@ class Solution:
     #     return self.isMirror(a.left, b.right) and self.isMirror(a.right, b.left)
     
         #BFS
-        from collections import deque
-        q = deque([(root.left, root.right)])
-        while q:
-            a, b = q.popleft()
-            if a is None and b is None:
-                continue
-            if a is None or b is None:
-                return False
-            if a.val != b.val:
-                return Fasle
-            q.append((a.left, b.right))
-            q.append((a.right, b.left))
+        # from collections import deque
+        # q = deque([(root.left, root.right)])
+        # while q:
+        #     a, b = q.popleft()
+        #     if a is None and b is None:
+        #         continue
+        #     if a is None or b is None:
+        #         return False
+        #     if a.val != b.val:
+        #         return Fasle
+        #     q.append((a.left, b.right))
+        #     q.append((a.right, b.left))
         
-        return True
+        # return True
 
     #     return self.isMirror(root.left, root.right)
     
