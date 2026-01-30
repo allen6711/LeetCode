@@ -7,8 +7,10 @@
 class Solution:
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
         #DFS
+        if root is None:
+            return True
         return self.isMirror(root.left, root.right)
-    
+
     def isMirror(self, a: Optional[TreeNode], b: Optional[TreeNode]) -> bool:
         if a is None and b is None:
             return True
@@ -16,8 +18,19 @@ class Solution:
             return False
         if a.val != b.val:
             return False
-        
         return self.isMirror(a.left, b.right) and self.isMirror(a.right, b.left)
+        #DFS
+    #     return self.isMirror(root.left, root.right)
+    
+    # def isMirror(self, a: Optional[TreeNode], b: Optional[TreeNode]) -> bool:
+    #     if a is None and b is None:
+    #         return True
+    #     if a is None or b is None:
+    #         return False
+    #     if a.val != b.val:
+    #         return False
+        
+    #     return self.isMirror(a.left, b.right) and self.isMirror(a.right, b.left)
     
         #BFS
         from collections import deque
