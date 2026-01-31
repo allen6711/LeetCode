@@ -13,58 +13,73 @@ class Solution:
         
         n = len(inorder)
         
-        # preorder -> the value of root
-        # inorder -> find the position of root then split left and right
-        
+        # preorder->inf of root val
+        # inorder->inf of left size by root position
         def dfs(preL, preR, inL, inR):
             if preL > preR:
                 return None
             root_val = preorder[preL]
             root = TreeNode(root_val)
-            # index of root in inorder
+            # root position in inorder
             k = index[root_val]
             left_size = k - inL
-
-            root.left = dfs(preL + 1, preL + left_size, inL, k - 1)
+            root.left = dfs(preL + 1, preL + left_size, inL, inL + k)
             root.right = dfs(preL + left_size + 1, preR, k + 1, inR)
-
+        
             return root
         
         return dfs(0, n - 1, 0, n - 1)
 
 
+        # Store value to index in dictionary
+        # index = {}
+        # for i, val in enumerate(inorder):
+        #     index[val] = i
+        
+        # n = len(inorder)
+        
+        # # preorder -> the value of root
+        # # inorder -> find the position of root then split left and right
+        
+        # def dfs(preL, preR, inL, inR):
+        #     if preL > preR:
+        #         return None
+        #     root_val = preorder[preL]
+        #     root = TreeNode(root_val)
+        #     # index of root in inorder
+        #     k = index[root_val]
+        #     left_size = k - inL
 
+        #     root.left = dfs(preL + 1, preL + left_size, inL, k - 1)
+        #     root.right = dfs(preL + left_size + 1, preR, k + 1, inR)
 
-
-
-
-
-
-
+        #     return root
+        
+        # return dfs(0, n - 1, 0, n - 1)
 
         # Store value: index
-        index = {}
-        for i, val in enumerate(inorder):
-            index[val] = i
+        # index = {}
+        # for i, val in enumerate(inorder):
+        #     index[val] = i
         
-        n = len(preorder)
+        # n = len(preorder)
 
-        def dfs(preL, preR, inL, inR):
-            if preL > preR:
-                return None
+        # def dfs(preL, preR, inL, inR):
+        #     if preL > preR:
+        #         return None
 
-            root_val = preorder[preL]
-            root = TreeNode(root_val)
-            k = index[root_val]
-            left_size = k - inL
+        #     root_val = preorder[preL]
+        #     root = TreeNode(root_val)
+        #     k = index[root_val]
+        #     left_size = k - inL
 
-            root.left = dfs(preL + 1, preL + left_size, inL, k - 1)
-            root.right = dfs(preL + left_size + 1, preR, k + 1, inR)
+        #     root.left = dfs(preL + 1, preL + left_size, inL, k - 1)
+        #     root.right = dfs(preL + left_size + 1, preR, k + 1, inR)
 
 
-            return root
+        #     return root
 
-        return dfs(0, n - 1, 0, n - 1)
+        # return dfs(0, n - 1, 0, n - 1)
 
         # value -> index in inorder
         # index = {}
