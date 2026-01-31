@@ -24,7 +24,6 @@ class Solution:
                 if prev:
                     prev.next = node
                 prev = node
-
                 if node.left:
                     q.append(node.left)
                 if node.right:
