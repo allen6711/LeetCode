@@ -6,6 +6,7 @@
 #         self.right = right
 class Solution:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+        # DFS
         if p is None and q is None:
             return True
         if p is None or q is None:
@@ -15,6 +16,21 @@ class Solution:
         
         return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
 
+        # BFS
+        from collections import deque
+        pq = deque([(p, q)])
+        while pq:
+            p, q = pq.popleft()
+            if p is None and q is None:
+                return True
+            if p is None or q is None:
+                return False
+            if p.val != q.val:
+                return False
+            pq.append((p.left, q.left))
+            pq.append((p.right, q.right))
+        
+        return True
 
         # DFS
         # if p is None and q is None:
