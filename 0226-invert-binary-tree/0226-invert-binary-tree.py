@@ -7,7 +7,7 @@
 class Solution:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         # DFS
-        if root is None:
+        if not root:
             return None
         
         root.left, root.right = root.right, root.left
@@ -16,18 +16,36 @@ class Solution:
 
         return root
 
-        # BFS
-        from collections import deque
-        q = deque([root])
-        while q:
-            node = q.popleft()
-            node.left, node.right = node.right, node.left
-            if node.left:
-                q.append(node.left)
-            if node.right:
-                q.append(node.right)
+
+
+
+
+
+
+
+
+        # # DFS
+        # if root is None:
+        #     return None
         
-        return root
+        # root.left, root.right = root.right, root.left
+        # self.invertTree(root.left)
+        # self.invertTree(root.right)
+
+        # return root
+
+        # # BFS
+        # from collections import deque
+        # q = deque([root])
+        # while q:
+        #     node = q.popleft()
+        #     node.left, node.right = node.right, node.left
+        #     if node.left:
+        #         q.append(node.left)
+        #     if node.right:
+        #         q.append(node.right)
+        
+        # return root
 
         # DFS
         # if root is None:
