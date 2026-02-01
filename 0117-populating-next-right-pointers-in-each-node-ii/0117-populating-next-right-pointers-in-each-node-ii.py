@@ -13,14 +13,14 @@ class Solution:
         # dummy + tail
         if not root:
             return None
+        
         level_start = root
-
         while level_start:
             dummy = Node(0)
             tail = dummy
             cur = level_start
-            while cur:
-                if cur.left:
+            while cur:    # cur x level
+                if cur.left:  # tail x + 1 level
                     tail.next = cur.left
                     tail = tail.next
                 if cur.right:
@@ -30,6 +30,27 @@ class Solution:
             level_start = dummy.next
         
         return root
+        
+        # # dummy + tail
+        # if not root:
+        #     return None
+        # level_start = root
+
+        # while level_start:
+        #     dummy = Node(0)
+        #     tail = dummy
+        #     cur = level_start
+        #     while cur:
+        #         if cur.left:
+        #             tail.next = cur.left
+        #             tail = tail.next
+        #         if cur.right:
+        #             tail.next = cur.right
+        #             tail = tail.next
+        #         cur = cur.next
+        #     level_start = dummy.next
+        
+        # return root
 
 
         # # dummy + tail
