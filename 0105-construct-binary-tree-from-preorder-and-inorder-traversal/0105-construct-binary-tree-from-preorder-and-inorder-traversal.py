@@ -6,29 +6,59 @@
 #         self.right = right
 class Solution:
     def buildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
-        # Store value to index in dictionary
         index = {}
         for i, val in enumerate(inorder):
             index[val] = i
         
         n = len(inorder)
-        
-        # preorder->inf of root val
-        # inorder->inf of left size by root position
+
         def dfs(preL, preR, inL, inR):
             if preL > preR:
                 return None
             root_val = preorder[preL]
             root = TreeNode(root_val)
-            # root position in inorder
             k = index[root_val]
             left_size = k - inL
             root.left = dfs(preL + 1, preL + left_size, inL, k - 1)
             root.right = dfs(preL + left_size + 1, preR, k + 1, inR)
-        
             return root
         
-        return dfs(0, n - 1, 0, n - 1)
+        return dfs(0, n - 1, 0, n-1)
+
+
+
+
+
+
+
+
+
+
+
+
+        # # Store value to index in dictionary
+        # index = {}
+        # for i, val in enumerate(inorder):
+        #     index[val] = i
+        
+        # n = len(inorder)
+        
+        # # preorder->inf of root val
+        # # inorder->inf of left size by root position
+        # def dfs(preL, preR, inL, inR):
+        #     if preL > preR:
+        #         return None
+        #     root_val = preorder[preL]
+        #     root = TreeNode(root_val)
+        #     # root position in inorder
+        #     k = index[root_val]
+        #     left_size = k - inL
+        #     root.left = dfs(preL + 1, preL + left_size, inL, k - 1)
+        #     root.right = dfs(preL + left_size + 1, preR, k + 1, inR)
+        
+        #     return root
+        
+        # return dfs(0, n - 1, 0, n - 1)
 
 
         # Store value to index in dictionary
