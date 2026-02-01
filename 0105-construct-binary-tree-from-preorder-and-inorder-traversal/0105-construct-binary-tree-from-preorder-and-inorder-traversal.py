@@ -23,7 +23,7 @@ class Solution:
             # root position in inorder
             k = index[root_val]
             left_size = k - inL
-            root.left = dfs(preL + 1, preL + left_size, inL, inL + k)
+            root.left = dfs(preL + 1, preL + left_size, inL, k - 1)
             root.right = dfs(preL + left_size + 1, preR, k + 1, inR)
         
             return root
