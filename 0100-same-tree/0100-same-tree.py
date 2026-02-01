@@ -14,23 +14,42 @@ class Solution:
         if p.val != q.val:
             return False
         
-        # return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
+        return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
 
-        # BFS
-        from collections import deque
-        pq = deque([(p, q)])
-        while pq:
-            p, q = pq.popleft()
-            if p is None and q is None:
-                continue
-            if p is None or q is None:
-                return False
-            if p.val != q.val:
-                return False
-            pq.append((p.left, q.left))
-            pq.append((p.right, q.right))
+
+
+
+
+
+
+
+
+
+        # # DFS
+        # if p is None and q is None:
+        #     return True
+        # if p is None or q is None:
+        #     return False
+        # if p.val != q.val:
+        #     return False
         
-        return True
+        # # return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
+
+        # # BFS
+        # from collections import deque
+        # pq = deque([(p, q)])
+        # while pq:
+        #     p, q = pq.popleft()
+        #     if p is None and q is None:
+        #         continue
+        #     if p is None or q is None:
+        #         return False
+        #     if p.val != q.val:
+        #         return False
+        #     pq.append((p.left, q.left))
+        #     pq.append((p.right, q.right))
+        
+        # return True
 
         # DFS
         # if p is None and q is None:
