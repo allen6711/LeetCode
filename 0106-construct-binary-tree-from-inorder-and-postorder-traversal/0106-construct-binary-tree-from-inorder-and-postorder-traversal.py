@@ -24,15 +24,7 @@ class Solution:
             return root
         
         return dfs(0, n - 1, 0, n - 1)
-
-
-
-
-
-
-
-
-
+        
         # # Store value to index in dictionary
         # index = {}
         # for i, val in enumerate(inorder):
