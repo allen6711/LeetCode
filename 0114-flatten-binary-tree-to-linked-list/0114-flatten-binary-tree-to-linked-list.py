@@ -14,7 +14,6 @@ class Solution:
             nonlocal prev
             if not node:
                 return
-            
             dfs(node.right)
             dfs(node.left)
             node.right = prev
