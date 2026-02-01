@@ -9,36 +9,46 @@ class Solution:
         """
         Do not return anything, modify root in-place instead.
         """
-        self.helper(root)
-    
-    def helper(self, root):
-        if root is None:
-            return None
-        
-        left_last = self.helper(root.left)
-        right_last = self.helper(root.right)
-
-        if left_last is not None:
-            left_last.right = root.right
-            root.right = root.left
-            root.left = None
-        
-        if right_last is not None:
-            return right_last
-        
-        if left_last is not None:
-            return left_last
-        
-        return root
+        prev = None
+        def dfs(node):
+            nonlocal prev
+            if not node:
+                return
             
-
+            dfs(node.right)
+            dfs(node.left)
+            node.right = prev
+            node.left = None
+            prev = node
         
-                
+        dfs(root)
 
 
 
 
 
+
+    #     self.helper(root)
+    
+    # def helper(self, root):
+    #     if root is None:
+    #         return None
+        
+    #     left_last = self.helper(root.left)
+    #     right_last = self.helper(root.right)
+
+    #     if left_last is not None:
+    #         left_last.right = root.right
+    #         root.right = root.left
+    #         root.left = None
+        
+    #     if right_last is not None:
+    #         return right_last
+        
+    #     if left_last is not None:
+    #         return left_last
+        
+    #     return root
 
         
     #     self.helper(root)
