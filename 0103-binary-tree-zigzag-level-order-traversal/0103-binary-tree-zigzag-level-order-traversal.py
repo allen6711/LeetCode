@@ -4,35 +4,61 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+from collections import deque
 class Solution:
     def zigzagLevelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
         if not root:
             return []
-        
-        queue = deque([root])
-        result = []
+        ans = []
+        q = deque([root])
         left_to_right = True
-
-        while queue:
+        while q:
             level = []
-
-            for _ in range(len(queue)):
-                node = queue.popleft()
+            size = len(q)
+            for _ in range(size):
+                node = q.popleft()
                 level.append(node.val)
-
-                if node.left:
-                    queue.append(node.left)
-                    
-                if node.right:
-                    queue.append(node.right)
                 
+                if node.left:
+                    q.append(node.left)
+                if node.right:
+                    q.append(node.right)
+            
             if not left_to_right:
                 level.reverse()
-
+            
+            ans.append(level)
             left_to_right = not left_to_right
-            result.append(level)
+        
+        return ans
 
-        return result
+        # if not root:
+        #     return []
+        
+        # queue = deque([root])
+        # result = []
+        # left_to_right = True
+
+        # while queue:
+        #     level = []
+
+        #     for _ in range(len(queue)):
+        #         node = queue.popleft()
+        #         level.append(node.val)
+
+        #         if node.left:
+        #             queue.append(node.left)
+                    
+        #         if node.right:
+        #             queue.append(node.right)
+                
+        #     if not left_to_right:
+        #         level.reverse()
+
+        #     left_to_right = not left_to_right
+        #     result.append(level)
+
+        # return result
 
 
         # if root is None:
