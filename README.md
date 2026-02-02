@@ -31,6 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0230-kth-smallest-element-in-a-bst](https://github.com/allen6711/LeetCode/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/allen6711/LeetCode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0257-binary-tree-paths](https://github.com/allen6711/LeetCode/tree/master/0257-binary-tree-paths) |
+| [0530-minimum-absolute-difference-in-bst](https://github.com/allen6711/LeetCode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/allen6711/LeetCode/tree/master/0637-average-of-levels-in-binary-tree) |
 | [1780-lowest-common-ancestor-of-a-binary-tree-ii](https://github.com/allen6711/LeetCode/tree/master/1780-lowest-common-ancestor-of-a-binary-tree-ii) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/allen6711/LeetCode/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
@@ -64,6 +65,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0269-alien-dictionary](https://github.com/allen6711/LeetCode/tree/master/0269-alien-dictionary) |
 | [0302-smallest-rectangle-enclosing-black-pixels](https://github.com/allen6711/LeetCode/tree/master/0302-smallest-rectangle-enclosing-black-pixels) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/allen6711/LeetCode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
+| [0530-minimum-absolute-difference-in-bst](https://github.com/allen6711/LeetCode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/allen6711/LeetCode/tree/master/0637-average-of-levels-in-binary-tree) |
 | [1780-lowest-common-ancestor-of-a-binary-tree-ii](https://github.com/allen6711/LeetCode/tree/master/1780-lowest-common-ancestor-of-a-binary-tree-ii) |
 | [1816-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/allen6711/LeetCode/tree/master/1816-lowest-common-ancestor-of-a-binary-tree-iv) |
@@ -89,6 +91,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0269-alien-dictionary](https://github.com/allen6711/LeetCode/tree/master/0269-alien-dictionary) |
 | [0302-smallest-rectangle-enclosing-black-pixels](https://github.com/allen6711/LeetCode/tree/master/0302-smallest-rectangle-enclosing-black-pixels) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/allen6711/LeetCode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
+| [0530-minimum-absolute-difference-in-bst](https://github.com/allen6711/LeetCode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/allen6711/LeetCode/tree/master/0637-average-of-levels-in-binary-tree) |
 | [1036-rotting-oranges](https://github.com/allen6711/LeetCode/tree/master/1036-rotting-oranges) |
 ## Binary Tree
@@ -119,6 +122,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0230-kth-smallest-element-in-a-bst](https://github.com/allen6711/LeetCode/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/allen6711/LeetCode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0257-binary-tree-paths](https://github.com/allen6711/LeetCode/tree/master/0257-binary-tree-paths) |
+| [0530-minimum-absolute-difference-in-bst](https://github.com/allen6711/LeetCode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/allen6711/LeetCode/tree/master/0637-average-of-levels-in-binary-tree) |
 | [1780-lowest-common-ancestor-of-a-binary-tree-ii](https://github.com/allen6711/LeetCode/tree/master/1780-lowest-common-ancestor-of-a-binary-tree-ii) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/allen6711/LeetCode/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
@@ -309,6 +313,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0098-validate-binary-search-tree](https://github.com/allen6711/LeetCode/tree/master/0098-validate-binary-search-tree) |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/allen6711/LeetCode/tree/master/0230-kth-smallest-element-in-a-bst) |
+| [0530-minimum-absolute-difference-in-bst](https://github.com/allen6711/LeetCode/tree/master/0530-minimum-absolute-difference-in-bst) |
 ## Hash Table
 |  |
 | ------- |
