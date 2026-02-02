@@ -7,8 +7,8 @@
 class Solution:
     def getMinimumDifference(self, root: Optional[TreeNode]) -> int:
         stack = []
-        cur = root
         prev = None
+        cur = root
         ans = float('inf')
 
         while cur or stack:
@@ -23,3 +23,22 @@ class Solution:
             cur = cur.right
         
         return ans
+
+
+        # stack = []
+        # cur = root
+        # prev = None
+        # ans = float('inf')
+
+        # while cur or stack:
+        #     while cur:
+        #         stack.append(cur)
+        #         cur = cur.left
+            
+        #     cur = stack.pop()
+        #     if prev is not None:
+        #         ans = min(ans, cur.val - prev)
+        #     prev = cur.val
+        #     cur = cur.right
+        
+        # return ans
