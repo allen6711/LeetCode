@@ -16,11 +16,12 @@ class Solution:
             size = len(q)
             for i in range(size):
                 node = q.popleft()
-                if i == size - 1:
-                    ans.append(node.val)
+                # if i == size - 1:
+                #     ans.append(node.val)
                 if node.left:
                     q.append(node.left)
                 if node.right:
                     q.append(node.right)
+            ans.append(node.val)
         
         return ans
