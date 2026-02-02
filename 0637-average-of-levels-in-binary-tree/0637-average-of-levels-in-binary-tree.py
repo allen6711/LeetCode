@@ -12,18 +12,19 @@ class Solution:
         ans = []
         q = deque([root])
         while q:
-            level_sum = 0.0
+            level_sum = 0
             size = len(q)
+
             for i in range(size):
                 node = q.popleft()
                 level_sum += node.val
-                if i == size - 1:
-                    level_sum /= size
-                    ans.append(level_sum)
+                
                 if node.left:
                     q.append(node.left)
                 if node.right:
                     q.append(node.right)
+            
+            ans.append(level_sum / size)
         
         return ans
         
