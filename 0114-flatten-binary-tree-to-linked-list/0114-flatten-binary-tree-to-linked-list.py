@@ -13,18 +13,41 @@ class Solution:
         def dfs(node):
             nonlocal prev
             if not node:
-                return
+                return None
             dfs(node.right)
             dfs(node.left)
-            node.right = prev
             node.left = None
+            node.right = prev
             prev = node
         
         dfs(root)
 
+        # prev = None
+        # def dfs(node):
+        #     nonlocal prev
+        #     if not node:
+        #         return None
+        #     dfs(node.right)
+        #     dfs(node.left)
+            
+        #     node.right = prev
+        #     node.left = None
+        #     prev = node
+        
+        # dfs(root)
 
-
-
+        # prev = None
+        # def dfs(node):
+        #     nonlocal prev
+        #     if not node:
+        #         return
+        #     dfs(node.right)
+        #     dfs(node.left)
+        #     node.right = prev
+        #     node.left = None
+        #     prev = node
+        
+        # dfs(root)
 
 
     #     self.helper(root)
