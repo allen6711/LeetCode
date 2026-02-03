@@ -7,14 +7,14 @@
 class Solution:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         # DFS
-        # if not root:
-        #     return None
-        # root.left, root.right = root.right, root.left
+        if not root:
+            return None
+        root.left, root.right = root.right, root.left
 
-        # self.invertTree(root.left)
-        # self.invertTree(root.right)
+        self.invertTree(root.left)
+        self.invertTree(root.right)
 
-        # return root
+        return root
         # BFS
         from collections import deque
         if not root:
