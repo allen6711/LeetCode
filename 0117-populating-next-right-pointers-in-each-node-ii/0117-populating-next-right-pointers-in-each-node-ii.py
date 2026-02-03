@@ -16,8 +16,8 @@ class Solution:
         level_start = root
         while level_start:
             dummy = Node(0)
-            tail = dummy
             cur = level_start
+            tail = dummy
             while cur:
                 if cur.left:
                     tail.next = cur.left
@@ -25,9 +25,7 @@ class Solution:
                 if cur.right:
                     tail.next = cur.right
                     tail = tail.next
-
                 cur = cur.next
-
             level_start = dummy.next
         
         return root
@@ -37,6 +35,30 @@ class Solution:
 
 
 
+
+
+
+        # # dummy + tail
+        # if not root:
+        #     return None
+        # level_start = root
+        # while level_start:
+        #     dummy = Node(0)
+        #     tail = dummy
+        #     cur = level_start
+        #     while cur:
+        #         if cur.left:
+        #             tail.next = cur.left
+        #             tail = tail.next
+        #         if cur.right:
+        #             tail.next = cur.right
+        #             tail = tail.next
+
+        #         cur = cur.next
+
+        #     level_start = dummy.next
+        
+        # return root
 
 
         # # dummy + tail
