@@ -7,19 +7,37 @@
 class Solution:
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
         # DFS
+    #     if not root:
+    #         return True
+    #     return self.isMirror(root.left, root.right)
+    
+    # def isMirror(self, p: Optional[TreeNode], q: Oprional[TreeNofe]) -> bool:
+    #     if p is None and q is None:
+    #         return True
+    #     if p is None or q is None:
+    #         return False
+    #     if p.val != q.val:
+    #         return False
+        
+    #     return self.isMirror(p.left, q.right) and self.isMirror(p.right, q.left)
+        # BFS
+        from collections import deque
         if not root:
             return True
-        return self.isMirror(root.left, root.right)
-    
-    def isMirror(self, p: Optional[TreeNode], q: Oprional[TreeNofe]) -> bool:
-        if p is None and q is None:
-            return True
-        if p is None or q is None:
-            return False
-        if p.val != q.val:
-            return False
+        pq = deque([(root.left, root.right)])
+        while pq:
+            p, q = pq.popleft()
+            if p is None and q is None:
+                continue
+            if p is None or q is None:
+                return False
+            if p.val != q.val:
+                return False
+            pq.append((p.left, q.right))
+            pq.append((p.right, q.left))
         
-        return self.isMirror(p.left, q.right) and self.isMirror(p.right, q.left)
+        return True
+
 
 
 
