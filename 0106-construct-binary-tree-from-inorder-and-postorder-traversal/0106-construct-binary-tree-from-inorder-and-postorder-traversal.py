@@ -9,10 +9,11 @@ class Solution:
         index = {}
         for i, val in enumerate(inorder):
             index[val] = i
+        
         n = len(inorder)
         
         def dfs(inL, inR, postL, postR):
-            if inL > inR:
+            if postL > postR:
                 return None
             root_val = postorder[postR]
             root = TreeNode(root_val)
@@ -20,10 +21,30 @@ class Solution:
             left_size = k - inL
             root.left = dfs(inL, k - 1, postL, postL + left_size - 1)
             root.right = dfs(k + 1, inR, postL + left_size, postR - 1)
-
+            
             return root
         
         return dfs(0, n - 1, 0, n - 1)
+
+
+        # index = {}
+        # for i, val in enumerate(inorder):
+        #     index[val] = i
+        # n = len(inorder)
+        
+        # def dfs(inL, inR, postL, postR):
+        #     if inL > inR:
+        #         return None
+        #     root_val = postorder[postR]
+        #     root = TreeNode(root_val)
+        #     k = index[root_val]
+        #     left_size = k - inL
+        #     root.left = dfs(inL, k - 1, postL, postL + left_size - 1)
+        #     root.right = dfs(k + 1, inR, postL + left_size, postR - 1)
+
+        #     return root
+        
+        # return dfs(0, n - 1, 0, n - 1)
         
         # # Store value to index in dictionary
         # index = {}
