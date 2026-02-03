@@ -21,6 +21,28 @@ class Solution:
             prev = node
         
         dfs(root)
+
+
+
+
+
+
+
+
+
+
+        # prev = None
+        # def dfs(node):
+        #     nonlocal prev
+        #     if not node:
+        #         return None
+        #     dfs(node.right)
+        #     dfs(node.left)
+        #     node.left = None
+        #     node.right = prev
+        #     prev = node
+        
+        # dfs(root)
             
 
         # prev = None
