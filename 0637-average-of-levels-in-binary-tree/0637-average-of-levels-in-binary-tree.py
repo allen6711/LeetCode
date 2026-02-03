@@ -27,36 +27,27 @@ class Solution:
         return ans
 
 
-
-
-
-
-
-
-
-
-
         
-        from collections import deque
-        if not root:
-            return []
-        ans = []
-        q = deque([root])
-        while q:
-            level_sum = 0
-            size = len(q)
+        # from collections import deque
+        # if not root:
+        #     return []
+        # ans = []
+        # q = deque([root])
+        # while q:
+        #     level_sum = 0
+        #     size = len(q)
 
-            for i in range(size):
-                node = q.popleft()
-                level_sum += node.val
+        #     for i in range(size):
+        #         node = q.popleft()
+        #         level_sum += node.val
                 
-                if node.left:
-                    q.append(node.left)
-                if node.right:
-                    q.append(node.right)
+        #         if node.left:
+        #             q.append(node.left)
+        #         if node.right:
+        #             q.append(node.right)
             
-            ans.append(level_sum / size)
+        #     ans.append(level_sum / size)
         
-        return ans
+        # return ans
         
         
