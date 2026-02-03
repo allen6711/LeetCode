@@ -19,16 +19,15 @@ class Solution:
                 h += 1
                 node = node.right
             return h
-
+        
         def dfs(node):
             if not node:
                 return 0
             
-            lh = left_height(node)
-            rh = right_height(node)
-
-            if lh == rh:
-                return 2 ** lh - 1
+            hl = left_height(node)
+            hr = right_height(node)
+            if hl == hr:
+                return 2 ** hl - 1
             
             return 1 + dfs(node.left) + dfs(node.right)
         
