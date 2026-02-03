@@ -8,23 +8,44 @@ from collections import deque
 
 class Solution:
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+        from collections import deque
         if not root:
             return []
-        ans = []
+        
         q = deque([root])
+        ans = []
         while q:
-            level = []
             size = len(q)
+            level_node = []
             for _ in range(size):
                 node = q.popleft()
-                level.append(node.val)
+                level_node.append(node.val)
                 if node.left:
                     q.append(node.left)
                 if node.right:
                     q.append(node.right)
-            ans.append(level)
+            
+            ans.append(level_node)
         
         return ans
+
+        # if not root:
+        #     return []
+        # ans = []
+        # q = deque([root])
+        # while q:
+        #     level = []
+        #     size = len(q)
+        #     for _ in range(size):
+        #         node = q.popleft()
+        #         level.append(node.val)
+        #         if node.left:
+        #             q.append(node.left)
+        #         if node.right:
+        #             q.append(node.right)
+        #     ans.append(level)
+        
+        # return ans
         
         # if not root:
         #     return []
