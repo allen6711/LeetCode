@@ -9,6 +9,37 @@ class Solution:
         from collections import deque
         if not root:
             return []
+        q = deque([root])
+        ans = []
+        while q:
+            size = len(q)
+            level_total = 0
+            for _ in range(size):
+                node = q.popleft()
+                level_total += node.val
+                if node.left:
+                    q.append(node.left)
+                if node.right:
+                    q.append(node.right)
+            
+            ans.append(level_total / size)
+        
+        return ans
+
+
+
+
+
+
+
+
+
+
+
+        
+        from collections import deque
+        if not root:
+            return []
         ans = []
         q = deque([root])
         while q:
