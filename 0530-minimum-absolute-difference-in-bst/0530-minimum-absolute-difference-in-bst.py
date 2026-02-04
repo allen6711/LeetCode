@@ -26,30 +26,23 @@ class Solution:
             
         return ans
 
+        # stack = []
+        # prev = None
+        # cur = root
+        # ans = float('inf')
 
-
-
-
-
-
-
-        stack = []
-        prev = None
-        cur = root
-        ans = float('inf')
-
-        while cur or stack:
-            while cur:
-                stack.append(cur)
-                cur = cur.left
+        # while cur or stack:
+        #     while cur:
+        #         stack.append(cur)
+        #         cur = cur.left
             
-            cur = stack.pop()
-            if prev is not None:
-                ans = min(ans, cur.val - prev)
-            prev = cur.val
-            cur = cur.right
+        #     cur = stack.pop()
+        #     if prev is not None:
+        #         ans = min(ans, cur.val - prev)
+        #     prev = cur.val
+        #     cur = cur.right
         
-        return ans
+        # return ans
 
 
         # stack = []
