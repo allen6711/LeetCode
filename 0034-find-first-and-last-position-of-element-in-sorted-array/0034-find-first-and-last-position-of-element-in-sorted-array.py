@@ -2,36 +2,70 @@ class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
         if not nums:
             return [-1, -1]
-        left, right = 0, len(nums)
-        while left < right:
-            mid = (left + right) // 2
+
+        return [self.firstPosition(nums, target), self.lastPosition(nums, target)]
+    
+    def firstPosition(self, nums: List[int], target: int) -> int:
+        start, end = 0, len(nums) - 1
+        while start + 1 < end:
+            mid = (start + end) // 2
             if nums[mid] >= target:
-                right = mid
+                end = mid
             else:
-                left = mid + 1
+                start = mid
+        if nums[start] == target:
+            return start
+        if nums[end] == target:
+            return end
         
-        l = left
+        return -1
 
-        left, right = 0, len(nums)
-        while left < right:
-            mid = (left + right) // 2
+    def lastPosition(self, nums: List[int], target: int) -> int:
+        start, end = 0, len(nums) - 1
+        while start + 1 < end:
+            mid = (start + end) // 2
             if nums[mid] <= target:
-                left = mid + 1
+                start = mid
             else:
-                right = mid
+                end = mid
+        if nums[end] == target:
+            return end
+        if nums[start] == target:
+            return start
+
+        return -1
+    
+
+
+
+        # if not nums:
+        #     return [-1, -1]
+        # left, right = 0, len(nums)
+        # while left < right:
+        #     mid = (left + right) // 2
+        #     if nums[mid] >= target:
+        #         right = mid
+        #     else:
+        #         left = mid + 1
         
-        r = left - 1
+        # l = left
 
-        # nums = [1, 3, 5], target = 10
-        # left = 3
-        if l == len(nums) or nums[l] != target:
-            return [-1, -1]
+        # left, right = 0, len(nums)
+        # while left < right:
+        #     mid = (left + right) // 2
+        #     if nums[mid] <= target:
+        #         left = mid + 1
+        #     else:
+        #         right = mid
         
-        return [l, r]
+        # r = left - 1
 
-
-
-
+        # # nums = [1, 3, 5], target = 10
+        # # left = 3
+        # if l == len(nums) or nums[l] != target:
+        #     return [-1, -1]
+        
+        # return [l, r]
 
         
         # first_position, last_position = -1, -1
