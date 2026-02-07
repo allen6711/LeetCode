@@ -3,44 +3,27 @@ class Solution:
         if not nums:
             return -1
         
-        start, end = 0, len(nums) - 1
-
-        while start + 1 < end:
-            mid = (start + end) // 2
-
-            # we need two conditions to seperate the nums
-            # [4, 5, 6, 7] and [0, 1, 2]
-            # to control mid correctly
+        left, right = 0, len(nums) - 1
+        while left + 1 < right:
+            mid = (left + right) // 2
             if target <= nums[-1]:
-                #[xxxxx012345]
-                # 2 situations: nums[mid] in the first part or the second part
-                # second part
                 if target <= nums[mid] <= nums[-1]:
-                    end = mid
-                
-                # nums[mid] < target or
-                # nums[mid] > target and > nums[-1]
-                # both should move start to mid
+                    right = mid
                 else:
-                    start = mid
-
-            # target > nums[-1]
+                    left = mid
             else:
-                if nums[-1] < nums[mid] <= target:
-                    start = mid
-                
-                # target < nums[mid] or 
-                # nums[mid] <= nums[-1]
+                if nums[-1] <= nums[mid] <= target:
+                    left = mid
                 else:
-                    end = mid
+                    right = mid
+            
+        if nums[left] == target:
+            return left
+        if nums[right] == target:
+            return right
         
-        if nums[start] == target:
-            return start
-        
-        if nums[end] == target:
-            return end
-
         return -1
+                    
 
 
 
@@ -59,12 +42,47 @@ class Solution:
 
 
 
+        # if not nums:
+        #     return -1
+        
+        # start, end = 0, len(nums) - 1
 
+        # while start + 1 < end:
+        #     mid = (start + end) // 2
 
+        #     # we need two conditions to seperate the nums
+        #     # [4, 5, 6, 7] and [0, 1, 2]
+        #     # to control mid correctly
+        #     if target <= nums[-1]:
+        #         #[xxxxx012345]
+        #         # 2 situations: nums[mid] in the first part or the second part
+        #         # second part
+        #         if target <= nums[mid] <= nums[-1]:
+        #             end = mid
+                
+        #         # nums[mid] < target or
+        #         # nums[mid] > target and > nums[-1]
+        #         # both should move start to mid
+        #         else:
+        #             start = mid
 
+        #     # target > nums[-1]
+        #     else:
+        #         if nums[-1] < nums[mid] <= target:
+        #             start = mid
+                
+        #         # target < nums[mid] or 
+        #         # nums[mid] <= nums[-1]
+        #         else:
+        #             end = mid
+        
+        # if nums[start] == target:
+        #     return start
+        
+        # if nums[end] == target:
+        #     return end
 
-
-
+        # return -1
 
 
         # left, right = 0, len(nums) - 1
