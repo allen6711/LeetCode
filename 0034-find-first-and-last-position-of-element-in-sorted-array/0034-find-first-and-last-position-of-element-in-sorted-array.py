@@ -1,39 +1,91 @@
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
-        if not nums:
-            return [-1, -1]
-
         return [self.firstPosition(nums, target), self.lastPosition(nums, target)]
     
     def firstPosition(self, nums: List[int], target: int) -> int:
-        start, end = 0, len(nums) - 1
-        while start + 1 < end:
-            mid = (start + end) // 2
+        if not nums:
+            return -1
+        left, right = 0, len(nums) - 1
+        while left + 1 < right:
+            mid = (left + right) // 2
             if nums[mid] >= target:
-                end = mid
+                right = mid
             else:
-                start = mid
-        if nums[start] == target:
-            return start
-        if nums[end] == target:
-            return end
-        
-        return -1
+                left = mid
+        if nums[left] == target:
+            return left
+        if nums[right] == target:
+            return right
 
+        return -1
     def lastPosition(self, nums: List[int], target: int) -> int:
-        start, end = 0, len(nums) - 1
-        while start + 1 < end:
-            mid = (start + end) // 2
+        if not nums:
+            return -1
+        left, right = 0, len(nums) - 1
+        while left + 1 < right:
+            mid = (left + right) // 2
             if nums[mid] <= target:
-                start = mid
+                left = mid
             else:
-                end = mid
-        if nums[end] == target:
-            return end
-        if nums[start] == target:
-            return start
+                right = mid
+        if nums[right] == target:
+            return right
+        if nums[left] == target:
+            return left
 
         return -1
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #     if not nums:
+    #         return [-1, -1]
+
+    #     return [self.firstPosition(nums, target), self.lastPosition(nums, target)]
+    
+    # def firstPosition(self, nums: List[int], target: int) -> int:
+    #     start, end = 0, len(nums) - 1
+    #     while start + 1 < end:
+    #         mid = (start + end) // 2
+    #         if nums[mid] >= target:
+    #             end = mid
+    #         else:
+    #             start = mid
+    #     if nums[start] == target:
+    #         return start
+    #     if nums[end] == target:
+    #         return end
+        
+    #     return -1
+
+    # def lastPosition(self, nums: List[int], target: int) -> int:
+    #     start, end = 0, len(nums) - 1
+    #     while start + 1 < end:
+    #         mid = (start + end) // 2
+    #         if nums[mid] <= target:
+    #             start = mid
+    #         else:
+    #             end = mid
+    #     if nums[end] == target:
+    #         return end
+    #     if nums[start] == target:
+    #         return start
+
+    #     return -1
     
 
 
