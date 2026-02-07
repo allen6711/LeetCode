@@ -5,31 +5,14 @@ class Solution:
             mid = (left + right) // 2
             if nums[mid] < nums[mid + 1]:
                 left = mid
-            elif nums[mid] > nums[mid + 1]:
-                right = mid
             else:
-                return mid
+                right = mid
         
         # peak at nums[0] or nums[-1]
         if nums[left] > nums[right]:
             return left
         else:
             return right
-                    
-        return min(nums[left], nums[right])
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         # if not nums:
         #     return -1
