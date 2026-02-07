@@ -6,39 +6,48 @@ class Solution:
         left, right = 0, len(nums) - 1
         while left + 1 < right:
             mid = (left + right) // 2
-            if target <= nums[-1]:
-                if target <= nums[mid] <= nums[-1]:
-                    right = mid
-                else:
+            if nums[mid] <= nums[-1]:
+                if nums[mid] <= target <= nums[-1]:
                     left = mid
+                else:
+                    right = mid
             else:
-                if nums[-1] <= nums[mid] <= target:
-                    left = mid
-                else:
+                if nums[mid] >= target > nums[-1]:
                     right = mid
-            
+                else:
+                    left = mid
+        
         if nums[left] == target:
             return left
         if nums[right] == target:
             return right
         
         return -1
-                    
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+        # if not nums:
+        #     return -1
+        
+        # left, right = 0, len(nums) - 1
+        # while left + 1 < right:
+        #     mid = (left + right) // 2
+        #     if target <= nums[-1]:
+        #         if target <= nums[mid] <= nums[-1]:
+        #             right = mid
+        #         else:
+        #             left = mid
+        #     else:
+        #         if nums[-1] <= nums[mid] <= target:
+        #             left = mid
+        #         else:
+        #             right = mid
+            
+        # if nums[left] == target:
+        #     return left
+        # if nums[right] == target:
+        #     return right
+        
+        # return -1
 
 
 
