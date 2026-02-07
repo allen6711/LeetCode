@@ -4,25 +4,21 @@ class Solution:
             return False
         
         m, n = len(matrix), len(matrix[0])
-        start, end = 0, m * n - 1
-
-        while start + 1 < end:
-            mid = (start + end) // 2
-
-            if matrix[mid // n][mid % n] <= target:
-                start = mid
-            
+        length = m * n
+        left, right = 0, length - 1
+        while left + 1 < right:
+            mid = (left + right) // 2
+            if matrix[mid // n][mid % n] >= target:
+                right = mid
             else:
-                end = mid
-            
-        if matrix[start // n][start % n] == target:
+                left = mid
+        
+        if matrix[right // n][right % n] == target:
             return True
-            
-        if matrix[end // n][end % n] == target:
+        if matrix[left // n][left % n] == target:
             return True
-            
+        
         return False
-    
 
 
 
@@ -37,6 +33,29 @@ class Solution:
 
 
 
+
+        # if not matrix or not matrix[0]:
+        #     return False
+        
+        # m, n = len(matrix), len(matrix[0])
+        # start, end = 0, m * n - 1
+
+        # while start + 1 < end:
+        #     mid = (start + end) // 2
+
+        #     if matrix[mid // n][mid % n] <= target:
+        #         start = mid
+            
+        #     else:
+        #         end = mid
+            
+        # if matrix[start // n][start % n] == target:
+        #     return True
+            
+        # if matrix[end // n][end % n] == target:
+        #     return True
+            
+        # return False
 
         # if not matrix or not matrix[0]:
         #     return False
