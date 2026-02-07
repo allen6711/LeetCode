@@ -13,24 +13,33 @@ class Solution:
             else:
                 left = mid
         
-        if matrix[right // n][right % n] == target:
-            return True
         if matrix[left // n][left % n] == target:
+            return True
+        if matrix[right // n][right % n] == target:
             return True
         
         return False
 
 
-
-
-
-
-
-
-
-
-
-
+        # if not matrix or not matrix[0]:
+        #     return False
+        
+        # m, n = len(matrix), len(matrix[0])
+        # length = m * n
+        # left, right = 0, length - 1
+        # while left + 1 < right:
+        #     mid = (left + right) // 2
+        #     if matrix[mid // n][mid % n] >= target:
+        #         right = mid
+        #     else:
+        #         left = mid
+        
+        # if matrix[right // n][right % n] == target:
+        #     return True
+        # if matrix[left // n][left % n] == target:
+        #     return True
+        
+        # return False
 
 
 
