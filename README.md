@@ -138,6 +138,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/allen6711/LeetCode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0035-search-insert-position](https://github.com/allen6711/LeetCode/tree/master/0035-search-insert-position) |
 | [0036-valid-sudoku](https://github.com/allen6711/LeetCode/tree/master/0036-valid-sudoku) |
+| [0042-trapping-rain-water](https://github.com/allen6711/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0049-group-anagrams](https://github.com/allen6711/LeetCode/tree/master/0049-group-anagrams) |
 | [0074-search-a-2d-matrix](https://github.com/allen6711/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0078-subsets](https://github.com/allen6711/LeetCode/tree/master/0078-subsets) |
@@ -270,6 +271,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0011-container-with-most-water](https://github.com/allen6711/LeetCode/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/allen6711/LeetCode/tree/master/0015-3sum) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/allen6711/LeetCode/tree/master/0019-remove-nth-node-from-end-of-list) |
+| [0042-trapping-rain-water](https://github.com/allen6711/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0082-remove-duplicates-from-sorted-list-ii](https://github.com/allen6711/LeetCode/tree/master/0082-remove-duplicates-from-sorted-list-ii) |
 | [0125-valid-palindrome](https://github.com/allen6711/LeetCode/tree/master/0125-valid-palindrome) |
 | [0141-linked-list-cycle](https://github.com/allen6711/LeetCode/tree/master/0141-linked-list-cycle) |
@@ -350,6 +352,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/allen6711/LeetCode/tree/master/0020-valid-parentheses) |
+| [0042-trapping-rain-water](https://github.com/allen6711/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0094-binary-tree-inorder-traversal](https://github.com/allen6711/LeetCode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/allen6711/LeetCode/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0143-reorder-list](https://github.com/allen6711/LeetCode/tree/master/0143-reorder-list) |
@@ -376,6 +379,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Monotonic Stack
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/allen6711/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0739-daily-temperatures](https://github.com/allen6711/LeetCode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/allen6711/LeetCode/tree/master/0883-car-fleet) |
 ## Divide and Conquer
@@ -425,5 +429,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/allen6711/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0392-is-subsequence](https://github.com/allen6711/LeetCode/tree/master/0392-is-subsequence) |
 <!---LeetCode Topics End-->
