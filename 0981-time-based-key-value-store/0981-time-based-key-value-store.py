@@ -7,7 +7,7 @@ class TimeMap:
         self.store[key].append((value, timestamp))
 
     def get(self, key: str, timestamp: int) -> str:
-        array = self.store[key]
+        array = self.store.get(key)
         if not array:
             return ""
         
