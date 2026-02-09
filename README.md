@@ -226,6 +226,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/allen6711/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0020-valid-parentheses](https://github.com/allen6711/LeetCode/tree/master/0020-valid-parentheses) |
+| [0030-substring-with-concatenation-of-all-words](https://github.com/allen6711/LeetCode/tree/master/0030-substring-with-concatenation-of-all-words) |
 | [0049-group-anagrams](https://github.com/allen6711/LeetCode/tree/master/0049-group-anagrams) |
 | [0125-valid-palindrome](https://github.com/allen6711/LeetCode/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/allen6711/LeetCode/tree/master/0242-valid-anagram) |
@@ -289,6 +290,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/allen6711/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0030-substring-with-concatenation-of-all-words](https://github.com/allen6711/LeetCode/tree/master/0030-substring-with-concatenation-of-all-words) |
 | [0209-minimum-size-subarray-sum](https://github.com/allen6711/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [0658-find-k-closest-elements](https://github.com/allen6711/LeetCode/tree/master/0658-find-k-closest-elements) |
 ## Sorting
@@ -336,6 +338,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/allen6711/LeetCode/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/allen6711/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0030-substring-with-concatenation-of-all-words](https://github.com/allen6711/LeetCode/tree/master/0030-substring-with-concatenation-of-all-words) |
 | [0036-valid-sudoku](https://github.com/allen6711/LeetCode/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/allen6711/LeetCode/tree/master/0049-group-anagrams) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/allen6711/LeetCode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
