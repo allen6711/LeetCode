@@ -9,6 +9,40 @@ class Solution:
         dummy = ListNode()
         prev = dummy
         carry = 0
+        while p1 or p2 or carry:
+            x = p1.val if p1 else 0
+            y = p2.val if p2 else 0
+            total = x + y + carry
+            carry = total // 10
+            retainer = total % 10
+            node = ListNode(retainer)
+            if p1:
+                p1 = p1.next
+            if p2:
+                p2 = p2.next
+
+            prev.next = node
+            prev = prev.next
+        
+        return dummy.next
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        p1, p2 = l1, l2
+        dummy = ListNode()
+        prev = dummy
+        carry = 0
 
         while p1 or p2 or carry:
             x = p1.val if p1 else 0
