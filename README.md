@@ -235,6 +235,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0269-alien-dictionary](https://github.com/allen6711/LeetCode/tree/master/0269-alien-dictionary) |
 | [0271-encode-and-decode-strings](https://github.com/allen6711/LeetCode/tree/master/0271-encode-and-decode-strings) |
 | [0392-is-subsequence](https://github.com/allen6711/LeetCode/tree/master/0392-is-subsequence) |
+| [0412-fizz-buzz](https://github.com/allen6711/LeetCode/tree/master/0412-fizz-buzz) |
 | [0680-valid-palindrome-ii](https://github.com/allen6711/LeetCode/tree/master/0680-valid-palindrome-ii) |
 | [0981-time-based-key-value-store](https://github.com/allen6711/LeetCode/tree/master/0981-time-based-key-value-store) |
 ## Binary Search
@@ -316,6 +317,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0002-add-two-numbers](https://github.com/allen6711/LeetCode/tree/master/0002-add-two-numbers) |
 | [0069-sqrtx](https://github.com/allen6711/LeetCode/tree/master/0069-sqrtx) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/allen6711/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
+| [0412-fizz-buzz](https://github.com/allen6711/LeetCode/tree/master/0412-fizz-buzz) |
 ## Backtracking
 |  |
 | ------- |
@@ -441,4 +443,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0042-trapping-rain-water](https://github.com/allen6711/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0392-is-subsequence](https://github.com/allen6711/LeetCode/tree/master/0392-is-subsequence) |
+## Simulation
+|  |
+| ------- |
+| [0412-fizz-buzz](https://github.com/allen6711/LeetCode/tree/master/0412-fizz-buzz) |
 <!---LeetCode Topics End-->
