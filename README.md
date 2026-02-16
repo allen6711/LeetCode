@@ -174,6 +174,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1036-rotting-oranges](https://github.com/allen6711/LeetCode/tree/master/1036-rotting-oranges) |
 | [1185-find-in-mountain-array](https://github.com/allen6711/LeetCode/tree/master/1185-find-in-mountain-array) |
 | [2045-cutting-ribbons](https://github.com/allen6711/LeetCode/tree/master/2045-cutting-ribbons) |
+| [3010-divide-an-array-into-subarrays-with-minimum-cost-i](https://github.com/allen6711/LeetCode/tree/master/3010-divide-an-array-into-subarrays-with-minimum-cost-i) |
 ## Union Find
 |  |
 | ------- |
@@ -307,6 +308,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0347-top-k-frequent-elements](https://github.com/allen6711/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0658-find-k-closest-elements](https://github.com/allen6711/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0883-car-fleet](https://github.com/allen6711/LeetCode/tree/master/0883-car-fleet) |
+| [3010-divide-an-array-into-subarrays-with-minimum-cost-i](https://github.com/allen6711/LeetCode/tree/master/3010-divide-an-array-into-subarrays-with-minimum-cost-i) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -448,4 +450,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0412-fizz-buzz](https://github.com/allen6711/LeetCode/tree/master/0412-fizz-buzz) |
+## Enumeration
+|  |
+| ------- |
+| [3010-divide-an-array-into-subarrays-with-minimum-cost-i](https://github.com/allen6711/LeetCode/tree/master/3010-divide-an-array-into-subarrays-with-minimum-cost-i) |
 <!---LeetCode Topics End-->
