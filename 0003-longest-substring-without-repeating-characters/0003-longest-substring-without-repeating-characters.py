@@ -3,6 +3,34 @@ class Solution:
         char_map = {}
         left = 0
         best = 0
+        for right, char in enumerate(s):
+            if char in char_map:
+                left = max(left, char_map[char] + 1)
+            char_map[char] = right
+            best = max(best, right - left + 1)
+
+        return best
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        char_map = {}
+        left = 0
+        best = 0
 
         for right, char in enumerate(s):
             if char in char_map:
@@ -14,33 +42,18 @@ class Solution:
         return best
 
 
+        # last = {}  # char -> last index
+        # left = 0
+        # best = 0
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        last = {}  # char -> last index
-        left = 0
-        best = 0
-
-        for right, char in enumerate(s):
-            if char in last and last[char] >= left:
-                left = last[char] + 1
+        # for right, char in enumerate(s):
+        #     if char in last and last[char] >= left:
+        #         left = last[char] + 1
             
-            last[char] = right
-            best = max(best, right - left + 1)
+        #     last[char] = right
+        #     best = max(best, right - left + 1)
         
-        return best
+        # return best
 
         # unique_chars = set()
         # max_length = 0
