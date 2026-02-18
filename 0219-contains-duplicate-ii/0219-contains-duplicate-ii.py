@@ -10,6 +10,7 @@ class Solution:
         # return False
         
         # O(n)
+        # O(n)
         visited = {}
         for i, num in enumerate(nums):
             if num in visited and abs(i - visited[num]) <= k:
