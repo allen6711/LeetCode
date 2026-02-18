@@ -1,18 +1,53 @@
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        base = ord('a')
-        word_dict = defaultdict(list)
-
-        for char in strs:
-            cnt = [0] * 26
-
-            for ch in char:
-                cnt[ord(ch) - base] += 1
-
-            key = tuple(cnt)
-            word_dict[key].append(char)
+        # O(n*klogk)
+        # groups = defaultdict(list)
+        # for s in strs:
+        #     key = ''.join(sorted(s))
+        #     groups[key].append(s)
         
-        return list(word_dict.values())
+        # return list(groups.values())
+
+        # O(nk)
+        groups = defaultdict(list)
+        for s in strs:
+            cnt = [0] * 26
+            for ch in s:
+                cnt[ord(ch) - ord('a')] += 1
+            key = tuple(cnt)
+            groups[key].append(s)
+        
+        return list(groups.values())
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        # base = ord('a')
+        # word_dict = defaultdict(list)
+
+        # for char in strs:
+        #     cnt = [0] * 26
+
+        #     for ch in char:
+        #         cnt[ord(ch) - base] += 1
+
+        #     key = tuple(cnt)
+        #     word_dict[key].append(char)
+        
+        # return list(word_dict.values())
 
         # base = ord('a')
         # word_dict = defaultdict(list)
