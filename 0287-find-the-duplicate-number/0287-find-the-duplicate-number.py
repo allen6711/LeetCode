@@ -1,5 +1,32 @@
 class Solution:
     def findDuplicate(self, nums: List[int]) -> int:
+        # O(nlogn)
+        # O(1)
+        nums.sort()
+        n = len(nums)
+        for i in range(n):
+            if i > 0 and nums[i] == nums[i - 1]:
+                return nums[i]
+        
+        return -1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         slow, fast = 0, 0
         # Find the circle
         while True:
