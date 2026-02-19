@@ -4,12 +4,12 @@ class Solution:
         # O(1)
         nums.sort()
         n = len(nums)
-        for i in range(n):
-            if i > 0 and nums[i] == nums[i - 1]:
+        for i in range(1, n):
+            if nums[i] == nums[i - 1]:
                 return nums[i]
         
         return -1
-
+        
 
 
 
