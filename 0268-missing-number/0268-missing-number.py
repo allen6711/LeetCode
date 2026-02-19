@@ -18,12 +18,17 @@ class Solution:
         # O(n)
         # O(1)
         ## Sum
-        n = len(nums)
-        expected = n * (n + 1) // 2
-        actual = sum(nums)
-        return expected - actual
-        ## XOR
         # n = len(nums)
+        # expected = n * (n + 1) // 2
+        # actual = sum(nums)
+        # return expected - actual
+        ## XOR
+        n = len(nums)
+        x = n
+        for i, num in enumerate(nums):
+            x ^= i
+            x ^= num
+        return x
         
 
      
