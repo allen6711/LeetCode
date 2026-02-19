@@ -28,4 +28,5 @@ class Solution:
             else:
                 ans[neg] = num
                 neg += 2
+                
         return ans
