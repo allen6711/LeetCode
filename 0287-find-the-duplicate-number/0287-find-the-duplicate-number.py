@@ -11,12 +11,27 @@ class Solution:
         # return -1
         # O(n)
         # O(n)
-        num_set = set()
-        for num in nums:
-            if num in num_set:
-                return num
-            num_set.add(num)
-        return -1
+        # num_set = set()
+        # for num in nums:
+        #     if num in num_set:
+        #         return num
+        #     num_set.add(num)
+        # return -1
+        # O(n)
+        # O(1)
+        slow, fast = nums[0], nums[0]
+        while True:
+            slow = nums[slow]
+            fast = nums[nums[fast]]
+            if slow == fast:
+                break
+            
+        finder = nums[0]
+        while finder != slow:
+            finder = nums[finder]
+            slow = nums[slow]
+
+        return slow
         
 
 
