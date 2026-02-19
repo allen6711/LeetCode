@@ -2,12 +2,20 @@ class Solution:
     def findDuplicate(self, nums: List[int]) -> int:
         # O(nlogn)
         # O(1)
-        nums.sort()
-        n = len(nums)
-        for i in range(1, n):
-            if nums[i] == nums[i - 1]:
-                return nums[i]
+        # nums.sort()
+        # n = len(nums)
+        # for i in range(1, n):
+        #     if nums[i] == nums[i - 1]:
+        #         return nums[i]
         
+        # return -1
+        # O(n)
+        # O(n)
+        num_set = set()
+        for num in nums:
+            if num in num_set:
+                return num
+            num_set.add(num)
         return -1
         
 
