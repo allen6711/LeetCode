@@ -5,15 +5,15 @@ class Solution:
         """
         # O(n^2)
         # O(1)
-        left = 0
-        n = len(nums)
-        while left < n:
-            if nums[left] == 0:
-                nums.pop(left)
-                nums.append(0)
-                n -= 1
-            else:
-                left += 1
+        # left = 0
+        # n = len(nums)
+        # while left < n:
+        #     if nums[left] == 0:
+        #         nums.pop(left)
+        #         nums.append(0)
+        #         n -= 1
+        #     else:
+        #         left += 1
         # O(n)
         # O(1)
         # left = 0
