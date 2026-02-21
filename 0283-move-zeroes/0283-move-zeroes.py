@@ -16,21 +16,21 @@ class Solution:
         #         left += 1
         # O(n)
         # O(1)
-        # left = 0
-        # n = len(nums)
-        # for i in range(n):
-        #     if nums[i] != 0:
-        #         nums[left] = nums[i]
-        #         left += 1
-        
-        # for i in range(left, n):
-        #     nums[i] = 0
-        
-        # O(n)
-        # O(1)
         left = 0
         n = len(nums)
         for i in range(n):
             if nums[i] != 0:
-                nums[left], nums[i] = nums[i], nums[left]
+                nums[left] = nums[i]
                 left += 1
+        
+        for i in range(left, n):
+            nums[i] = 0
+        
+        # O(n)
+        # O(1)
+        # left = 0
+        # n = len(nums)
+        # for i in range(n):
+        #     if nums[i] != 0:
+        #         nums[left], nums[i] = nums[i], nums[left]
+        #         left += 1
