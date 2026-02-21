@@ -1,34 +1,98 @@
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
+        # O(n^3)
+        # O(m)
+        # n = len(nums)
+        # visited = set()
+        # ans = []
+        # for i in range(n):
+        #     for j in range(i + 1, n):
+        #         for k in range(j + 1, n):
+        #             if nums[i] + nums[j] + nums[k] == 0:
+        #                 triplet = tuple(sorted([nums[i], nums[j], nums[k]]))
+        #                 if triplet not in visited:
+        #                     visited.add(triplet)
+        #                     ans.append(list(triplet))
+        # return ans
+        # O(n^2)
+        # O(1)
         nums.sort()
-        n = len(nums)
         ans = []
+        n = len(nums)
 
-        for i in range(n - 2):
-            if nums[i] > 0:
-                break
-            
-            # Pass the same num
+        for i in range(n):
+            # Skip duplicate anchor
             if i > 0 and nums[i - 1] == nums[i]:
                 continue
-
+            # If nums[i] > 0, sum can't be 0
+            if nums[i] > 0:
+                break
+            target = -nums[i]
             left, right = i + 1, n - 1
             while left < right:
-                total = nums[i] + nums[left] + nums[right]
-                if total < 0:
-                    left += 1
-                elif total > 0:
-                    right -= 1
-                else:
+                total = nums[left] + nums[right]
+                if total == target:
                     ans.append([nums[i], nums[left], nums[right]])
                     left += 1
                     right -= 1
-                    while left < right and nums[left - 1] == nums[left]:
+                    # Skip duplicate
+                    while left < right and nums[left] == nums[left - 1]:
                         left += 1
-                    while left < right and nums[right + 1] == nums[right]:
+                    while left < right and nums[right] == nums[right + 1]:
                         right -= 1
-
+                        
+                elif total < target:
+                    left += 1
+                else:
+                    right -= 1
+        
         return ans
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        # nums.sort()
+        # n = len(nums)
+        # ans = []
+
+        # for i in range(n - 2):
+        #     if nums[i] > 0:
+        #         break
+            
+        #     # Pass the same num
+        #     if i > 0 and nums[i - 1] == nums[i]:
+        #         continue
+
+        #     left, right = i + 1, n - 1
+        #     while left < right:
+        #         total = nums[i] + nums[left] + nums[right]
+        #         if total < 0:
+        #             left += 1
+        #         elif total > 0:
+        #             right -= 1
+        #         else:
+        #             ans.append([nums[i], nums[left], nums[right]])
+        #             left += 1
+        #             right -= 1
+        #             while left < right and nums[left - 1] == nums[left]:
+        #                 left += 1
+        #             while left < right and nums[right + 1] == nums[right]:
+        #                 right -= 1
+
+        # return ans
 
 
         # nums.sort()
