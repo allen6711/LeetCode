@@ -1,5 +1,6 @@
 class Solution:
-    def threeSumClosest(self, nums: List[int], target: int) -> int:# O(n^3)
+    def threeSumClosest(self, nums: List[int], target: int) -> int:
+        # O(n^3)
         # O(1)
         # n = len(nums)
         # best_sum = nums[0] + nums[1] + nums[2]
