@@ -45,10 +45,9 @@ class Solution:
                     continue
                 
                 left, right = j + 1, n - 1
-                need = target - nums[i] - nums[j]
                 while left < right:
-                    two = nums[left] + nums[right]
-                    if two == need:
+                    total = nums[i] + nums[j] + nums[left] + nums[right]
+                    if total == target:
                         ans.append([nums[i], nums[j], nums[left], nums[right]])
                         left += 1
                         right -= 1
@@ -56,7 +55,7 @@ class Solution:
                             left += 1
                         while left < right and nums[right] == nums[right + 1]:
                             right -= 1
-                    elif two < need:
+                    elif total < target:
                         left += 1
                     else:
                         right -= 1
