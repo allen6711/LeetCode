@@ -8,127 +8,24 @@ class Solution:
         """
         Do not return anything, modify head in-place instead.
         """
-        slow, fast = head, head
-        while fast and fast.next:
-            slow = slow.next
-            fast = fast.next.next
-            if slow == fast:
-                break
+        if not head or not head.next:
+            return None
         
-        second = slow.next
-        slow.next = None
-        # reverse the second list
-        prev = None
-        cur = second
+        nodes = []
+        cur = head
         while cur:
-            next_node = cur.next
-            cur.next = prev
-            prev = cur
-            cur = next_node
+            nodes.append(cur)
+            cur = cur.next
+        
+        left, right = 0, len(nodes) - 1
+        while left < right:
+            nodes[left].next = nodes[right]
+            left += 1
 
-        # Merge two lists
-        first = head
-        second = prev
-        while second:
-            next_node1 = first.next
-            next_node2 = second.next
-
-            first.next = second
-            second.next = next_node1
-
-            first = next_node1
-            second = next_node2
+            if left == right:
+                break
             
-        # if not head or not head.next:
-        #     return
-        # # Find the middle by two pointers
-        # slow, fast = head, head
-        # while fast and fast.next:
-        #     slow = slow.next
-        #     fast = fast.next.next
-        
-        # # Reverse the second list
-        # prev = None
-        # cur = slow.next
-        # slow.next = None
-        # while cur:
-        #     next_node = cur.next
-        #     cur.next = prev
-        #     prev = cur
-        #     cur = next_node
-        # # Merge two halves
-        # first = head
-        # second = prev
-        # while second:
-        #     temp1 = first.next
-        #     temp2 = second.next
-        #     first.next = second
-        #     second.next = temp1
-        #     first = temp1
-        #     second = temp2
+            nodes[right].next = nodes[left]
+            right -= 1
 
-
-        # if not head or not head.next:
-        #     return
-        
-        # # Find the middle
-        # slow, fast = head, head
-        # while fast and fast.next:
-        #     slow = slow.next
-        #     fast = fast.next.next
-
-        # # Reverse Secound half
-        # prev = None
-        # cur = slow.next
-        # slow.next = None
-        # while cur:
-        #     next_node = cur.next
-        #     cur.next = prev
-        #     prev = cur
-        #     cur = next_node
-
-        # second = prev  # Second head
-        # first = head   # First head
-        
-        # # Merge two halves
-        # while second:
-        #     temp1 = first.next
-        #     temp2 = second.next
-        #     first.next = second
-        #     second.next = temp1
-        #     first = temp1
-        #     second = temp2
-
-        # if not head or not head.next:
-        #     return 
-
-        # # Find middle (slow will be at mid)
-        # slow, fast = head, head
-        # while fast and fast.next:
-        #     slow = slow.next
-        #     fast = fast.next.next
-        
-        # # Reverse second half
-        # prev = None
-        # cur = slow.next
-        # slow.next = None  # cut the list into two halves
-
-        # while cur:
-        #     next_node = cur.next
-        #     cur.next = prev
-        #     prev = cur
-        #     cur = next_node
-        # second = prev  # head of reversed second half
-        # first = head
-
-        # # Merge two halves
-        # while second:
-        #     temp1 = first.next
-        #     temp2 = second.next
-
-        #     first.next = second
-        #     second.next = temp1
-
-        #     first = temp1
-        #     second = temp2
-        
+        nodes[left].next = None
