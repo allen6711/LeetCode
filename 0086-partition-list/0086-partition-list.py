@@ -49,5 +49,3 @@ class Solution:
         ge_tail.next = None
         less_tail.next = ge_dummy.next
         return less_dummy.next
-
-        
