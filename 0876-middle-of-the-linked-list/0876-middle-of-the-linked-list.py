@@ -7,14 +7,22 @@ class Solution:
     def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
         # O(n)
         # O(1)
-        length = 0
-        cur = head
-        while cur:
-            cur = cur.next
-            length += 1
+        # length = 0
+        # cur = head
+        # while cur:
+        #     cur = cur.next
+        #     length += 1
         
-        cur = head
-        for _ in range(length // 2):
-            cur = cur.next
+        # cur = head
+        # for _ in range(length // 2):
+        #     cur = cur.next
         
-        return cur
+        # return cur
+        # O(n)
+        # O(1)
+        slow, fast = head, head
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+        
+        return slow
