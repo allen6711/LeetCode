@@ -11,8 +11,8 @@ class Solution:
         if not head or not head.next:
             return None
         
-        nodes = []
         cur = head
+        nodes = []
         while cur:
             nodes.append(cur)
             cur = cur.next
@@ -21,11 +21,42 @@ class Solution:
         while left < right:
             nodes[left].next = nodes[right]
             left += 1
-
             if left == right:
                 break
-            
             nodes[right].next = nodes[left]
             right -= 1
-
+        
         nodes[left].next = None
+
+
+
+
+
+
+
+
+
+
+        # O(n)
+        # O(n)
+        # if not head or not head.next:
+        #     return None
+        
+        # nodes = []
+        # cur = head
+        # while cur:
+        #     nodes.append(cur)
+        #     cur = cur.next
+        
+        # left, right = 0, len(nodes) - 1
+        # while left < right:
+        #     nodes[left].next = nodes[right]
+        #     left += 1
+
+        #     if left == right:
+        #         break
+            
+        #     nodes[right].next = nodes[left]
+        #     right -= 1
+
+        # nodes[left].next = None
