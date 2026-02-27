@@ -1,5 +1,32 @@
 class Solution:
     def maxArea(self, height: List[int]) -> int:
+        best = float('-inf')
+        left, right = 0, len(height) - 1
+        while left < right:
+            area = min(height[left], height[right]) * (right - left)
+            best = max(best, area)
+            if height[left] < height[right]:
+                left += 1
+            else:
+                right -= 1
+        
+        return best
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         # O(n^2)
         # O(1)
         # n = len(height)
