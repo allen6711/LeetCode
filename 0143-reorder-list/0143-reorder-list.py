@@ -10,22 +10,45 @@ class Solution:
         """
         if not head or not head.next:
             return None
+        # find the middle
+        slow, fast = head, head
+        while fast.next and fast.next.next:
+            slow = slow.next
+            fast = fast.next.next
         
-        arr = []
-        cur = head
+        # reverse
+        prev = None
+        cur = slow.next
+        slow.next = None  # avoid cycle
         while cur:
-            arr.append(cur)
-            cur = cur.next
-        left, right = 0, len(arr) - 1
-        while left < right:
-            arr[left].next = arr[right]
-            left += 1
-            if left == right:
-                break
-            arr[right].next = arr[left]
-            right -= 1
+            next_node = cur.next
+            cur.next = prev
+            prev = cur
+            cur = next_node
         
-        arr[left].next = None
+        # Merge two splits
+        first, second = head, prev
+        while second:
+            first_next = first.next
+            second_next = second.next
+
+            first.next = second
+            second.next = first_next
+
+            first = first_next
+            second = second_next
+
+
+
+
+
+
+
+
+
+
+
+
         # O(n)
         # O(n)
         # if not head or not head.next:
@@ -48,9 +71,9 @@ class Solution:
         #     nodes[right].next = nodes[left]
         #     right -= 1
 
-        # # nodes[left].next = None
-        # # O(n)
-        # # O(1)
+        # nodes[left].next = None
+        # O(n)
+        # O(1)
         # if not head or not head.next:
         #     return None
         # # 1. Find the end of the first half
