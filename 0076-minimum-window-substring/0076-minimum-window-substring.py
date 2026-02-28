@@ -1,5 +1,33 @@
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
+        if not s or not t:
+            return ""
+        best_len = float("inf")
+        best_left = 0
+        need = Counter(t)
+        window = defaultdict(int)
+        need_sub_num = len(need)
+        now_have = 0
+        left = 0
+        n = len(s)
+        for right, char in enumerate(s):
+            window[char] += 1
+            if char in need and window[char] == need[char]:
+                now_have += 1
+            
+            while now_have == need_sub_num:
+                window_len = right - left + 1
+                if window_len < best_len:
+                    best_len = window_len
+                    best_left = left
+                
+                left_char = s[left]
+                window[left_char] -= 1
+                if left_char in need and window[left_char] < need[left_char]:
+                    now_have -= 1
+                left += 1
+        
+        return "" if best_len == float('inf') else s[best_left:best_left + best_len]
         # O(n^2)
         # O(k)
         # if not s or not t:
@@ -61,50 +89,3 @@ class Solution:
                 left += 1
         
         return "" if best_len == float('inf') else s[best_left:best_left + best_len]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        if not s or not t:
-            return ""
-        
-        need = Counter(t)
-        window = defaultdict(int)
-
-        required = len(need)
-        formed = 0
-
-        left = 0
-        best_len = float('inf')
-        best_l = 0
-
-        for right, char in enumerate(s):
-            window[char] += 1
-            if char in need and window[char] == need[char]:
-                formed += 1
-            while formed == required:
-                if right - left + 1 < best_len:
-                    best_len = right - left + 1
-                    best_l = left
-                
-                left_char = s[left]
-                window[left_char] -= 1
-                if left_char in need and window[left_char] < need[left_char]:
-                    formed -= 1
-                left += 1
-        return "" if best_len == float('inf') else s[best_l: best_l + best_len]
