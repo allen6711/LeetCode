@@ -3,19 +3,19 @@ class Solution:
         if not s or not t:
             return ""
         best_len = float('inf')
-        best_left = 0
-        need = Counter(t)
-        window = defaultdict(int)
-        need_char_num = len(need)
-        num_now_have = 0
         n = len(s)
+        need = Counter(t)
+        need_num_char = len(need)
+        have_num_char = 0
+        window = defaultdict(int)
+        best_left = 0
         left = 0
         for right, char in enumerate(s):
             window[char] += 1
             if char in need and window[char] == need[char]:
-                num_now_have += 1
-            
-            while num_now_have == need_char_num:
+                have_num_char += 1
+
+            while have_num_char == need_num_char:
                 window_len = right - left + 1
                 if window_len < best_len:
                     best_len = window_len
@@ -24,11 +24,11 @@ class Solution:
                 left_char = s[left]
                 window[left_char] -= 1
                 if left_char in need and window[left_char] < need[left_char]:
-                    num_now_have -= 1
+                    have_num_char -= 1
+                
                 left += 1
         return "" if best_len == float('inf') else s[best_left:best_left + best_len]
-
-        # O(n^2)
+        # O(n^3)
         # O(k)
         # if not s or not t:
         #     return ""
