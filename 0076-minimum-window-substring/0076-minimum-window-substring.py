@@ -2,20 +2,20 @@ class Solution:
     def minWindow(self, s: str, t: str) -> str:
         if not s or not t:
             return ""
-        best_len = float("inf")
+        best_len = float('inf')
         best_left = 0
         need = Counter(t)
         window = defaultdict(int)
-        need_sub_num = len(need)
-        now_have = 0
-        left = 0
+        need_char_num = len(need)
+        num_now_have = 0
         n = len(s)
+        left = 0
         for right, char in enumerate(s):
             window[char] += 1
             if char in need and window[char] == need[char]:
-                now_have += 1
+                num_now_have += 1
             
-            while now_have == need_sub_num:
+            while num_now_have == need_char_num:
                 window_len = right - left + 1
                 if window_len < best_len:
                     best_len = window_len
@@ -24,10 +24,10 @@ class Solution:
                 left_char = s[left]
                 window[left_char] -= 1
                 if left_char in need and window[left_char] < need[left_char]:
-                    now_have -= 1
+                    num_now_have -= 1
                 left += 1
-        
         return "" if best_len == float('inf') else s[best_left:best_left + best_len]
+
         # O(n^2)
         # O(k)
         # if not s or not t:
