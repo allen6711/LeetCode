@@ -1,69 +1,28 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        char_map = {}
-        left = 0
-        best = 0
-        for right, char in enumerate(s):
-            if char in char_map:
-                left = max(left, char_map[char] + 1)
-            char_map[char] = right
-            best = max(best, right - left + 1)
-
-        return best
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        char_map = {}
-        left = 0
-        best = 0
-
-        for right, char in enumerate(s):
-            if char in char_map:
-                left = max(left, char_map[char] + 1)
-            
-            char_map[char] = right
-            best = max(best, right - left + 1)
-        
-        return best
-
-
-        # last = {}  # char -> last index
-        # left = 0
+        # O(n^3)
+        # O(n)
+        # n = len(s)
         # best = 0
-
-        # for right, char in enumerate(s):
-        #     if char in last and last[char] >= left:
-        #         left = last[char] + 1
-            
-        #     last[char] = right
-        #     best = max(best, right - left + 1)
+        # for i in range(n):
+        #     for j in range(i, n):
+        #         sub = s[i:j + 1]
+        #         if len(sub) == len(set(sub)):
+        #             best = max(best, len(sub))
         
         # return best
+        # O(n)
+        # O(k)
+        visited = set()
+        n = len(s)
+        left = 0
+        best = 0
+        for right in range(n):
+            while s[right] in visited:
+                visited.remove(s[left])
+                left += 1
 
-        # unique_chars = set()
-        # max_length = 0
-        # left_pointer = 0
-        # for right_pointer, char in enumerate(s):
-        #     while char in unique_chars:
-        #         unique_chars.remove(s[left_pointer])
-        #         left_pointer += 1
-                
-        #     unique_chars.add(s[right_pointer])
-        #     max_length = max(max_length, right_pointer - left_pointer + 1)
+            visited.add(s[right])
+            best = max(best, right - left + 1)
         
-        # return max_length
+        return best
