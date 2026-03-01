@@ -29,7 +29,7 @@ class Solution:
             left = 0
             count = {}
             distinct = 0
-            total = 0
+            total_le = 0
 
             for right in range(len(nums)):
                 x = nums[right]
@@ -47,8 +47,8 @@ class Solution:
                         distinct -= 1
                     left += 1
                 # All subarrays ending at 'right' with start in [left...right] are valid
-                total += (right - left + 1)
-            return total
+                total_le += (right - left + 1)
+            return total_le
         
         return at_most(k) - at_most(k - 1)
 
