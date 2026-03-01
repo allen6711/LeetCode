@@ -1,5 +1,28 @@
 class Solution:
     def totalFruit(self, fruits: List[int]) -> int:
+        # left = 0
+        # best = float('-inf')
+        # count = {}
+        # left = 0
+        # best_left = 0
+        # for right, fruit in enumerate(fruits):
+        #     count[fruit] += 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         # O(n)
         # O(k)
         left = 0
@@ -21,39 +44,3 @@ class Solution:
             best = max(best, right - left + 1)
         
         return best
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        window = Counter()
-        left = 0
-        best_left = 0
-        best_len = float('-inf')
-        basket = []
-        for right, num in enumerate(fruits):
-            window[num] += 1
-            if len(window) == 2:
-                window_len = right - left + 1
-                if window_len > best_len:
-                    best_len = window_len
-                    best_left = left
-                    basket = fruits[best_left:best_left + window_len]
-                
-            
-            while len(window) > 2:
-                window[num] -= 1
-                left += 1
-                break
-        
-        return 0 if best_len == float('-inf') else len(basket)
