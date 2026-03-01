@@ -181,6 +181,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0875-koko-eating-bananas](https://github.com/allen6711/LeetCode/tree/master/0875-koko-eating-bananas) |
 | [0882-peak-index-in-a-mountain-array](https://github.com/allen6711/LeetCode/tree/master/0882-peak-index-in-a-mountain-array) |
 | [0883-car-fleet](https://github.com/allen6711/LeetCode/tree/master/0883-car-fleet) |
+| [0904-fruit-into-baskets](https://github.com/allen6711/LeetCode/tree/master/0904-fruit-into-baskets) |
 | [0907-koko-eating-bananas](https://github.com/allen6711/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [1036-rotting-oranges](https://github.com/allen6711/LeetCode/tree/master/1036-rotting-oranges) |
 | [1185-find-in-mountain-array](https://github.com/allen6711/LeetCode/tree/master/1185-find-in-mountain-array) |
@@ -326,6 +327,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0209-minimum-size-subarray-sum](https://github.com/allen6711/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [0219-contains-duplicate-ii](https://github.com/allen6711/LeetCode/tree/master/0219-contains-duplicate-ii) |
 | [0658-find-k-closest-elements](https://github.com/allen6711/LeetCode/tree/master/0658-find-k-closest-elements) |
+| [0904-fruit-into-baskets](https://github.com/allen6711/LeetCode/tree/master/0904-fruit-into-baskets) |
 ## Sorting
 |  |
 | ------- |
@@ -403,6 +405,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/allen6711/LeetCode/tree/master/0268-missing-number) |
 | [0347-top-k-frequent-elements](https://github.com/allen6711/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0560-subarray-sum-equals-k](https://github.com/allen6711/LeetCode/tree/master/0560-subarray-sum-equals-k) |
+| [0904-fruit-into-baskets](https://github.com/allen6711/LeetCode/tree/master/0904-fruit-into-baskets) |
 | [0981-time-based-key-value-store](https://github.com/allen6711/LeetCode/tree/master/0981-time-based-key-value-store) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/allen6711/LeetCode/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
 | [1816-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/allen6711/LeetCode/tree/master/1816-lowest-common-ancestor-of-a-binary-tree-iv) |
