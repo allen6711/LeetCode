@@ -1,8 +1,8 @@
 class Solution:
     def totalFruit(self, fruits: List[int]) -> int:
         left = 0
-        best = float('-inf')
         count = {}
+        best = float('-inf')
         for right, fruit in enumerate(fruits):
             if fruit in count:
                 count[fruit] += 1
@@ -12,12 +12,14 @@ class Solution:
             while len(count) > 2:
                 left_fruit = fruits[left]
                 count[left_fruit] -= 1
+
                 if count[left_fruit] == 0:
                     del count[left_fruit]
+            
                 left += 1
             
             best = max(best, right - left + 1)
-        
+
         return best
             
 
