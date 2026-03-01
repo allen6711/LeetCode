@@ -1,32 +1,5 @@
 class Solution:
     def subarraysWithKDistinct(self, nums: List[int], k: int) -> int:
-        def at_mostK(k: int) -> int:
-            if k < 0:
-                return 0
-            left = 0
-            count = {}
-            distinct = 0
-            total_le = 0
-            for right, num in enumerate(nums):
-                if num in count:
-                    count[num] += 1
-                else:
-                    count[num]  = 1
-                    distinct += 1
-                
-                while distinct > k:
-                    left_num = nums[left]
-                    count[left_num] -= 1
-                    if count[left_num] == 0:
-                        del count[left_num]
-                        distinct -= 1
-                    left += 1
-                
-                total_le += (right - left + 1)
-            return total_le
-        
-        return at_mostK(k) - at_mostK(k - 1)
-                
         # O(n^2)
         # O(n)
         # n = len(nums)
