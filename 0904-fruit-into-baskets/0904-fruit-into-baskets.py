@@ -15,13 +15,12 @@ class Solution:
 
                 if count[left_fruit] == 0:
                     del count[left_fruit]
-            
+                
                 left += 1
             
             best = max(best, right - left + 1)
-
+        
         return best
-            
 
 
 
