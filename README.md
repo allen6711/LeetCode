@@ -183,6 +183,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0883-car-fleet](https://github.com/allen6711/LeetCode/tree/master/0883-car-fleet) |
 | [0904-fruit-into-baskets](https://github.com/allen6711/LeetCode/tree/master/0904-fruit-into-baskets) |
 | [0907-koko-eating-bananas](https://github.com/allen6711/LeetCode/tree/master/0907-koko-eating-bananas) |
+| [0992-subarrays-with-k-different-integers](https://github.com/allen6711/LeetCode/tree/master/0992-subarrays-with-k-different-integers) |
 | [1036-rotting-oranges](https://github.com/allen6711/LeetCode/tree/master/1036-rotting-oranges) |
 | [1185-find-in-mountain-array](https://github.com/allen6711/LeetCode/tree/master/1185-find-in-mountain-array) |
 | [1480-running-sum-of-1d-array](https://github.com/allen6711/LeetCode/tree/master/1480-running-sum-of-1d-array) |
@@ -328,6 +329,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0219-contains-duplicate-ii](https://github.com/allen6711/LeetCode/tree/master/0219-contains-duplicate-ii) |
 | [0658-find-k-closest-elements](https://github.com/allen6711/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0904-fruit-into-baskets](https://github.com/allen6711/LeetCode/tree/master/0904-fruit-into-baskets) |
+| [0992-subarrays-with-k-different-integers](https://github.com/allen6711/LeetCode/tree/master/0992-subarrays-with-k-different-integers) |
 ## Sorting
 |  |
 | ------- |
@@ -407,6 +409,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0560-subarray-sum-equals-k](https://github.com/allen6711/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 | [0904-fruit-into-baskets](https://github.com/allen6711/LeetCode/tree/master/0904-fruit-into-baskets) |
 | [0981-time-based-key-value-store](https://github.com/allen6711/LeetCode/tree/master/0981-time-based-key-value-store) |
+| [0992-subarrays-with-k-different-integers](https://github.com/allen6711/LeetCode/tree/master/0992-subarrays-with-k-different-integers) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/allen6711/LeetCode/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
 | [1816-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/allen6711/LeetCode/tree/master/1816-lowest-common-ancestor-of-a-binary-tree-iv) |
 | [2965-find-missing-and-repeated-values](https://github.com/allen6711/LeetCode/tree/master/2965-find-missing-and-repeated-values) |
@@ -461,6 +464,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0169-majority-element](https://github.com/allen6711/LeetCode/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/allen6711/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0992-subarrays-with-k-different-integers](https://github.com/allen6711/LeetCode/tree/master/0992-subarrays-with-k-different-integers) |
 ## Quickselect
 |  |
 | ------- |
