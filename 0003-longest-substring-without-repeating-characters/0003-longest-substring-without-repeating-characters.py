@@ -3,17 +3,15 @@ class Solution:
         visited = set()
         left = 0
         best = 0
-        for right in range(len(s)):
+        n = len(s)
+        for right in range(n):
             while s[right] in visited:
                 visited.remove(s[left])
                 left += 1
-
             visited.add(s[right])
             best = max(best, right - left + 1)
-        
+
         return best
-
-
 
 
 
