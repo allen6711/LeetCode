@@ -1,5 +1,23 @@
 class Solution:
     def totalFruit(self, fruits: List[int]) -> int:
+        n = len(fruits)
+        left = 0
+        best = float('-inf')
+        count = {}
+        for right in range(n):
+            if fruits[right] in count:
+                count[fruits[right]] += 1
+            else:
+                count[fruits[right]] = 1
+            while len(count) > 2:
+                left_num = fruits[left]
+                count[left_num] -= 1
+                if count[left_num] == 0:
+                    del count[left_num]
+                left += 1
+            best = max(best, right - left + 1)
+        
+        return best
         # O(n^2)
         # O(k)
         # n = len(fruits)
