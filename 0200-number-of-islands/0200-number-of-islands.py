@@ -5,23 +5,23 @@ class Solution:
         
         rows, cols = len(grid), len(grid[0])
         islands = 0
-
         for r in range(rows):
             for c in range(cols):
                 if grid[r][c] != '1':
                     continue
                 
                 islands += 1
-                grid[r][c] = '0'  # mark visited
+                grid[r][c] = '0'
                 q = deque([(r, c)])
 
                 while q:
                     x, y = q.popleft()
-                    for dx, dy in ((1, 0), (0, 1), (-1, 0), (0, -1)):
+                    for dx, dy in ((0, 1), (1, 0), (0, -1), (-1, 0)):
                         nx, ny = x + dx, y + dy
                         if 0 <= nx < rows and 0 <= ny < cols and grid[nx][ny] == '1':
                             grid[nx][ny] = '0'
                             q.append((nx, ny))
+
         return islands
 
 
@@ -41,116 +41,6 @@ class Solution:
 
 
 
-
-
-        # BFS
-        if not grid or not grid[0]:
-            return 0
-        
-        islands = 0
-        visited = set()
-
-        for i in range(len(grid)):
-            for j in range(len(grid[0])):
-                if grid[i][j] == '1' and (i, j) not in visited:
-                    self.bfs(grid, i, j, visited)
-                    islands += 1
-        
-        return islands
-
-    def bfs(self, grid, x, y, visited):
-        queue = deque([grid])
-        visited = set((x, y))
-
-        while queue:
-            x, y = queue.popleft()
-            for delta_x, delta_y in [(1, 0), (0, -1), (-1, 0), (0, 1)]:
-                next_x = x + delta_x
-                next_y = y + delta_y
-            
-                if not self.isValid(grid, next_x, next_y, visited):
-                    continue
-                
-                queue.append((next_x. next_y))
-                visited.app((next_x, next_y))
-        
-    def isValid(self, x, y, visited):
-        n, m = len(grid). len(grid[0])
-
-        if not (0 <= x < n and 0 <= y < m):
-            return False
-        
-        if (x, y) in visited:
-            return False
-        
-        return grid[x][y] == '1'
-        
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        # BFS
-        if not grid or not grid[0]:
-            return 0
-        
-        islands = 0
-        visited = set()
-
-        for i in range(len(grid)):
-             for j in range(len(grid[0])):
-                if grid[i][j] == '1' and (i, j) not in visited:
-                    self.bfs(grid, i, j, visited)
-                    islands += 1
-        
-        return islands
-
-    def bfs(self, grid, x, y, visited):
-        queue = deque([(x, y)])
-        visited.add((x, y))
-
-        while queue:
-            x, y = queue.popleft()
-            for delta_x, delta_y in [(1, 0), (0, -1), (-1, 0), (0, 1)]:
-                next_x = x + delta_x
-                next_y = y + delta_y
-                if not self.isValid(grid, next_x, next_y, visited):
-                    continue
-                queue.append((next_x, next_y))
-                visited.add((next_x, next_y))
-    
-    def isValid(self, grid, x, y, visited):
-        n, m = len(grid), len(grid[0])
-        
-        if not (0 <= x < n and 0 <= y < m):
-            return False
-        
-        if (x, y) in visited:
-            return False
-        
-        return grid[x][y] == '1'
 
 
 
