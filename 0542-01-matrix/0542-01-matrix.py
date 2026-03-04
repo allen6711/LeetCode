@@ -1,5 +1,7 @@
 class Solution:
     def updateMatrix(self, mat: List[List[int]]) -> List[List[int]]:
+        # O(mn)
+        # O(mn)
         rows, cols = len(mat), len(mat[0])
         dist = [[-1] * cols for _ in range(rows)]
         q = deque()
