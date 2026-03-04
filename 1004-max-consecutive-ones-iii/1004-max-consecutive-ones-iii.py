@@ -51,7 +51,7 @@ class Solution:
         # O(1)
         left = 0
         n = len(nums)
-        best = float('-inf')
+        best = 0
         zeros = 0
         for right in range(n):
             if nums[right] == 0:
