@@ -26,31 +26,6 @@ class Solution:
                             q.append((nx, ny))
         
         return islands
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         # DFS
         # def dfs(row, col):
         #     grid[row][col] = '0'
