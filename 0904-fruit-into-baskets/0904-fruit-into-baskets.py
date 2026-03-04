@@ -2,22 +2,38 @@ class Solution:
     def totalFruit(self, fruits: List[int]) -> int:
         n = len(fruits)
         left = 0
-        best = float('-inf')
-        count = {}
+        best_len = 0
+        window = {}
         for right in range(n):
-            if fruits[right] in count:
-                count[fruits[right]] += 1
+            if fruits[right] in window:
+                window[fruits[right]] += 1
             else:
-                count[fruits[right]] = 1
-            while len(count) > 2:
+                window[fruits[right]] = 1
+            
+            while len(window) > 2:
                 left_num = fruits[left]
-                count[left_num] -= 1
-                if count[left_num] == 0:
-                    del count[left_num]
+                window[left_num] -= 1
+                if window[left_num] == 0:
+                    del window[left_num]
                 left += 1
-            best = max(best, right - left + 1)
-        
-        return best
+            
+            best_len = max(best_len, right - left + 1)
+        return best_len
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         # O(n^2)
         # O(k)
         # n = len(fruits)
