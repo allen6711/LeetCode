@@ -11,23 +11,23 @@ class Solution:
             word, steps = q.popleft()
             if word == endWord:
                 return steps
+            
             word_char = list(word)
             for i in range(len(word_char)):
                 original_char = word_char[i]
-
                 for ch in "abcdefghijklmnopqrstuvwxyz":
                     if ch == original_char:
                         continue
-
+                    
                     word_char[i] = ch
                     candidate = "".join(word_char)
                     if candidate in word_set and candidate not in visited:
                         visited.add(candidate)
                         q.append((candidate, steps + 1))
-
                 word_char[i] = original_char
-    
+        
         return 0
+
 
 
 
