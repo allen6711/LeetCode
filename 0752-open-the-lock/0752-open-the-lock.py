@@ -1,5 +1,7 @@
 class Solution:
     def openLock(self, deadends: List[str], target: str) -> int:
+        # O(10^4)
+        # O(10^4)
         dead = set(deadends)
         
         # If the start is blocked, we cannot move at all
