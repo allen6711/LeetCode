@@ -1,5 +1,49 @@
 class Solution:
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
+        word_set = set(wordList)
+        if endWord not in word_set:
+            return 0
+        
+        q = deque([(beginWord, 1)])
+        visited = set([beginWord])
+
+        while q:
+            word, steps = q.popleft()
+            if word == endWord:
+                return steps
+            word_char = list(word)
+            for i in range(len(word_char)):
+                original_char = word_char[i]
+                for ch in "abcdefghijklmnopqrstuvwxyz":
+                    if ch == original_char:
+                        continue
+                    word_char[i] = ch
+                    candidate = "".join(word_char)
+                    if candidate not in word_set:
+                        continue
+                    if candidate in visited:
+                        continue
+                    visited.add(candidate)
+                    q.append((candidate, steps + 1))
+                word_char[i] = original_char
+        return 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         # O(nl)
         # O(n)
         word_set = set(wordList)
