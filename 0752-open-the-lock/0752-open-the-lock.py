@@ -5,7 +5,7 @@ class Solution:
             return -1
         
         q = deque([("0000", 0)])
-        visited = set(["0000"])
+        visited = set("0000")
 
         while q:
             state, steps = q.popleft()
@@ -14,10 +14,10 @@ class Solution:
             
             for i in range(4):
                 digit = int(state[i])
-
                 for move in (-1, 1):
                     new_digit = (digit + move) % 10
                     neighbor = state[:i] + str(new_digit) + state[i + 1:]
+
                     if neighbor in dead:
                         continue
                     if neighbor in visited:
@@ -26,8 +26,6 @@ class Solution:
                     q.append((neighbor, steps + 1))
         
         return -1
-
-
 
 
 
