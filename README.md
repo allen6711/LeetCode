@@ -98,6 +98,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0752-open-the-lock](https://github.com/allen6711/LeetCode/tree/master/0752-open-the-lock) |
 | [0994-rotting-oranges](https://github.com/allen6711/LeetCode/tree/master/0994-rotting-oranges) |
 | [1036-rotting-oranges](https://github.com/allen6711/LeetCode/tree/master/1036-rotting-oranges) |
+| [1091-shortest-path-in-binary-matrix](https://github.com/allen6711/LeetCode/tree/master/1091-shortest-path-in-binary-matrix) |
 ## Binary Tree
 |  |
 | ------- |
@@ -193,6 +194,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0994-rotting-oranges](https://github.com/allen6711/LeetCode/tree/master/0994-rotting-oranges) |
 | [1004-max-consecutive-ones-iii](https://github.com/allen6711/LeetCode/tree/master/1004-max-consecutive-ones-iii) |
 | [1036-rotting-oranges](https://github.com/allen6711/LeetCode/tree/master/1036-rotting-oranges) |
+| [1091-shortest-path-in-binary-matrix](https://github.com/allen6711/LeetCode/tree/master/1091-shortest-path-in-binary-matrix) |
 | [1185-find-in-mountain-array](https://github.com/allen6711/LeetCode/tree/master/1185-find-in-mountain-array) |
 | [1480-running-sum-of-1d-array](https://github.com/allen6711/LeetCode/tree/master/1480-running-sum-of-1d-array) |
 | [1929-concatenation-of-array](https://github.com/allen6711/LeetCode/tree/master/1929-concatenation-of-array) |
@@ -217,6 +219,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0542-01-matrix](https://github.com/allen6711/LeetCode/tree/master/0542-01-matrix) |
 | [0994-rotting-oranges](https://github.com/allen6711/LeetCode/tree/master/0994-rotting-oranges) |
 | [1036-rotting-oranges](https://github.com/allen6711/LeetCode/tree/master/1036-rotting-oranges) |
+| [1091-shortest-path-in-binary-matrix](https://github.com/allen6711/LeetCode/tree/master/1091-shortest-path-in-binary-matrix) |
 | [2965-find-missing-and-repeated-values](https://github.com/allen6711/LeetCode/tree/master/2965-find-missing-and-repeated-values) |
 ## Linked List
 |  |
