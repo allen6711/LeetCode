@@ -6,7 +6,6 @@ class Solution:
         
         q = deque([(beginWord, 1)])
         visited = set([beginWord])
-
         while q:
             word, steps = q.popleft()
             if word == endWord:
@@ -18,7 +17,6 @@ class Solution:
                 for ch in "abcdefghijklmnopqrstuvwxyz":
                     if ch == original_char:
                         continue
-                    
                     word_char[i] = ch
                     candidate = "".join(word_char)
                     if candidate in word_set and candidate not in visited:
@@ -27,7 +25,6 @@ class Solution:
                 word_char[i] = original_char
         
         return 0
-
 
 
 
