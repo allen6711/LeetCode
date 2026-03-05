@@ -11,6 +11,7 @@ class Solution:
             word, steps = q.popleft()
             if word == endWord:
                 return steps
+            
             word_char = list(word)
             for i in range(len(word_char)):
                 original_char = word_char[i]
