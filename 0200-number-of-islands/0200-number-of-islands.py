@@ -7,10 +7,10 @@ class Solution:
                 if grid[r][c] != '1':
                     continue
                 
-                grid[r][c] = '0'
                 islands += 1
+                grid[r][c] = '0'
                 q = deque([(r, c)])
-
+                
                 while q:
                     x, y = q.popleft()
                     for dx, dy in ((1, 0), (0, 1), (-1, 0), (0, -1)):
@@ -19,8 +19,6 @@ class Solution:
                             grid[nx][ny] = '0'
                             q.append((nx, ny))
         return islands
-
-
 
 
 
