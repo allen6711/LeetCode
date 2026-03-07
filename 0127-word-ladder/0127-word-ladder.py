@@ -3,9 +3,9 @@ class Solution:
         word_set = set(wordList)
         if endWord not in word_set:
             return 0
-        
         q = deque([(beginWord, 1)])
         visited = set([beginWord])
+
         while q:
             word, steps = q.popleft()
             if word == endWord:
@@ -21,10 +21,21 @@ class Solution:
                     if candidate in word_set and candidate not in visited:
                         visited.add(candidate)
                         q.append((candidate, steps + 1))
-
-                    word_char[i] = original_char
-
+                word_char[i] = original_char
+                
         return 0
+        
+
+
+
+
+
+
+
+
+
+
+
 
         # O(nl)
         # O(n)
