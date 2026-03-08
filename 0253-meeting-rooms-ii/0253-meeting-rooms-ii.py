@@ -22,36 +22,3 @@ class Solution:
             heapq.heappush(heap, end)
         
         return len(heap)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        meeting_delta = []
-        for start, end in intervals:
-            meeting_delta.append((start, 1))
-            meeting_delta.append((end, -1))
-
-        meeting_delta.sort()
-        cur = ans = 0
-
-        for _, delta in meeting_delta:
-            cur += delta
-            if cur > ans:
-                ans = cur
-        
-        return ans
-            
