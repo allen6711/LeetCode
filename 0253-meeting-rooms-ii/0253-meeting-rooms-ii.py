@@ -3,11 +3,11 @@ class Solution:
         if not intervals:
             return 0
         
-        heap = []
-        # Sort by start
         intervals.sort(key=lambda x: x[0])
 
+        heap = []
         heapq.heappush(heap, intervals[0][1])
+
         for i in range(1, len(intervals)):
             start, end = intervals[i]
 
@@ -15,9 +15,8 @@ class Solution:
                 heapq.heappop(heap)
             
             heapq.heappush(heap, end)
-        
+            
         return len(heap)
-
 
 
 
