@@ -1,5 +1,7 @@
 class Solution:
     def minMeetingRooms(self, intervals: List[List[int]]) -> int:
+        # O(nlogn)
+        # O(n)
         if not intervals:
             return 0
         
@@ -7,7 +9,7 @@ class Solution:
         intervals.sort(key=lambda x: x[0])
 
         # Min-heap of end times
-        heap = []
+        heap = []   # room_num
         heapq.heappush(heap, (intervals[0][1]))
 
         for i in range(1, len(intervals)):
