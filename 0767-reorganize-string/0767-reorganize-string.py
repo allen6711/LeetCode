@@ -2,6 +2,58 @@ class Solution:
     def reorganizeString(self, s: str) -> str:
         n = len(s)
         counts = Counter(s)
+        max_counts = max(counts.values())
+
+        if max_counts > (n + 1) // 2:
+            return ""
+        
+        heap = [(-cnt, ch) for ch, cnt in counts.items()]
+        heapq.heapify(heap)
+        ans = []
+
+        while len(heap) >= 2:
+            cnt1, ch1 = heapq.heappop(heap)
+            cnt2, ch2 = heapq.heappop(heap)
+
+            ans.append(ch1)
+            ans.append(ch2)
+
+            cnt1 += 1
+            cnt2 += 1
+
+            if cnt1 < 0:
+                heapq.heappush(heap, (cnt1, ch1))
+            if cnt2 < 0:
+                heapq.heappush(heap, (cnt2, ch2))
+            
+        if heap:
+            cnt, ch = heapq.heappop(heap)
+            if -cnt > 1:
+                return ""
+            if ans and ans[-1] == ch:
+                return ""
+            
+            ans.append(ch)
+        
+        return "".join(ans)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        # O(nlogk)
+        # O(k+n)
+        n = len(s)
+        counts = Counter(s)
         max_count = max(counts.values())
 
         # Feasibility check
@@ -42,7 +94,3 @@ class Solution:
 
         
         return "".join(res)
-
-            
-
-
