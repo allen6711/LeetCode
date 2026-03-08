@@ -170,6 +170,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/allen6711/LeetCode/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/allen6711/LeetCode/tree/master/0219-contains-duplicate-ii) |
 | [0238-product-of-array-except-self](https://github.com/allen6711/LeetCode/tree/master/0238-product-of-array-except-self) |
+| [0253-meeting-rooms-ii](https://github.com/allen6711/LeetCode/tree/master/0253-meeting-rooms-ii) |
 | [0268-missing-number](https://github.com/allen6711/LeetCode/tree/master/0268-missing-number) |
 | [0269-alien-dictionary](https://github.com/allen6711/LeetCode/tree/master/0269-alien-dictionary) |
 | [0271-encode-and-decode-strings](https://github.com/allen6711/LeetCode/tree/master/0271-encode-and-decode-strings) |
@@ -330,6 +331,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0160-intersection-of-two-linked-lists](https://github.com/allen6711/LeetCode/tree/master/0160-intersection-of-two-linked-lists) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/allen6711/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0170-two-sum-iii-data-structure-design](https://github.com/allen6711/LeetCode/tree/master/0170-two-sum-iii-data-structure-design) |
+| [0253-meeting-rooms-ii](https://github.com/allen6711/LeetCode/tree/master/0253-meeting-rooms-ii) |
 | [0283-move-zeroes](https://github.com/allen6711/LeetCode/tree/master/0283-move-zeroes) |
 | [0287-find-the-duplicate-number](https://github.com/allen6711/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0392-is-subsequence](https://github.com/allen6711/LeetCode/tree/master/0392-is-subsequence) |
@@ -363,6 +365,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0215-kth-largest-element-in-an-array](https://github.com/allen6711/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0217-contains-duplicate](https://github.com/allen6711/LeetCode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/allen6711/LeetCode/tree/master/0242-valid-anagram) |
+| [0253-meeting-rooms-ii](https://github.com/allen6711/LeetCode/tree/master/0253-meeting-rooms-ii) |
 | [0268-missing-number](https://github.com/allen6711/LeetCode/tree/master/0268-missing-number) |
 | [0274-h-index](https://github.com/allen6711/LeetCode/tree/master/0274-h-index) |
 | [0347-top-k-frequent-elements](https://github.com/allen6711/LeetCode/tree/master/0347-top-k-frequent-elements) |
@@ -373,6 +376,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/allen6711/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
+| [0253-meeting-rooms-ii](https://github.com/allen6711/LeetCode/tree/master/0253-meeting-rooms-ii) |
 | [0347-top-k-frequent-elements](https://github.com/allen6711/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0658-find-k-closest-elements](https://github.com/allen6711/LeetCode/tree/master/0658-find-k-closest-elements) |
 ## Math
@@ -505,6 +509,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/allen6711/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [0238-product-of-array-except-self](https://github.com/allen6711/LeetCode/tree/master/0238-product-of-array-except-self) |
+| [0253-meeting-rooms-ii](https://github.com/allen6711/LeetCode/tree/master/0253-meeting-rooms-ii) |
 | [0560-subarray-sum-equals-k](https://github.com/allen6711/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 | [1004-max-consecutive-ones-iii](https://github.com/allen6711/LeetCode/tree/master/1004-max-consecutive-ones-iii) |
 | [1480-running-sum-of-1d-array](https://github.com/allen6711/LeetCode/tree/master/1480-running-sum-of-1d-array) |
@@ -512,6 +517,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/allen6711/LeetCode/tree/master/0011-container-with-most-water) |
+| [0253-meeting-rooms-ii](https://github.com/allen6711/LeetCode/tree/master/0253-meeting-rooms-ii) |
 | [0680-valid-palindrome-ii](https://github.com/allen6711/LeetCode/tree/master/0680-valid-palindrome-ii) |
 ## Data Stream
 |  |
