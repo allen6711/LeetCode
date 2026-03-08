@@ -3,13 +3,12 @@ class Solution:
         n = len(s)
         counts = Counter(s)
         max_counts = max(counts.values())
-
         if max_counts > (n + 1) // 2:
             return ""
         
         heap = [(-cnt, ch) for ch, cnt in counts.items()]
         heapq.heapify(heap)
-        ans = []
+        ans =[]
 
         while len(heap) >= 2:
             cnt1, ch1 = heapq.heappop(heap)
@@ -25,16 +24,15 @@ class Solution:
                 heapq.heappush(heap, (cnt1, ch1))
             if cnt2 < 0:
                 heapq.heappush(heap, (cnt2, ch2))
-            
+        
         if heap:
             cnt, ch = heapq.heappop(heap)
             if -cnt > 1:
                 return ""
             if ans and ans[-1] == ch:
                 return ""
-            
             ans.append(ch)
-        
+
         return "".join(ans)
 
 
