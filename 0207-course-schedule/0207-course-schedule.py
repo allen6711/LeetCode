@@ -7,22 +7,23 @@ class Solution:
             graph[pre].append(course)
             indegree[course] += 1
         
-        
         q = deque()
         for i in range(numCourses):
             if indegree[i] == 0:
                 q.append(i)
         
         taken = 0
-
         while q:
             cur = q.popleft()
             taken += 1
-            for next in graph[cur]:
-                indegree[next] -= 1
-                if indegree[next] == 0:
-                    q.append(next)
+            for next_course in graph[cur]:
+                indegree[next_course] -= 1
+                if indegree[next_course] == 0:
+                    q.append(next_course)
+
         return taken == numCourses
+
+
 
 
 
