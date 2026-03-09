@@ -15,18 +15,3 @@ class Solution:
                     return first[:i] # slicing costs O(i)
         
         return first
-
-
-
-
-
-
-
-
-
-        for index in range(len(strs[0])):
-            for string in strs[1:]:
-                if index >= len(string) or strs[0][index] != string[index]:
-                    return strs[0][:index]
-        
-        return strs[0]
