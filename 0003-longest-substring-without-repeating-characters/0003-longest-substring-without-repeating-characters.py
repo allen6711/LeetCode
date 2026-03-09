@@ -8,12 +8,9 @@ class Solution:
             while s[right] in visited:
                 visited.remove(s[left])
                 left += 1
-
             visited.add(s[right])
             best = max(best, right - left + 1)
-
         return best
-
 
         # O(n^3)
         # O(k)
