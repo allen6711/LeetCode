@@ -1,5 +1,28 @@
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
+        count = defaultdict(int)
+        n = len(nums)
+        for num in nums:
+            count[num] += 1
+            if num in count and count[num] > n // 2:
+                return num
+        
+        return -1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         # O(n)
         # O(n)
         # freq = defaultdict(int)
