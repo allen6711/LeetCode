@@ -1,11 +1,14 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
-        visited = set()
-        left = 0
-        for i in range(len(nums)):
-            if nums[i] not in visited:
-                nums[left] = nums[i]
-                left += 1
+        # O(n)
+        # O(1)
+        if not nums:
+            return 0
+        
+        write = 1  # The first element must be unique
+        for read in range(1, len(nums)):
+            if nums[read] != nums[write - 1]:
+                nums[write] = nums[read]
+                write += 1
+        return write
 
-            visited.add(nums[i])
-        return len(visited)
