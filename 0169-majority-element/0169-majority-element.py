@@ -1,18 +1,18 @@
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
-        count = defaultdict(int)
-        n = len(nums)
+        count = 0
+        candidate = None
         for num in nums:
-            count[num] += 1
-            if num in count and count[num] > n // 2:
-                return num
+            if count == 0:
+                candidate = num
+                count = 1
+            elif num == candidate:
+                count += 1
+            else:
+                count -= 1
         
-        return -1
-
-
-
-
-
+        return candidate
+        
 
 
 
@@ -43,38 +43,6 @@ class Solution:
                 count = 1
             elif num == candidate:
                 count += 1
-            else:
-                count -= 1
-        
-        return candidate
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        candidate = None
-        count = 0
-
-        for num in nums:
-            if count == 0:
-                candidate = num
-                count += 1
-
-            elif num == candidate:
-                count += 1
-
             else:
                 count -= 1
         
