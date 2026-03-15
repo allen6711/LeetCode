@@ -17,6 +17,4 @@ class Solution:
             if nums[read] != val:
                 nums[write] = nums[read]
                 write += 1
-        return write
-
-        
+        return write 
