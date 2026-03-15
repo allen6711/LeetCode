@@ -2,7 +2,7 @@ class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
         # O(n)
         # O(1)
-        if len(nums) < 2:
+        if len(nums) <= 2:
             return len(nums)
         
         write = 2
