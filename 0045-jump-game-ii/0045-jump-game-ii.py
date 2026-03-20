@@ -1,7 +1,7 @@
 class Solution:
     def jump(self, nums: List[int]) -> int:
-        # O()
-        # O()
+        # O(n)
+        # O(1)
         jumps = 0
         farthest = 0
         current_end = 0
