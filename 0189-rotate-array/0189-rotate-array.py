@@ -18,6 +18,8 @@ class Solution:
         
         # O(n)
         # O(1)
+        if not nums:
+            return
         n = len(nums)
         k %= n
         self.reverse(0, n - 1, nums)
