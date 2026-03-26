@@ -188,6 +188,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0287-find-the-duplicate-number](https://github.com/allen6711/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0302-smallest-rectangle-enclosing-black-pixels](https://github.com/allen6711/LeetCode/tree/master/0302-smallest-rectangle-enclosing-black-pixels) |
 | [0347-top-k-frequent-elements](https://github.com/allen6711/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0380-insert-delete-getrandom-o1](https://github.com/allen6711/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0444-sequence-reconstruction](https://github.com/allen6711/LeetCode/tree/master/0444-sequence-reconstruction) |
 | [0542-01-matrix](https://github.com/allen6711/LeetCode/tree/master/0542-01-matrix) |
 | [0560-subarray-sum-equals-k](https://github.com/allen6711/LeetCode/tree/master/0560-subarray-sum-equals-k) |
@@ -409,6 +410,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0150-evaluate-reverse-polish-notation](https://github.com/allen6711/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0189-rotate-array](https://github.com/allen6711/LeetCode/tree/master/0189-rotate-array) |
 | [0268-missing-number](https://github.com/allen6711/LeetCode/tree/master/0268-missing-number) |
+| [0380-insert-delete-getrandom-o1](https://github.com/allen6711/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0412-fizz-buzz](https://github.com/allen6711/LeetCode/tree/master/0412-fizz-buzz) |
 | [2965-find-missing-and-repeated-values](https://github.com/allen6711/LeetCode/tree/master/2965-find-missing-and-repeated-values) |
 ## Backtracking
@@ -457,6 +459,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0242-valid-anagram](https://github.com/allen6711/LeetCode/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/allen6711/LeetCode/tree/master/0268-missing-number) |
 | [0347-top-k-frequent-elements](https://github.com/allen6711/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0380-insert-delete-getrandom-o1](https://github.com/allen6711/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0395-longest-substring-with-at-least-k-repeating-characters](https://github.com/allen6711/LeetCode/tree/master/0395-longest-substring-with-at-least-k-repeating-characters) |
 | [0424-longest-repeating-character-replacement](https://github.com/allen6711/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0560-subarray-sum-equals-k](https://github.com/allen6711/LeetCode/tree/master/0560-subarray-sum-equals-k) |
@@ -495,6 +498,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0155-min-stack](https://github.com/allen6711/LeetCode/tree/master/0155-min-stack) |
 | [0170-two-sum-iii-data-structure-design](https://github.com/allen6711/LeetCode/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0271-encode-and-decode-strings](https://github.com/allen6711/LeetCode/tree/master/0271-encode-and-decode-strings) |
+| [0380-insert-delete-getrandom-o1](https://github.com/allen6711/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0981-time-based-key-value-store](https://github.com/allen6711/LeetCode/tree/master/0981-time-based-key-value-store) |
 ## Monotonic Stack
 |  |
@@ -609,4 +613,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0014-longest-common-prefix](https://github.com/allen6711/LeetCode/tree/master/0014-longest-common-prefix) |
+## Randomized
+|  |
+| ------- |
+| [0380-insert-delete-getrandom-o1](https://github.com/allen6711/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 <!---LeetCode Topics End-->
