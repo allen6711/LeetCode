@@ -1,5 +1,30 @@
 class Solution:
     def hIndex(self, citations: List[int]) -> int:
+        n = len(citations)
+        map = [0] * (n + 1)
+        best = 0
+        for i in range(1, n + 1):
+            for num in citations:
+                if num >= i:
+                    map[i] += 1
+            if map[i] >= i:
+                best = max(best, i)
+        return best
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         # O(n^2)
         # O(1)
         # n = len(citations)
