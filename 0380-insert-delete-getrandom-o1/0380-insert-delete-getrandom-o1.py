@@ -16,7 +16,7 @@ class RandomizedSet:
             return False
         last_val = self.nums[-1]
         remove_idx = self.pos[val]
-        self.nums[remove_idx] = val
+        self.nums[remove_idx] = last_val
         self.pos[last_val] = remove_idx
         self.nums.pop()
         del self.pos[val]
