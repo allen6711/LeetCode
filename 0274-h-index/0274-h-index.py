@@ -7,9 +7,11 @@ class Solution:
                 bucket[n] += 1
             else:
                 bucket[num] += 1
+        
         papers = 0
         for h in range(n, -1, -1):
             papers += bucket[h]
+
             if papers >= h:
                 return h
         
