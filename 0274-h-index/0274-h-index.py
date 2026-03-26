@@ -9,11 +9,10 @@ class Solution:
                 bucket[num] += 1
         
         papers = 0
-        for h in range(n, -1, -1):
-            papers += bucket[h]
-            if papers >= h:
-                return h
-
+        for i in range(n, -1, -1):
+            papers += bucket[i]
+            if papers >= i:
+                return i
         return 0
 
 
