@@ -1,33 +1,5 @@
 class Solution:
     def hIndex(self, citations: List[int]) -> int:
-        n = len(citations)
-        bucket = [0] * (n + 1)
-        for num in citations:
-            if num >= n:
-                bucket[n] += 1
-            else:
-                bucket[num] += 1
-        
-        papers = 0
-        for h in range(n, -1, -1):
-            papers += bucket[h]
-
-            if papers >= h:
-                return h
-        
-        return 0
-
-
-
-
-
-
-
-
-
-
-
-
         # O(n^2)
         # O(1)
         # n = len(citations)
