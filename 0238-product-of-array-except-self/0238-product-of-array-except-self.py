@@ -1,77 +1,31 @@
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
-        n = len(nums)
-        answer = [0] * n
-        answer[0] = 1
-
-        for i in range(1, n):
-            answer[i] = answer[i - 1] * nums[i - 1]
+        # O(n^2)
+        # O(n)
+        # n = len(nums)
+        # answer = []
+        # for i in range(n):
+        #     product = 1
+        #     for j in range(n):
+        #         if i == j:
+        #             continue
+        #         product *= nums[j]
+        #     answer.append(product)
         
-        right = 1
+        # return answer
+        # O(n)
+        # O(n)
+        n = len(nums)
+        answer = [1] * n
+
+        prefix = 1
+        for i in range(n):
+            answer[i] = prefix
+            prefix *= nums[i]
+        
+        postfix = 1
         for i in range(n - 1, -1, -1):
-            answer[i] = answer[i] * right
-            right = nums[i] * right
+            answer[i] *= postfix
+            postfix *= nums[i]
         
         return answer
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        # n = len(nums)
-        # answer = [0] * n
-        # answer[0] = 1
-
-        # # left product
-        # for i in range(1, n):
-        #     answer[i] = answer[i - 1] * nums[i - 1]
-        
-        # # right product
-        # right = 1
-        # for i in range(n - 1, -1, -1):
-        #     answer[i] = answer[i] * right
-        #     right = right * nums[i]
-        
-        # return answer
-
-        # n = len(nums)
-        # answer = [0] * n
-
-        # # left product
-        # answer[0] = 1
-        # for i in range(1, n):
-        #     answer[i] = answer[i - 1] * nums[i - 1]
-        
-        # # right product
-        # right = 1
-        # for i in range(n - 1, -1, -1):
-        #     answer[i] = answer[i] * right
-        #     right = right * nums[i]
-        
-        # return answer
-        
-        # n = len(nums)
-        # answer = [0] * n
-        # answer[0] = 1
-        # for i in range(1, n):
-        #     answer[i] = answer[i - 1] * nums[i - 1]
-        
-        # right = 1
-        # for i in range(n - 1, -1, -1):
-        #     answer[i] = answer[i] * right
-        #     right = right * nums[i]
-        
-        # return answer
