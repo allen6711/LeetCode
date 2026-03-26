@@ -1,17 +1,20 @@
 class Solution:
     def hIndex(self, citations: List[int]) -> int:
         n = len(citations)
-        map = [0] * (n + 1)
-        best = 0
-        for i in range(1, n + 1):
-            for num in citations:
-                if num >= i:
-                    map[i] += 1
-            if map[i] >= i:
-                best = max(best, i)
-        return best
+        bucket = [0] * (n + 1)
+        for num in citations:
+            if num >= n:
+                bucket[n] += 1
+            else:
+                bucket[num] += 1
         
+        papers = 0
+        for h in range(n, -1, -1):
+            papers += bucket[h]
+            if papers >= h:
+                return h
 
+        return 0
 
 
 
