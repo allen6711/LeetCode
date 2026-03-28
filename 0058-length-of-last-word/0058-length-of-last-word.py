@@ -5,7 +5,7 @@ class Solution:
         # word = s.strip().split()
         # return len(word[-1])
         # O(n)
-        # O()
+        # O(1)
         right = len(s) - 1
         # Skip trailing spaces
         while right >= 0 and s[right] == " ":
