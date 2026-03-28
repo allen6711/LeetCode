@@ -18,64 +18,23 @@ class Solution:
         # return ans
 
         # O(n)
-        water = 0
-        leftmax = float('-inf')
-        rightmax = float('-inf')
-        left, right = 0, len(height) - 1
+        # O(1)
+        n = len(height)
+        leftmax = 0
+        rightmax = 0
+        left, right = 0, n - 1
+        ans = 0
         while left < right:
             if height[left] <= height[right]:
                 if height[left] > leftmax:
                     leftmax = height[left]
                 else:
-                    water += leftmax - height[left]
+                    ans += leftmax - height[left]
                 left += 1
             else:
                 if height[right] > rightmax:
                     rightmax = height[right]
                 else:
-                    water += rightmax - height[right]
+                    ans += rightmax - height[right]
                 right -= 1
-        
-        return water
-
-
-        # max_left = 0
-        # max_right = 0
-        # left, right = 0, len(height) - 1
-        # water = 0
-        # while left < right:
-        #     if height[left] <= height[right]:
-        #         if height[left] > max_left:
-        #             max_left = height[left]
-        #         else:
-        #             water += max_left - height[left]
-        #         left += 1
-        #     else:
-        #         if height[right] > max_right:
-        #             max_right = height[right]
-        #         else:
-        #             water += max_right - height[right]
-        #         right -= 1
-        
-        # return water
-        
-        # left, right = 0, len(height) - 1
-        # leftMax, rightMax = 0, 0
-        # water = 0
-
-        # while left < right:
-        #     if height[left] <= height[right]:
-        #         if height[left] >= leftMax:
-        #             leftMax = height[left]
-        #         else:
-        #             water += leftMax - height[left]
-        #         left += 1
-        #     else:
-        #         if height[right] >= rightMax:
-        #             rightMax = height[right]
-        #         else:
-        #             water += rightMax - height[right]
-        #         right -= 1
-        
-        # return water
-            
+        return ans
