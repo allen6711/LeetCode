@@ -1,5 +1,6 @@
 class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+        
         # O(n*m)
         # O(m)
         # magazine = list(magazine)
@@ -10,15 +11,26 @@ class Solution:
         #         return False
         
         # return True
-        # O()
-        # O()
-        count = {}
-        for ch in magazine:
-            count[ch] = count.get(ch, 0) + 1
+        # Hashmap
+        # O(m+n)
+        # O(k)
+        # count = {}
+        # for ch in magazine:
+        #     count[ch] = count.get(ch, 0) + 1
+        # for ch in ransomNote:
+        #     if count.get(ch, 0) == 0:
+        #         return False
+        #     else:
+        #         count[ch] -= 1
+        
+        # return True
+        # Counter
+        # O(m+n)
+        # O(k)
+        count = Counter(magazine)
         for ch in ransomNote:
-            if count.get(ch, 0) == 0:
+            if count[ch] == 0:
                 return False
             else:
                 count[ch] -= 1
-        
         return True
