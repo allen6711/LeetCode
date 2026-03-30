@@ -153,6 +153,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0045-jump-game-ii](https://github.com/allen6711/LeetCode/tree/master/0045-jump-game-ii) |
 | [0049-group-anagrams](https://github.com/allen6711/LeetCode/tree/master/0049-group-anagrams) |
 | [0055-jump-game](https://github.com/allen6711/LeetCode/tree/master/0055-jump-game) |
+| [0068-text-justification](https://github.com/allen6711/LeetCode/tree/master/0068-text-justification) |
 | [0074-search-a-2d-matrix](https://github.com/allen6711/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0078-subsets](https://github.com/allen6711/LeetCode/tree/master/0078-subsets) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/allen6711/LeetCode/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
@@ -285,6 +286,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0030-substring-with-concatenation-of-all-words](https://github.com/allen6711/LeetCode/tree/master/0030-substring-with-concatenation-of-all-words) |
 | [0049-group-anagrams](https://github.com/allen6711/LeetCode/tree/master/0049-group-anagrams) |
 | [0058-length-of-last-word](https://github.com/allen6711/LeetCode/tree/master/0058-length-of-last-word) |
+| [0068-text-justification](https://github.com/allen6711/LeetCode/tree/master/0068-text-justification) |
 | [0076-minimum-window-substring](https://github.com/allen6711/LeetCode/tree/master/0076-minimum-window-substring) |
 | [0125-valid-palindrome](https://github.com/allen6711/LeetCode/tree/master/0125-valid-palindrome) |
 | [0127-word-ladder](https://github.com/allen6711/LeetCode/tree/master/0127-word-ladder) |
@@ -597,6 +599,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [0068-text-justification](https://github.com/allen6711/LeetCode/tree/master/0068-text-justification) |
 | [0412-fizz-buzz](https://github.com/allen6711/LeetCode/tree/master/0412-fizz-buzz) |
 | [1929-concatenation-of-array](https://github.com/allen6711/LeetCode/tree/master/1929-concatenation-of-array) |
 | [2149-rearrange-array-elements-by-sign](https://github.com/allen6711/LeetCode/tree/master/2149-rearrange-array-elements-by-sign) |
