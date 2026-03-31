@@ -1,5 +1,17 @@
 class Solution:
     def wordPattern(self, pattern: str, s: str) -> bool:
+        # O(n^2)
+        # O(1)
+        # words = s.split()
+        # if len(pattern) != len(words):
+        #     return False
+        # n = len(pattern)
+        # for i in range(n):
+        #     for j in range(i + 1, n):
+        #         if (pattern[i] == pattern[j] and words[i] != words[j]) or \
+        #            (pattern[i] != pattern[j] and words[i] == words[j]):
+        #            return False
+        # return True
         # O(n)
         # O(n)
         words = s.split()
