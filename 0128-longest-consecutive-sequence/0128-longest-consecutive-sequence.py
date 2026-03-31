@@ -1,20 +1,5 @@
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
-        if not nums:
-            return 0
-        current = 1
-        longest = 1
-        nums.sort()
-        n = len(nums)
-        for i in range(1, n):
-            if nums[i] == nums[i - 1]:
-                continue
-            elif nums[i] == nums[i - 1] + 1:
-                current += 1
-            else:
-                current = 1
-            longest = max(longest, current)
-        return longest
 
 
 
@@ -38,9 +23,11 @@ class Solution:
             elif nums[i] == nums[i - 1] + 1:
                 current += 1
             else:
-                longest = max(longest, current)
                 current = 1
-        return max(longest, current)
+        
+            longest = max(longest, current)
+
+        return longest
 
 
 
