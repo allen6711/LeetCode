@@ -1,142 +1,21 @@
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        # O(klogk)
         # O(n*klogk)
         # groups = defaultdict(list)
         # for s in strs:
-        #     key = ''.join(sorted(s))
+        #     key = "".join(sorted(s))
         #     groups[key].append(s)
         
         # return list(groups.values())
-
+        # O(nk)
         # O(nk)
         groups = defaultdict(list)
         for s in strs:
-            cnt = [0] * 26
+            count = [0] * 26
             for ch in s:
-                cnt[ord(ch) - ord('a')] += 1
-            key = tuple(cnt)
+                count[ord(ch) - ord('a')] += 1
+            key = tuple(count)
             groups[key].append(s)
         
         return list(groups.values())
-
-
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        # base = ord('a')
-        # word_dict = defaultdict(list)
-
-        # for char in strs:
-        #     cnt = [0] * 26
-
-        #     for ch in char:
-        #         cnt[ord(ch) - base] += 1
-
-        #     key = tuple(cnt)
-        #     word_dict[key].append(char)
-        
-        # return list(word_dict.values())
-
-        # base = ord('a')
-        # word_dict = defaultdict(list)
-        # for char in strs:
-        #     cnt = [0] * 26
-
-        #     for ch in char:
-        #         cnt[ord(ch) - base] += 1
-            
-        #     key = tuple(cnt)
-        #     word_dict[key].append(char)
-        
-        # return list(word_dict.values())
-
-
-        # base = ord('a')
-        # word_dict = defaultdict(list)
-
-        # for char in strs:
-        #     cnt = [0] * 26
-
-        #     for ch in char:
-        #         cnt[ord(ch) - base] += 1
-            
-        #     key = tuple(cnt)
-        #     word_dict[key].append(char)
-        
-        # return list(word_dict.values())
-
-        # base = ord('a')
-        # answer = []
-        # word_dict = defaultdict(list)
-
-        # for char in strs:
-        #     cnt = [0] * 26
-
-        #     for ch in char:
-        #         cnt[ord(ch) - base] += 1
-            
-        #     key = tuple(cnt)
-        #     word_dict[key].append(char)
-
-        # return list(word_dict.values())
-
-        
-        # base = ord('a')
-        # answer = defaultdict(list)
-
-        # for char in strs:
-        #     cnt = [0] * 26
-        #     for ch in char:
-        #         cnt[ord(ch) - base] += 1
-        #     key = tuple(cnt)
-        #     answer[key].append(char)
-        
-        # return list(answer.values())
-
-        # cnt = [0] * 26
-        # base = ord('a')
-        # answer = defaultdict(list)
-
-        # for char in strs:
-        #     cnt = [0] * 26
-
-        #     for ch in char:
-        #         cnt[ord(ch) - base] += 1
-            
-        #     key = tuple(cnt)
-        #     answer[key].append(char)
-        
-        # return list(answer.values())
-
-        # answer = defaultdict(list)
-        # base = ord('a')
-
-        # for char in strs:
-        #     cnt = [0] * 26
-        #     for ch in char:
-        #         cnt[ord(ch) - base] += 1
-            
-        #     key = tuple(cnt)
-        #     answer[key].append(char)
-        
-        # return list(answer.values())
-
-
-        # anagrams = defaultdict(list)
-        # for s in strs:
-        #     key = "".join(sorted(s))
-        #     anagrams[key].append(s)
-        
-        # return list(anagrams.values())
