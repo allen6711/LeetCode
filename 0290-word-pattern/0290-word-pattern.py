@@ -1,5 +1,7 @@
 class Solution:
     def wordPattern(self, pattern: str, s: str) -> bool:
+        # O(n)
+        # O(n)
         words = s.split()
         if len(pattern) != len(words):
             return False
