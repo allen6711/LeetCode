@@ -1,13 +1,24 @@
 class Solution:
     def isHappy(self, n: int) -> bool:
-        visited = set()
-        while n != 1:
-            if n in visited:
-                return False
-            visited.add(n)
-            n = self.get_next(n)
-            
-        return True
+        # O(logn)
+        # O(logn)
+        # visited = set()
+        # while n != 1:
+        #     if n in visited:
+        #         return False
+        #     visited.add(n)
+        #     n = self.get_next(n)
+
+        # return True
+        # O()
+        # O()
+        slow = n
+        fast = self.get_next(n)
+        while fast != 1 and slow != fast:
+            slow = self.get_next(slow)
+            fast = self.get_next(self.get_next(fast))
+        
+        return fast == 1
     
     def get_next(self, num: int) -> int:
         total = 0
