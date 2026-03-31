@@ -1,5 +1,8 @@
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
+        # O(nlogn)
+        # O(n)
+        return sorted(s) == sorted(t)
         count_s = Counter(s)
         count_t = Counter(t)
         if count_s == count_t:
