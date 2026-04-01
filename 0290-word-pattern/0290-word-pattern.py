@@ -3,6 +3,7 @@ class Solution:
         words = s.split()
         if len(pattern) != len(words):
             return False
+        
         p_to_s = {}
         s_to_p = {}
         for ch, word in zip(pattern, words):
@@ -12,10 +13,7 @@ class Solution:
                 return False
             p_to_s[ch] = word
             s_to_p[word] = ch
-        
         return True
-
-
 
 
 
