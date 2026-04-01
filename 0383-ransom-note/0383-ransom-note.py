@@ -1,5 +1,30 @@
 class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+        visited = defaultdict(int)
+        for ch in magazine:
+            visited[ch] += 1
+        for ch in ransomNote:
+            if ch in visited:
+                visited[ch] -= 1
+                if visited[ch] < 0:
+                    return False
+            else:
+                return False
+        
+        return True
+
+
+
+
+
+
+
+
+
+
+
+
+
         # O(n*m)
         # O(m)
         # magazine = list(magazine)
@@ -12,7 +37,7 @@ class Solution:
         # return True
         # Hashmap
         # O(m+n)
-        # O(k)
+        # O(m)
         # count = {}
         # for ch in magazine:
         #     count[ch] = count.get(ch, 0) + 1
@@ -25,7 +50,7 @@ class Solution:
         # return True
         # Counter
         # O(m+n)
-        # O(k)
+        # O(m)
         count = Counter(magazine)
         for ch in ransomNote:
             if count[ch] == 0:
