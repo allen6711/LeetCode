@@ -1,17 +1,14 @@
 class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
-        visited = defaultdict(int)
-        for ch in magazine:
-            visited[ch] += 1
+        count = Counter(magazine)
         for ch in ransomNote:
-            if ch in visited:
-                visited[ch] -= 1
-                if visited[ch] < 0:
-                    return False
-            else:
+            if count[ch] == 0:
                 return False
+            else:
+                count[ch] -= 1
         
         return True
+
 
 
 
