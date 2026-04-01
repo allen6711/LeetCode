@@ -9,7 +9,6 @@ class Solution:
         for count in freq:
             if count != 0:
                 return False
-        
         return True
 
 
