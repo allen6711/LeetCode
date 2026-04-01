@@ -5,9 +5,10 @@ class Solution:
             freq = [0] * 26
             for ch in word:
                 freq[ord(ch) - ord('a')] += 1
+            
             key = tuple(freq)
             word_dict[key].append(word)
-
+        
         return list(word_dict.values())
 
 
