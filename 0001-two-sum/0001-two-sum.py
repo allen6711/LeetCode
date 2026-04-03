@@ -1,5 +1,27 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
+        collect = {}
+        for i, num in enumerate(nums):
+            new_target = target - num
+            if new_target in collect:
+                return [collect[new_target], i]
+            collect[num] = i
+        
+        return -1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         # O(n^2)
         # O(1)
         # n = len(nums)
