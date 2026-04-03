@@ -11,6 +11,7 @@ class Solution:
                     current += 1
                     length += 1
                 longest = max(longest, length)
+        
         return longest
         # O(nlogn)
         # O(1)
