@@ -10,6 +10,8 @@ from typing import Optional
 class Solution:
     def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:
         # BFS
+        # O(V + E)
+        # O(V)
         if not node:
             return None
         old_to_new = {}
