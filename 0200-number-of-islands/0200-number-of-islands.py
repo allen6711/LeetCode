@@ -13,6 +13,7 @@ class Solution:
                 grid[r][c] = "0"
                 islands += 1
                 q = deque([(r, c)])
+
                 while q:
                     x, y = q.popleft()
                     for dx, dy in ((1, 0), (0, 1), (-1, 0), (0, -1)):
@@ -22,10 +23,6 @@ class Solution:
                             q.append((nx, ny))
         
         return islands
-
-
-
-
 
 
 
