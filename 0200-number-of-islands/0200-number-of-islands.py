@@ -1,7 +1,7 @@
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
-        # O(mn)
-        # O(mn)
+        # O(m*n)
+        # O(m*n)
         if not grid and not grid[0]:
             return 0
         
