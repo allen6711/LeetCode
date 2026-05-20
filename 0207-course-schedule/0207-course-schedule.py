@@ -6,9 +6,9 @@ class Solution:
             graph[pre].append(course)
             indegree[course] += 1
         
-        q = deque()
         completed = 0
-        
+
+        q = deque()
         for course in range(numCourses):
             if indegree[course] == 0:
                 q.append(course)
@@ -16,7 +16,6 @@ class Solution:
         while q:
             cur = q.popleft()
             completed += 1
-
             for next_course in graph[cur]:
                 indegree[next_course] -= 1
 
@@ -24,8 +23,6 @@ class Solution:
                     q.append(next_course)
         
         return completed == numCourses
-                
-
 
 
 
