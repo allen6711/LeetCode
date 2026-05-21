@@ -8,7 +8,6 @@ class Solution:
         def bfs(start: str, target: str) -> float:
             if start not in graph or target not in graph:
                 return -1.0
-            
             if start == target:
                 return 1.0
             
@@ -19,14 +18,14 @@ class Solution:
                 for nei, weight in graph[cur]:
                     if nei in visited:
                         continue
-
+                        
                     next_value = cur_value * weight
                     if nei == target:
                         return next_value
                     
                     visited.add(nei)
                     q.append((nei, next_value))
-            return -1
+            return -1.0
         
         ans = []
         for a, b in queries:
