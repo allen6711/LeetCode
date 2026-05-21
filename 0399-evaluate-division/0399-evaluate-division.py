@@ -26,8 +26,7 @@ class Solution:
                     
                     visited.add(nei)
                     q.append((nei, next_value))
-            
-            return -1.0
+            return -1
         
         ans = []
         for a, b in queries:
