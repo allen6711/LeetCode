@@ -1,19 +1,23 @@
 class Solution:
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
-        word_set = set(wordList)
+        # n: len(wordList)
+        # l: len(beginWord)
+        # O(nl^2)
+        # O(nl)
+        word_set = set(wordList)   # O(nl)
         if endWord not in word_set:
             return 0
         
         q = deque([(beginWord, 1)])
-        visited = set([beginWord])
+        visited = set([beginWord])    # O(l) -> hash
         while q:
-            cur, steps = q.popleft()
-            if cur == endWord:
+            cur, steps = q.popleft()   # mostly O(n)
+            if cur == endWord:         # O(l)
                 return steps
             
-            for i in range(len(cur)):
-                for ch in "abcdefghijklmnopqrstuvwxyz":
-                    new_word = cur[:i] + ch + cur[i + 1:]
+            for i in range(len(cur)):     # -> O(l)
+                for ch in "abcdefghijklmnopqrstuvwxyz":    # O(26)
+                    new_word = cur[:i] + ch + cur[i + 1:]    # -> O(l)
                     if new_word not in word_set:
                         continue
                     if new_word in visited:
@@ -22,55 +26,4 @@ class Solution:
                     visited.add(new_word)
                     q.append((new_word, steps + 1))
         
-        return 0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        # O(nl)
-        # O(n)
-        word_set = set(wordList)
-
-        # If endWord is not in the dictionary, no valid transformation exists
-        if endWord not in word_set:
-            return 0
-
-        q = deque([(beginWord, 1)])
-        visited = set([beginWord])
-
-        while q:
-            word, steps = q.popleft()
-            if word == endWord:
-                return steps
-
-            # Convert to list once for easier character replacement
-            word_chars = list(word)
-            for i in range(len(word_chars)):
-                original_char = word_chars[i]
-
-                # Try replacing word[i] with 'a' to 'z'
-                for ch in "abcdefghijklmnopqrstuvwxyz":
-                    if ch == original_char:
-                        continue
-                    
-                    word_chars[i] = ch
-                    candidate = "".join(word_chars)
-
-                    if candidate in word_set and candidate not in visited:
-                        visited.add(candidate)
-                        q.append((candidate, steps + 1))
-                
-                # Restore original character before moving to next index
-                word_chars[i] = original_char
-
         return 0
