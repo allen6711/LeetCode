@@ -32,7 +32,7 @@ class Solution:
                 
                 if next_square in visited:
                     continue
-                    
+
                 visited.add(next_square)
                 q.append((next_square, moves + 1))
         
