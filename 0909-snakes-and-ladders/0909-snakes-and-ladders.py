@@ -2,7 +2,6 @@ class Solution:
     def snakesAndLadders(self, board: List[List[int]]) -> int:
         n = len(board)
         target = n * n
-
         def get_pos(square: int) -> tuple[int, int]:
             idx = square - 1
             row_from_bottom = idx // n
@@ -12,7 +11,7 @@ class Solution:
                 col = n - col - 1
             
             return row, col
-
+        
         q = deque([(1, 0)])
         visited = set([1])
         while q:
@@ -33,11 +32,12 @@ class Solution:
                 
                 if next_square in visited:
                     continue
-                
+                    
                 visited.add(next_square)
                 q.append((next_square, moves + 1))
         
         return -1
+
 
 
 
