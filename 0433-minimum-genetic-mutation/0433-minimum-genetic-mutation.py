@@ -1,6 +1,55 @@
 class Solution:
     def minMutation(self, startGene: str, endGene: str, bank: List[str]) -> int:
         bank_set = set(bank)
+        if endGene not in bank_set:
+            return -1
+
+        genes = ["A", "C", "G", "T"]
+        q = deque([(startGene, 0)])
+        visited = set([startGene])
+
+        while q:
+            cur, steps = q.popleft()
+            if cur == endGene:
+                return steps
+            
+            for i in range(len(cur)):
+                for ch in genes:
+                    if cur[i] == ch:
+                        continue
+                    
+                    new_gene = cur[:i] + ch + cur[i + 1:]
+                    if new_gene not in bank_set:
+                        continue
+                    if new_gene in visited:
+                        continue
+                    
+                    visited.add(new_gene)
+                    q.append((new_gene, steps + 1))
+        
+        return -1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        # O(n)
+        # O(n)
+        bank_set = set(bank)
 
         if endGene not in bank_set:
             return -1
