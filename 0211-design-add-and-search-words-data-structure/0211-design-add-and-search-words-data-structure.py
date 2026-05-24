@@ -1,3 +1,49 @@
+class TrieNode():
+    def __init__(self):
+        self.children = {}
+        self.is_word = False
+
+class WordDictionary:
+    def __init__(self):
+        self.root = TrieNode()
+    
+    def addWord(self, word: str) -> None:
+        cur = self.root
+
+        for ch in word:
+            if ch not in cur.children:
+                cur.children[ch] = TrieNode
+            
+            cur = cur.children[ch]
+        
+        cur.is_word = True
+    
+    def search(self, word: str) -> bool:
+        
+        def dfs(index: int, node: TrieNode):
+            if word[index] != ".":
+                if word[index] not in node.children:
+                    return False
+                dfs(index + 1, node.children[word[index]])
+            
+            if word[index] == ".":
+                for child in node.children.values():
+                    dfs(index + 1, child.children)
+        
+        dfs(0, self.root)
+
+
+
+
+
+
+
+
+
+
+
+
+
 class TrieNode:
     def __init__(self):
         self.children = {}
@@ -8,6 +54,9 @@ class WordDictionary:
     def __init__(self):
         self.root = TrieNode()
 
+    # l: length of word
+    # O(l)
+    # O(l)
     def addWord(self, word: str) -> None:
         cur = self.root
 
@@ -19,6 +68,8 @@ class WordDictionary:
         
         cur.is_word = True
 
+    # O(l) without ".", O(26^l) with "."
+    # O(l)
     def search(self, word: str) -> bool:
 
         def dfs(index: int, node: TrieNode) -> bool:
