@@ -1,3 +1,45 @@
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.word = None
+
+class Sulution:
+    def findWords(self, board: List[List[str]], words: List[str]) -> List[str]:
+        root = TrieNode()
+
+        for word_in_list in words:
+            cur = root
+            for ch in word:
+                if ch not in cur.children:
+                    cur.children[ch] = TrieNode
+                cur = cur.children[ch]
+            cur.word = word_in_list
+        
+        rows, cols = len(board), len(board[0])
+        result = []
+
+        def dfs(x: int, y: int, node: TrieNode) -> None:
+            ch = board[x][y]
+            if ch not in node.children:
+                return
+            
+            next_node = node.children[ch]
+            if next_node.word is not None:
+                result.append(next_node.word)
+            
+            board[x][y] = "#"
+
+            for dx, dy in ((1, 0), (0, 1), (-1, 0), (0, -1)):
+                nx, ny = x + dx, y + dy
+                if 0 <= nx < rows and 0 <= ny < cols and board[nx][ny] != "#":
+                    dfs(nx, ny, next_node)
+            
+        return results
+            
+
+
+
+
 # M = number of rows in the board
 # N = number of columns in the board
 # W = number of words
