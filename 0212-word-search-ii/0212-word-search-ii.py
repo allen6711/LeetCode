@@ -8,13 +8,13 @@ class Solution:
         root = TrieNode()
 
         # Build Trie
-        for word in words:
+        for word_in_list in words:
             cur = root
-            for ch in word:
+            for ch in word_in_list:
                 if ch not in cur.children:
                     cur.children[ch] = TrieNode()
                 cur = cur.children[ch]
-            cur.word = word
+            cur.word = word_in_list
         
         rows = len(board)
         cols = len(board[0])
