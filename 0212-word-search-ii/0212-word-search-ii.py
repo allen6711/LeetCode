@@ -1,3 +1,11 @@
+# M = number of rows in the board
+# N = number of columns in the board
+# W = number of words
+# L = average length of the words
+# K = maximum length of a word
+# O(M * N * 4 * 3^(K - 1))
+# O(min(K, M * N))
+
 class TrieNode:
     def __init__(self):
         self.children = {}
@@ -15,6 +23,11 @@ class Solution:
                     cur.children[ch] = TrieNode()
                 cur = cur.children[ch]
             cur.word = word_in_list
+        # root
+        #     └── o
+        #         └── a
+        #             └── t
+        #                 └── h  word = "oath"
         
         rows = len(board)
         cols = len(board[0])
