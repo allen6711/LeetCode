@@ -2,7 +2,6 @@ class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
         if not digits:
             return []
-        
         phone = {
             "2": "abc",
             "3": "def",
@@ -14,8 +13,8 @@ class Solution:
             "9": "wxyz"
         }
 
-        result = []
         path = []
+        result = []
 
         def dfs(index: int) -> None:
             if index == len(digits):
@@ -23,12 +22,12 @@ class Solution:
                 return
             
             digit = digits[index]
-            letters = phone[digit]
-
-            for ch in letters:
+            for ch in phone[digit]:
                 path.append(ch)
                 dfs(index + 1)
                 path.pop()
         
         dfs(0)
         return result
+
+                
