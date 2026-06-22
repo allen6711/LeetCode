@@ -1,14 +1,17 @@
 class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:
+        # L: length of word
+        # O(m * n * 3^L)
+        # O(L)
         rows, cols = len(board), len(board[0])
 
-        def dfs(r: int, c: int, index: int) -> None:
+        def dfs(r: int, c: int, index: int) -> bool:
             if index == len(word):
                 return True
             
             if r < 0 or r >= rows or c < 0 or c >= cols:
                 return False
-                
+
             if board[r][c] != word[index]:
                 return False
             
