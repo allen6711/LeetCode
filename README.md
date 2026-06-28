@@ -33,6 +33,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0257-binary-tree-paths](https://github.com/allen6711/LeetCode/tree/master/0257-binary-tree-paths) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/allen6711/LeetCode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/allen6711/LeetCode/tree/master/0637-average-of-levels-in-binary-tree) |
+| [1485-clone-binary-tree-with-random-pointer](https://github.com/allen6711/LeetCode/tree/master/1485-clone-binary-tree-with-random-pointer) |
 | [1780-lowest-common-ancestor-of-a-binary-tree-ii](https://github.com/allen6711/LeetCode/tree/master/1780-lowest-common-ancestor-of-a-binary-tree-ii) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/allen6711/LeetCode/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
 | [1816-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/allen6711/LeetCode/tree/master/1816-lowest-common-ancestor-of-a-binary-tree-iv) |
@@ -72,6 +73,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0399-evaluate-division](https://github.com/allen6711/LeetCode/tree/master/0399-evaluate-division) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/allen6711/LeetCode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/allen6711/LeetCode/tree/master/0637-average-of-levels-in-binary-tree) |
+| [1485-clone-binary-tree-with-random-pointer](https://github.com/allen6711/LeetCode/tree/master/1485-clone-binary-tree-with-random-pointer) |
 | [1780-lowest-common-ancestor-of-a-binary-tree-ii](https://github.com/allen6711/LeetCode/tree/master/1780-lowest-common-ancestor-of-a-binary-tree-ii) |
 | [1816-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/allen6711/LeetCode/tree/master/1816-lowest-common-ancestor-of-a-binary-tree-iv) |
 ## Breadth-First Search
@@ -109,6 +111,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0994-rotting-oranges](https://github.com/allen6711/LeetCode/tree/master/0994-rotting-oranges) |
 | [1036-rotting-oranges](https://github.com/allen6711/LeetCode/tree/master/1036-rotting-oranges) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/allen6711/LeetCode/tree/master/1091-shortest-path-in-binary-matrix) |
+| [1485-clone-binary-tree-with-random-pointer](https://github.com/allen6711/LeetCode/tree/master/1485-clone-binary-tree-with-random-pointer) |
 ## Binary Tree
 |  |
 | ------- |
@@ -139,6 +142,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0257-binary-tree-paths](https://github.com/allen6711/LeetCode/tree/master/0257-binary-tree-paths) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/allen6711/LeetCode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/allen6711/LeetCode/tree/master/0637-average-of-levels-in-binary-tree) |
+| [1485-clone-binary-tree-with-random-pointer](https://github.com/allen6711/LeetCode/tree/master/1485-clone-binary-tree-with-random-pointer) |
 | [1780-lowest-common-ancestor-of-a-binary-tree-ii](https://github.com/allen6711/LeetCode/tree/master/1780-lowest-common-ancestor-of-a-binary-tree-ii) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/allen6711/LeetCode/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
 | [1816-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/allen6711/LeetCode/tree/master/1816-lowest-common-ancestor-of-a-binary-tree-iv) |
@@ -534,6 +538,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0904-fruit-into-baskets](https://github.com/allen6711/LeetCode/tree/master/0904-fruit-into-baskets) |
 | [0981-time-based-key-value-store](https://github.com/allen6711/LeetCode/tree/master/0981-time-based-key-value-store) |
 | [0992-subarrays-with-k-different-integers](https://github.com/allen6711/LeetCode/tree/master/0992-subarrays-with-k-different-integers) |
+| [1485-clone-binary-tree-with-random-pointer](https://github.com/allen6711/LeetCode/tree/master/1485-clone-binary-tree-with-random-pointer) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/allen6711/LeetCode/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
 | [1816-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/allen6711/LeetCode/tree/master/1816-lowest-common-ancestor-of-a-binary-tree-iv) |
 | [2965-find-missing-and-repeated-values](https://github.com/allen6711/LeetCode/tree/master/2965-find-missing-and-repeated-values) |
