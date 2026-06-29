@@ -1,7 +1,7 @@
 class Solution:
     def numOfStrings(self, patterns: List[str], word: str) -> int:
         # n: number of patterns
-        # m: length of m
+        # m: length of word
         # k: average length of pattern
         # O(n*m*k)
         # O(1)
