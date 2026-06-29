@@ -8,6 +8,32 @@
 
 class Solution:
     def copyRandomBinaryTree(self, root: 'Optional[Node]') -> 'Optional[NodeCopy]':
+        old_to_new = {}
+        
+        def dfs(node: 'Optional[Node]') -> 'Optional[Node]':
+            if not node:
+                return None
+            if node in old_to_new:
+                return old_to_new[node]
+            
+            copy = NodeCopy(node.val)
+            old_to_new[node] = copy
+
+            copy.left = dfs(node.left)
+            copy.right = dfs(node.right)
+            copy.random = dfs(node.random)
+
+            return copy
+        
+        return dfs(root)
+
+
+
+
+
+
+
+        
         # O(n)
         # O(n)
         old_to_new = {}
