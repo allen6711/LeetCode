@@ -8,6 +8,8 @@ class Node:
 
 class Solution:
     def cloneTree(self, root: 'Node') -> 'Node':
+        # O(n)
+        # O(h)
         if not root:
             return None
         
