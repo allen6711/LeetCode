@@ -115,6 +115,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1091-shortest-path-in-binary-matrix](https://github.com/allen6711/LeetCode/tree/master/1091-shortest-path-in-binary-matrix) |
 | [1485-clone-binary-tree-with-random-pointer](https://github.com/allen6711/LeetCode/tree/master/1485-clone-binary-tree-with-random-pointer) |
 | [1490-clone-n-ary-tree](https://github.com/allen6711/LeetCode/tree/master/1490-clone-n-ary-tree) |
+| [2812-find-the-safest-path-in-a-grid](https://github.com/allen6711/LeetCode/tree/master/2812-find-the-safest-path-in-a-grid) |
 ## Binary Tree
 |  |
 | ------- |
@@ -241,6 +242,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/allen6711/LeetCode/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
 | [2045-cutting-ribbons](https://github.com/allen6711/LeetCode/tree/master/2045-cutting-ribbons) |
 | [2149-rearrange-array-elements-by-sign](https://github.com/allen6711/LeetCode/tree/master/2149-rearrange-array-elements-by-sign) |
+| [2812-find-the-safest-path-in-a-grid](https://github.com/allen6711/LeetCode/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [2965-find-missing-and-repeated-values](https://github.com/allen6711/LeetCode/tree/master/2965-find-missing-and-repeated-values) |
 | [3010-divide-an-array-into-subarrays-with-minimum-cost-i](https://github.com/allen6711/LeetCode/tree/master/3010-divide-an-array-into-subarrays-with-minimum-cost-i) |
 ## Union Find
@@ -265,6 +267,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0994-rotting-oranges](https://github.com/allen6711/LeetCode/tree/master/0994-rotting-oranges) |
 | [1036-rotting-oranges](https://github.com/allen6711/LeetCode/tree/master/1036-rotting-oranges) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/allen6711/LeetCode/tree/master/1091-shortest-path-in-binary-matrix) |
+| [2812-find-the-safest-path-in-a-grid](https://github.com/allen6711/LeetCode/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [2965-find-missing-and-repeated-values](https://github.com/allen6711/LeetCode/tree/master/2965-find-missing-and-repeated-values) |
 ## Linked List
 |  |
@@ -375,6 +378,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1004-max-consecutive-ones-iii](https://github.com/allen6711/LeetCode/tree/master/1004-max-consecutive-ones-iii) |
 | [1185-find-in-mountain-array](https://github.com/allen6711/LeetCode/tree/master/1185-find-in-mountain-array) |
 | [2045-cutting-ribbons](https://github.com/allen6711/LeetCode/tree/master/2045-cutting-ribbons) |
+| [2812-find-the-safest-path-in-a-grid](https://github.com/allen6711/LeetCode/tree/master/2812-find-the-safest-path-in-a-grid) |
 ## Interactive
 |  |
 | ------- |
@@ -458,6 +462,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0347-top-k-frequent-elements](https://github.com/allen6711/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0658-find-k-closest-elements](https://github.com/allen6711/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0767-reorganize-string](https://github.com/allen6711/LeetCode/tree/master/0767-reorganize-string) |
+| [2812-find-the-safest-path-in-a-grid](https://github.com/allen6711/LeetCode/tree/master/2812-find-the-safest-path-in-a-grid) |
 ## Math
 |  |
 | ------- |
@@ -684,6 +689,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0130-surrounded-regions](https://github.com/allen6711/LeetCode/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/allen6711/LeetCode/tree/master/0200-number-of-islands) |
 | [0399-evaluate-division](https://github.com/allen6711/LeetCode/tree/master/0399-evaluate-division) |
+| [2812-find-the-safest-path-in-a-grid](https://github.com/allen6711/LeetCode/tree/master/2812-find-the-safest-path-in-a-grid) |
 ## Counting Sort
 |  |
 | ------- |
