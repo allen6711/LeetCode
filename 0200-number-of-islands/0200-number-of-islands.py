@@ -1,7 +1,7 @@
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
         if not grid:
-            return -1
+            return 0
         rows, cols = len(grid), len(grid[0])
         queue = deque()
         islands = 0
