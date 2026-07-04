@@ -3,6 +3,7 @@ class Solution:
         graph = defaultdict(list)
         answer = float('inf')
         visited = set()
+        visited.add(1)
         for a, b, dist in roads:
             graph[a].append((b, dist))
             graph[b].append((a, dist))
