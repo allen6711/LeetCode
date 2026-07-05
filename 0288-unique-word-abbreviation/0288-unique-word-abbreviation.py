@@ -1,4 +1,37 @@
 class ValidWordAbbr:
+    def __init__(self, dictionary: List[str]) -> None:
+        self.abbr_map = defaultdict(set)
+        for word in dictionary:
+            abbr = self.get_abbr(word)
+            self.abbr_map[abbr].add(word)
+            
+    def isUnique(self, word: str) -> bool:
+        abbr = self.get_abbr(word)
+        if abbr not in self.abbr_map:
+            return True
+        
+        return self.abbr_map[abbr] == {word}
+
+    
+    def get_abbr(self, word: str) -> str:
+        if len(word) <= 2:
+            return word
+        
+        return word[0] + str(len(word) - 2) + word[-1]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     # n = number of word in dictionary
     # L = average length of word
     # q = number of isUnique calls
