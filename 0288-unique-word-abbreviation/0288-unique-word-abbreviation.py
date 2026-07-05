@@ -2,6 +2,8 @@ class ValidWordAbbr:
     # n = number of word in dictionary
     # L = average length of word
     # q = number of isUnique calls
+    # O(logn)
+    # O(n)
 
     def __init__(self, dictionary: List[str]):
         self.abbr_map = defaultdict(set)
