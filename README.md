@@ -216,6 +216,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0274-h-index](https://github.com/allen6711/LeetCode/tree/master/0274-h-index) |
 | [0283-move-zeroes](https://github.com/allen6711/LeetCode/tree/master/0283-move-zeroes) |
 | [0287-find-the-duplicate-number](https://github.com/allen6711/LeetCode/tree/master/0287-find-the-duplicate-number) |
+| [0288-unique-word-abbreviation](https://github.com/allen6711/LeetCode/tree/master/0288-unique-word-abbreviation) |
 | [0302-smallest-rectangle-enclosing-black-pixels](https://github.com/allen6711/LeetCode/tree/master/0302-smallest-rectangle-enclosing-black-pixels) |
 | [0347-top-k-frequent-elements](https://github.com/allen6711/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0380-insert-delete-getrandom-o1](https://github.com/allen6711/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
@@ -342,6 +343,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0257-binary-tree-paths](https://github.com/allen6711/LeetCode/tree/master/0257-binary-tree-paths) |
 | [0269-alien-dictionary](https://github.com/allen6711/LeetCode/tree/master/0269-alien-dictionary) |
 | [0271-encode-and-decode-strings](https://github.com/allen6711/LeetCode/tree/master/0271-encode-and-decode-strings) |
+| [0288-unique-word-abbreviation](https://github.com/allen6711/LeetCode/tree/master/0288-unique-word-abbreviation) |
 | [0290-word-pattern](https://github.com/allen6711/LeetCode/tree/master/0290-word-pattern) |
 | [0383-ransom-note](https://github.com/allen6711/LeetCode/tree/master/0383-ransom-note) |
 | [0392-is-subsequence](https://github.com/allen6711/LeetCode/tree/master/0392-is-subsequence) |
@@ -548,6 +550,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0219-contains-duplicate-ii](https://github.com/allen6711/LeetCode/tree/master/0219-contains-duplicate-ii) |
 | [0242-valid-anagram](https://github.com/allen6711/LeetCode/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/allen6711/LeetCode/tree/master/0268-missing-number) |
+| [0288-unique-word-abbreviation](https://github.com/allen6711/LeetCode/tree/master/0288-unique-word-abbreviation) |
 | [0290-word-pattern](https://github.com/allen6711/LeetCode/tree/master/0290-word-pattern) |
 | [0347-top-k-frequent-elements](https://github.com/allen6711/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0380-insert-delete-getrandom-o1](https://github.com/allen6711/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
@@ -596,6 +599,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0208-implement-trie-prefix-tree](https://github.com/allen6711/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/allen6711/LeetCode/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0271-encode-and-decode-strings](https://github.com/allen6711/LeetCode/tree/master/0271-encode-and-decode-strings) |
+| [0288-unique-word-abbreviation](https://github.com/allen6711/LeetCode/tree/master/0288-unique-word-abbreviation) |
 | [0380-insert-delete-getrandom-o1](https://github.com/allen6711/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0981-time-based-key-value-store](https://github.com/allen6711/LeetCode/tree/master/0981-time-based-key-value-store) |
 ## Monotonic Stack
