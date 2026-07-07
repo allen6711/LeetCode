@@ -493,6 +493,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0412-fizz-buzz](https://github.com/allen6711/LeetCode/tree/master/0412-fizz-buzz) |
 | [1259-handshakes-that-dont-cross](https://github.com/allen6711/LeetCode/tree/master/1259-handshakes-that-dont-cross) |
 | [2965-find-missing-and-repeated-values](https://github.com/allen6711/LeetCode/tree/master/2965-find-missing-and-repeated-values) |
+| [3754-concatenate-non-zero-digits-and-multiply-by-sum-i](https://github.com/allen6711/LeetCode/tree/master/3754-concatenate-non-zero-digits-and-multiply-by-sum-i) |
 ## Backtracking
 |  |
 | ------- |
