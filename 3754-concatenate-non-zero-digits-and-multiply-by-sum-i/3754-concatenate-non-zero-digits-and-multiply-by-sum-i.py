@@ -7,7 +7,7 @@ class Solution:
             digit_sum += digit
             if digit != 0:
                 x = x * 10 + digit
-            
+        
         return x * digit_sum
 
 
