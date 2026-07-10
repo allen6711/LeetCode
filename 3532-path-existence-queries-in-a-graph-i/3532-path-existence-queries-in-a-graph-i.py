@@ -1,5 +1,9 @@
 class Solution:
     def pathExistenceQueries(self, n: int, nums: List[int], maxDiff: int, queries: List[List[int]]) -> List[bool]:
+        # n: the number of nodes
+        # q: the number of queries
+        # O(n+q)
+        # O(n+q)
         component = [0] * n
         component_id = 0
 
