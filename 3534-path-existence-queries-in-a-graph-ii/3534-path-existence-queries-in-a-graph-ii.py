@@ -1,5 +1,7 @@
 class Solution:
     def pathExistenceQueries(self, n: int, nums: List[int], maxDiff: int, queries: List[List[int]]) -> List[int]:
+        # O((n+q)logn)
+        # O(nlogn)
         # pairs[pos] = (value, original node index)
         pairs = sorted((nums[i], i) for i in range(n))
         values = [value for value, _ in pairs]
