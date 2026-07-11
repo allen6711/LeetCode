@@ -350,6 +350,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0271-encode-and-decode-strings](https://github.com/allen6711/LeetCode/tree/master/0271-encode-and-decode-strings) |
 | [0288-unique-word-abbreviation](https://github.com/allen6711/LeetCode/tree/master/0288-unique-word-abbreviation) |
 | [0290-word-pattern](https://github.com/allen6711/LeetCode/tree/master/0290-word-pattern) |
+| [0291-word-pattern-ii](https://github.com/allen6711/LeetCode/tree/master/0291-word-pattern-ii) |
 | [0383-ransom-note](https://github.com/allen6711/LeetCode/tree/master/0383-ransom-note) |
 | [0392-is-subsequence](https://github.com/allen6711/LeetCode/tree/master/0392-is-subsequence) |
 | [0395-longest-substring-with-at-least-k-repeating-characters](https://github.com/allen6711/LeetCode/tree/master/0395-longest-substring-with-at-least-k-repeating-characters) |
@@ -517,6 +518,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0090-subsets-ii](https://github.com/allen6711/LeetCode/tree/master/0090-subsets-ii) |
 | [0212-word-search-ii](https://github.com/allen6711/LeetCode/tree/master/0212-word-search-ii) |
 | [0257-binary-tree-paths](https://github.com/allen6711/LeetCode/tree/master/0257-binary-tree-paths) |
+| [0291-word-pattern-ii](https://github.com/allen6711/LeetCode/tree/master/0291-word-pattern-ii) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -566,6 +568,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/allen6711/LeetCode/tree/master/0268-missing-number) |
 | [0288-unique-word-abbreviation](https://github.com/allen6711/LeetCode/tree/master/0288-unique-word-abbreviation) |
 | [0290-word-pattern](https://github.com/allen6711/LeetCode/tree/master/0290-word-pattern) |
+| [0291-word-pattern-ii](https://github.com/allen6711/LeetCode/tree/master/0291-word-pattern-ii) |
 | [0347-top-k-frequent-elements](https://github.com/allen6711/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0380-insert-delete-getrandom-o1](https://github.com/allen6711/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0383-ransom-note](https://github.com/allen6711/LeetCode/tree/master/0383-ransom-note) |
