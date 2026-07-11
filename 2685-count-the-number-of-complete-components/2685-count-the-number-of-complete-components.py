@@ -1,5 +1,7 @@
 class Solution:
     def countCompleteComponents(self, n: int, edges: List[List[int]]) -> int:
+        # O(n+m)
+        # O(n+m)
         graph = [[] for _ in range(n)]
         for a, b in edges:
             graph[a].append(b)
