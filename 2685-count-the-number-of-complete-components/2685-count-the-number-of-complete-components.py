@@ -7,32 +7,29 @@ class Solution:
         
         visited = [False] * n
         answer = 0
-        
+
         def dfs(node: int) -> tuple[int, int]:
             visited[node] = True
-            vertex_count = 1
+            vertex_sum = 1
             degree_sum = len(graph[node])
-
             for neighbor in graph[node]:
                 if not visited[neighbor]:
-                    child_vertices, child_degree_sum = dfs(neighbor)
-                    vertex_count += child_vertices
+                    child_vertex_sum, child_degree_sum = dfs(neighbor)
+                    vertex_sum += child_vertex_sum
                     degree_sum += child_degree_sum
             
-            return vertex_count, degree_sum
+            return vertex_sum, degree_sum
         
         for node in range(n):
             if not visited[node]:
-                vertex_count, degree_sum = dfs(node)
-            
-                real_edge = degree_sum // 2 
-                expected_edges = vertex_count * (vertex_count - 1) // 2
+                vertex_sum, degree_sum = dfs(node)
+                expected_degree_sum = vertex_sum * (vertex_sum - 1) // 2
+                real_degree_sum = degree_sum // 2
 
-                if expected_edges == real_edge:
+                if real_degree_sum == expected_degree_sum:
                     answer += 1
         
         return answer
-
 
 
 
