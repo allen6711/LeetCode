@@ -1,56 +1,9 @@
 class Solution:
     def wordPatternMatch(self, pattern: str, s: str) -> bool:
-        mapping = {}
-        visited = set()
-
-        def backtrack(pattern_index: int, s_index: int) -> bool:
-            if pattern_index == len(pattern) and s_index == len(s):
-                return True
-            
-            if pattern_index == len(pattern) or s_index == len(s):
-                return False
-            
-            ch = pattern[pattern_index]
-
-            if ch in mapping:
-                word = mapping[ch]
-                if not s.startswith(word, s_index):
-                    return False
-                
-                return backtrack(pattern_index + 1, s_index + len(word))
-            
-            for end in range(s_index + 1, len(s) + 1):
-                candidate = s[s_index:end]
-
-                if candidate in visited:
-                    continue
-
-                mapping[ch] = candidate
-                visited.add(candidate)
-
-                if backtrack(pattern_index + 1, end):
-                    return True
-                
-                del mapping[ch]
-                visited.remove(candidate)
-            
-            return False
-        
-        return backtrack(0, 0)
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
+        # m: length of pattern
+        # n: length of string
+        # O(n^m)
+        # O(m+n)
         mapping = {}
         used = set()
 
