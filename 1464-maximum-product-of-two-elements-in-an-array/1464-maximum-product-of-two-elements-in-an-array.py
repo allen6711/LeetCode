@@ -1,5 +1,7 @@
 class Solution:
     def maxProduct(self, nums: List[int]) -> int:
+        # O(n)
+        # O(1)
         max1 = float('-inf')
         max2 = float('-inf')
         for num in nums:
@@ -8,5 +10,5 @@ class Solution:
                 max1 = num
             elif num > max2:
                 max2 = num
-                
+
         return (max1 - 1) * (max2 - 1)
