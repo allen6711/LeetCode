@@ -1,5 +1,33 @@
 class Solution:
     def longestPalindrome(self, s: str) -> str:
+        # DP
+        #
+        #
+        n = len(s)
+        # is dp[i][j] = s[i:j + 1] palindrome
+        dp = [[False] * n for _ in range(n)]
+        start = 0
+        max_len = 1
+
+        # Single character must be palindrom
+        for i in range(n):
+            dp[i][i] = True
+        
+        # length = substring
+        for length in range(2, n + 1):
+            for i in range(n - length + 1):  # i 最終會走到n-length (最後一個substring的位置)
+                j = i + length - 1           # j 開始會從i + length - 1的地方開始
+                if s[i] == s[j]:
+                    if length <= 3:
+                        dp[i][j] = True
+                    else:
+                        dp[i][j] = dp[i + 1][j - 1]
+                
+                if dp[i][j] and length > max_len:
+                    start = i
+                    max_len = length
+        
+        return s[start:start + max_len]
         # O(n)
         # O(1)
         max_length = 0
