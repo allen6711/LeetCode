@@ -6,15 +6,18 @@ class Solution:
         def extand(left: int, right: int) -> str:
             nonlocal max_len, ans
             while left >= 0 and right < n and s[left] == s[right]:
-                if len(s[left:right + 1]) > max_len:
+                cur_length = right - left + 1
+                if cur_length > max_len:
                     ans = s[left:right + 1]
-                    max_len = len(s[left: right + 1])
+                    max_len = cur_length
                 
                 left -= 1
                 right += 1
         
         for i in range(n):
+            # Odd
             extand(i, i)
+            # Even
             extand(i, i + 1)
         
         return ans
