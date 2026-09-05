@@ -398,6 +398,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0981-time-based-key-value-store](https://github.com/allen6711/LeetCode/tree/master/0981-time-based-key-value-store) |
 | [1004-max-consecutive-ones-iii](https://github.com/allen6711/LeetCode/tree/master/1004-max-consecutive-ones-iii) |
 | [1185-find-in-mountain-array](https://github.com/allen6711/LeetCode/tree/master/1185-find-in-mountain-array) |
+| [1802-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/allen6711/LeetCode/tree/master/1802-maximum-value-at-a-given-index-in-a-bounded-array) |
 | [2045-cutting-ribbons](https://github.com/allen6711/LeetCode/tree/master/2045-cutting-ribbons) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/allen6711/LeetCode/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/allen6711/LeetCode/tree/master/3532-path-existence-queries-in-a-graph-i) |
@@ -513,6 +514,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0380-insert-delete-getrandom-o1](https://github.com/allen6711/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0412-fizz-buzz](https://github.com/allen6711/LeetCode/tree/master/0412-fizz-buzz) |
 | [1259-handshakes-that-dont-cross](https://github.com/allen6711/LeetCode/tree/master/1259-handshakes-that-dont-cross) |
+| [1802-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/allen6711/LeetCode/tree/master/1802-maximum-value-at-a-given-index-in-a-bounded-array) |
 | [2965-find-missing-and-repeated-values](https://github.com/allen6711/LeetCode/tree/master/2965-find-missing-and-repeated-values) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/allen6711/LeetCode/tree/master/3658-gcd-of-odd-and-even-sums) |
 | [3754-concatenate-non-zero-digits-and-multiply-by-sum-i](https://github.com/allen6711/LeetCode/tree/master/3754-concatenate-non-zero-digits-and-multiply-by-sum-i) |
@@ -691,6 +693,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0253-meeting-rooms-ii](https://github.com/allen6711/LeetCode/tree/master/0253-meeting-rooms-ii) |
 | [0680-valid-palindrome-ii](https://github.com/allen6711/LeetCode/tree/master/0680-valid-palindrome-ii) |
 | [0767-reorganize-string](https://github.com/allen6711/LeetCode/tree/master/0767-reorganize-string) |
+| [1802-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/allen6711/LeetCode/tree/master/1802-maximum-value-at-a-given-index-in-a-bounded-array) |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/allen6711/LeetCode/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 ## Data Stream
 |  |
