@@ -1,5 +1,7 @@
 class Solution:
     def nextGreaterElements(self, nums: List[int]) -> List[int]:
+        # O(n)
+        # O(n)
         n = len(nums)
         ans = [-1] * n
         stack = []
@@ -14,4 +16,3 @@ class Solution:
                 stack.append(index)
         
         return ans
-            
