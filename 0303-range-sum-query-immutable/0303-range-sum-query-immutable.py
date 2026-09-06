@@ -1,5 +1,6 @@
 class NumArray:
-
+    # O(n)
+    # O(n)
     def __init__(self, nums: List[int]):
         self.prefix = [0]
 
