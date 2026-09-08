@@ -1,5 +1,7 @@
 class Solution:
     def removeKdigits(self, num: str, k: int) -> str:
+        # O(n)
+        # O(n)
         stack = []
 
         for digit in num:
