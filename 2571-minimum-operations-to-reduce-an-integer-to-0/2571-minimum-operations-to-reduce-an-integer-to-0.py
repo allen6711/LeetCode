@@ -4,6 +4,8 @@ class Solution:
         # n -= 2^i
         # In binary situation
         # Single 1, Consecutive 1
+        # O(logn)
+        # O(1)
         operations = 0
 
         while n > 0:
