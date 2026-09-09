@@ -546,6 +546,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0222-count-complete-tree-nodes](https://github.com/allen6711/LeetCode/tree/master/0222-count-complete-tree-nodes) |
 | [0268-missing-number](https://github.com/allen6711/LeetCode/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/allen6711/LeetCode/tree/master/0287-find-the-duplicate-number) |
+| [2571-minimum-operations-to-reduce-an-integer-to-0](https://github.com/allen6711/LeetCode/tree/master/2571-minimum-operations-to-reduce-an-integer-to-0) |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/allen6711/LeetCode/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 ## Binary Search Tree
 |  |
@@ -705,6 +706,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0680-valid-palindrome-ii](https://github.com/allen6711/LeetCode/tree/master/0680-valid-palindrome-ii) |
 | [0767-reorganize-string](https://github.com/allen6711/LeetCode/tree/master/0767-reorganize-string) |
 | [1802-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/allen6711/LeetCode/tree/master/1802-maximum-value-at-a-given-index-in-a-bounded-array) |
+| [2571-minimum-operations-to-reduce-an-integer-to-0](https://github.com/allen6711/LeetCode/tree/master/2571-minimum-operations-to-reduce-an-integer-to-0) |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/allen6711/LeetCode/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 ## Data Stream
 |  |
@@ -736,6 +738,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0516-longest-palindromic-subsequence](https://github.com/allen6711/LeetCode/tree/master/0516-longest-palindromic-subsequence) |
 | [0542-01-matrix](https://github.com/allen6711/LeetCode/tree/master/0542-01-matrix) |
 | [1259-handshakes-that-dont-cross](https://github.com/allen6711/LeetCode/tree/master/1259-handshakes-that-dont-cross) |
+| [2571-minimum-operations-to-reduce-an-integer-to-0](https://github.com/allen6711/LeetCode/tree/master/2571-minimum-operations-to-reduce-an-integer-to-0) |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/allen6711/LeetCode/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3620-network-recovery-pathways](https://github.com/allen6711/LeetCode/tree/master/3620-network-recovery-pathways) |
 ## Simulation
