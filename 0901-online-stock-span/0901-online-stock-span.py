@@ -4,6 +4,8 @@ class StockSpanner:
         self.stack = []
 
     def next(self, price: int) -> int:
+        # O(1)
+        # O(n)
         span = 1
 
         while self.stack and self.stack[-1][0] <= price:
