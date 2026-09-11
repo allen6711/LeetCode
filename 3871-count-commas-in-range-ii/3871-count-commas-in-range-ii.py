@@ -1,5 +1,7 @@
 class Solution:
     def countCommas(self, n: int) -> int:
+        # O(logn)
+        # O(1)
         ans = 0
         threshold = 1000
 
