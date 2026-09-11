@@ -7,6 +7,8 @@ class Solution:
         # [(2n / k) + 1 - k] = x
         # x = [(2n + k - k^2)] / k
         # x = [2n - k(k - 1)] / k
+        # O(sqrt(n))    ->  k(k + 1) <= 2n
+        # O(1)
         ans = 0 # x
         k = 1
 
