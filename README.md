@@ -260,6 +260,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2045-cutting-ribbons](https://github.com/allen6711/LeetCode/tree/master/2045-cutting-ribbons) |
 | [2149-rearrange-array-elements-by-sign](https://github.com/allen6711/LeetCode/tree/master/2149-rearrange-array-elements-by-sign) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/allen6711/LeetCode/tree/master/2812-find-the-safest-path-in-a-grid) |
+| [2866-beautiful-towers-ii](https://github.com/allen6711/LeetCode/tree/master/2866-beautiful-towers-ii) |
 | [2965-find-missing-and-repeated-values](https://github.com/allen6711/LeetCode/tree/master/2965-find-missing-and-repeated-values) |
 | [3010-divide-an-array-into-subarrays-with-minimum-cost-i](https://github.com/allen6711/LeetCode/tree/master/3010-divide-an-array-into-subarrays-with-minimum-cost-i) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/allen6711/LeetCode/tree/master/3286-find-a-safe-walk-through-a-grid) |
@@ -639,6 +640,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0739-daily-temperatures](https://github.com/allen6711/LeetCode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/allen6711/LeetCode/tree/master/0883-car-fleet) |
 | [0901-online-stock-span](https://github.com/allen6711/LeetCode/tree/master/0901-online-stock-span) |
+| [2866-beautiful-towers-ii](https://github.com/allen6711/LeetCode/tree/master/2866-beautiful-towers-ii) |
 ## Database
 |  |
 | ------- |
@@ -669,6 +671,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0739-daily-temperatures](https://github.com/allen6711/LeetCode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/allen6711/LeetCode/tree/master/0883-car-fleet) |
 | [0901-online-stock-span](https://github.com/allen6711/LeetCode/tree/master/0901-online-stock-span) |
+| [2866-beautiful-towers-ii](https://github.com/allen6711/LeetCode/tree/master/2866-beautiful-towers-ii) |
 ## Divide and Conquer
 |  |
 | ------- |
