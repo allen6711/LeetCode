@@ -3,6 +3,8 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
+        # O(n)
+        # O(1)
         n = len(nums)
         # Find the first nums[i] < nums[i + 1]
         i = n - 2
