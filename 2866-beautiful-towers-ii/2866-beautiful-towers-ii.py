@@ -1,5 +1,7 @@
 class Solution:
     def maximumSumOfHeights(self, maxHeights: List[int]) -> int:
+        # O(n)
+        # O(n)
         n = len(maxHeights)
 
         left = [0] * n
