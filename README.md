@@ -527,6 +527,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0380-insert-delete-getrandom-o1](https://github.com/allen6711/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0412-fizz-buzz](https://github.com/allen6711/LeetCode/tree/master/0412-fizz-buzz) |
 | [0829-consecutive-numbers-sum](https://github.com/allen6711/LeetCode/tree/master/0829-consecutive-numbers-sum) |
+| [0836-rectangle-overlap](https://github.com/allen6711/LeetCode/tree/master/0836-rectangle-overlap) |
 | [1259-handshakes-that-dont-cross](https://github.com/allen6711/LeetCode/tree/master/1259-handshakes-that-dont-cross) |
 | [1802-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/allen6711/LeetCode/tree/master/1802-maximum-value-at-a-given-index-in-a-bounded-array) |
 | [2965-find-missing-and-repeated-values](https://github.com/allen6711/LeetCode/tree/master/2965-find-missing-and-repeated-values) |
@@ -795,6 +796,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0149-max-points-on-a-line](https://github.com/allen6711/LeetCode/tree/master/0149-max-points-on-a-line) |
+| [0836-rectangle-overlap](https://github.com/allen6711/LeetCode/tree/master/0836-rectangle-overlap) |
 ## Graph Theory
 |  |
 | ------- |
