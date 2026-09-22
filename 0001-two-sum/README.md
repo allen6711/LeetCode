@@ -38,4 +38,38 @@
 </ul>
 
 <p>&nbsp;</p>
-<strong>Follow-up:&nbsp;</strong>Can you come up with an algorithm that is less than <code>O(n<sup>2</sup>)</code><font face="monospace">&nbsp;</font>time complexity?
+<strong>Follow-up:&nbsp;</strong>Can you come up with an algorithm that is less than <code>O(n<sup>2</sup>)</code><font face="monospace">&nbsp;</font>time complexity?  
+
+<br><br>
+
+***Interview***
+“Let me first restate the problem to make sure I understand it correctly.
+We’re given an integer array nums and a target value, and we need to return the indices of two different elements whose sum equals the target.
+
+A straightforward solution would be to check every pair of numbers. That would take O(n squared) time and O(1) extra space.
+
+We can improve this to O(n) time using a hash map.
+
+The key observation is that when I’m looking at a number x, I know exactly what number I need: target - x.
+
+So as I iterate through the array, I’ll check whether this complement has already appeared in the hash map.
+
+If it has, then I’ve found the answer, and I can return the stored index together with the current index.
+
+Otherwise, I store the current number and its index in the hash map and continue.”  
+
+
+***Coding***
+“I’ll use a dictionary called seen to map each number to its index.
+
+For every number, I calculate the complement.
+
+Importantly, I check the complement before inserting the current number. This guarantees that I don’t accidentally use the same element twice.
+
+If the complement already exists, I return its index and the current index. Otherwise, I store the current number.”
+
+
+***Complexicity***
+“The time complexity is O(n), because we scan the array once, and hash map lookup and insertion are O(1) on average.
+
+The space complexity is O(n) in the worst case because we may store every element in the hash map.”
