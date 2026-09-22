@@ -1,17 +1,5 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
-
-
-
-
-
-
-
-
-
-
-
-
         # O(n)
         # O(1)
         left = 0
