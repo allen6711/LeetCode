@@ -42,8 +42,10 @@
 
 <br><br>
 
-***Interview***
+Problem-Solving Approach
+
 “Let me first restate the problem to make sure I understand it correctly.
+
 We’re given an integer array nums and a target value, and we need to return the indices of two different elements whose sum equals the target.
 
 A straightforward solution would be to check every pair of numbers. That would take O(n squared) time and O(1) extra space.
@@ -56,20 +58,22 @@ So as I iterate through the array, I’ll check whether this complement has alre
 
 If it has, then I’ve found the answer, and I can return the stored index together with the current index.
 
-Otherwise, I store the current number and its index in the hash map and continue.”  
+Otherwise, I store the current number and its index in the hash map and continue.”
 
+Coding Walkthrough
 
-***Coding***
 “I’ll use a dictionary called seen to map each number to its index.
 
 For every number, I calculate the complement.
 
 Importantly, I check the complement before inserting the current number. This guarantees that I don’t accidentally use the same element twice.
 
-If the complement already exists, I return its index and the current index. Otherwise, I store the current number.”
+If the complement already exists, I return its index and the current index.
 
+Otherwise, I store the current number and continue.”
 
-***Complexicity***
+Time and Space Complexity
+
 “The time complexity is O(n), because we scan the array once, and hash map lookup and insertion are O(1) on average.
 
 The space complexity is O(n) in the worst case because we may store every element in the hash map.”
