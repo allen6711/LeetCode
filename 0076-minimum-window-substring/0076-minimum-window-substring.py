@@ -1,35 +1,34 @@
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
-        need_ch_num = Counter(t)
+        count_t = Counter(t)
         window = defaultdict(int)
-        need_ch = len(need_ch_num)
-        now_have = 0
-
+        need_ch = len(count_t)
+        have_now = 0
         left = 0
         best_left = 0
         best_len = float('inf')
 
         for right, char in enumerate(s):
             window[char] += 1
-            if window[char] == need_ch_num[char]:
-                now_have += 1
-
-            while now_have == need_ch:
+            if window[char] == count_t[char]:
+                have_now += 1
+            while have_now == need_ch:
                 cur_len = right - left + 1
                 if cur_len < best_len:
                     best_len = cur_len
                     best_left = left
-                
-                window[s[left]] -= 1
-                if s[left] in need_ch_num and window[s[left]] < need_ch_num[s[left]]:
-                    now_have -= 1
-
+                    
+                left_char = s[left]
+                window[left_char] -= 1
+                if window[left_char] < count_t[left_char]:
+                    have_now -= 1
                 left += 1
-        
+    
         if best_len == float('inf'):
             return ""
-        
+
         return s[best_left:best_left + best_len]
+
 
 
 
