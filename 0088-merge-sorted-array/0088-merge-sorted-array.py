@@ -3,6 +3,36 @@ class Solution:
         """
         Do not return anything, modify nums1 in-place instead.
         """
+        left = m - 1
+        right = n - 1
+        middle = m + n - 1
+
+        while left >= 0 and right >= 0:
+            if nums1[left] > nums2[right]:
+                nums1[middle] = nums1[left]
+                left -= 1
+            else:
+                nums1[middle] = nums2[right]
+                right -= 1
+            middle -= 1
+        
+        while right >= 0:
+            nums1[middle] = nums2[right]
+            right -= 1
+            middle -= 1
+        
+        return nums1
+            
+
+
+
+
+
+
+
+
+
+
         # O((m+n)log(m+n))
         # O(1)
         # for i in range(n):
