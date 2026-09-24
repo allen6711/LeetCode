@@ -1,43 +1,5 @@
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
-        count_t = Counter(t)
-        window = defaultdict(int)
-        need_ch = len(count_t)
-        have_now = 0
-        left = 0
-        best_left = 0
-        best_len = float('inf')
-
-        for right, char in enumerate(s):
-            window[char] += 1
-            if window[char] == count_t[char]:
-                have_now += 1
-            while have_now == need_ch:
-                cur_len = right - left + 1
-                if cur_len < best_len:
-                    best_len = cur_len
-                    best_left = left
-                    
-                left_char = s[left]
-                window[left_char] -= 1
-                if window[left_char] < count_t[left_char]:
-                    have_now -= 1
-                left += 1
-    
-        if best_len == float('inf'):
-            return ""
-
-        return s[best_left:best_left + best_len]
-
-
-
-
-
-
-
-
-
-
         # O(n^3)
         # O(k)
         # if not s or not t:
