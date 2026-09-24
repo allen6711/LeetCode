@@ -2,8 +2,10 @@ class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         ans = defaultdict(list)
         for str in strs:
-            group = Counter(str)
-            key = tuple(sorted(group.items()))
+            count = [0] * 26
+            for s in str:
+                count[ord(s) - ord('a')] += 1
+            key = tuple(count)
             ans[key].append(str)
         
         return list(ans.values())
