@@ -10,13 +10,13 @@ class Solution:
         # return list(groups.values())
         # O(klogk)
         # O(nklogk)
-        groups = defaultdict(list)
-        for str in strs:
-            count = Counter(str)
-            key = tuple(sorted(count.items()))
-            groups[key].append(str)
+        # groups = defaultdict(list)
+        # for str in strs:
+        #     count = Counter(str)
+        #     key = tuple(sorted(count.items()))
+        #     groups[key].append(str)
         
-        return list(groups.values())
+        # return list(groups.values())
         # O(nk)
         # O(nk)
         groups = defaultdict(list)
