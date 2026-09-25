@@ -670,6 +670,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0303-range-sum-query-immutable](https://github.com/allen6711/LeetCode/tree/master/0303-range-sum-query-immutable) |
 | [0380-insert-delete-getrandom-o1](https://github.com/allen6711/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0901-online-stock-span](https://github.com/allen6711/LeetCode/tree/master/0901-online-stock-span) |
+| [0933-number-of-recent-calls](https://github.com/allen6711/LeetCode/tree/master/0933-number-of-recent-calls) |
 | [0981-time-based-key-value-store](https://github.com/allen6711/LeetCode/tree/master/0981-time-based-key-value-store) |
 ## Monotonic Stack
 |  |
@@ -743,6 +744,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0170-two-sum-iii-data-structure-design](https://github.com/allen6711/LeetCode/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0901-online-stock-span](https://github.com/allen6711/LeetCode/tree/master/0901-online-stock-span) |
+| [0933-number-of-recent-calls](https://github.com/allen6711/LeetCode/tree/master/0933-number-of-recent-calls) |
 ## Recursion
 |  |
 | ------- |
@@ -857,6 +859,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/allen6711/LeetCode/tree/master/0239-sliding-window-maximum) |
+| [0933-number-of-recent-calls](https://github.com/allen6711/LeetCode/tree/master/0933-number-of-recent-calls) |
 ## Monotonic Queue
 |  |
 | ------- |
