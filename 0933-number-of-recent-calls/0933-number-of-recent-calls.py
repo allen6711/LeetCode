@@ -1,4 +1,6 @@
 class RecentCounter:
+    # O(1)
+    # O(k)
 
     def __init__(self):
         self.queue = deque()
