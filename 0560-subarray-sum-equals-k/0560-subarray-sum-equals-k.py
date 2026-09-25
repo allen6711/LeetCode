@@ -10,6 +10,7 @@ class Solution:
                 ans += prefix_count[prefix_sum - k]
                 
             prefix_count[prefix_sum] += 1
+        return ans
         # O(n^2)
         # O(1)
         # n = len(nums)
