@@ -7,8 +7,8 @@ class Solution:
         for num in nums:
             prefix_sum += num
             if prefix_sum - k in prefix_count:
-                prefix_count[prefix_sum - k] += 1
                 ans += prefix_count[prefix_sum - k]
+                
             prefix_count[prefix_sum] += 1
         # O(n^2)
         # O(1)
