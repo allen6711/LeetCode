@@ -1,7 +1,7 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         # O(n)
-        # O()
+        # O(n)
         # 因為括號要遵守：最後打開的括號，要最先被關閉。
         # 也就是：Last In, First Out (LIFO)
         pair = {")": "(", "]": "[", "}": "{"}
