@@ -9,6 +9,37 @@ class Node:
 
 class Solution:
     def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
+        # Hash Map method
+        if not head:
+            return None
+        
+        old_to_new = {}
+        # Pass 1: copy every node
+        cur = head
+        while cur:
+            old_to_new[cur] = Node(cur.val)
+            cur = cur.next
+        
+        # Pass 2: connect next and random
+        cur = head
+        while cur:
+            old_to_new[cur].next = old_to_new.get(cur.next) # A->B, cur.next is B
+            old_to_new[cur].random = old_to_new.get(cur.random)
+            cur = cur.next
+        
+        return old_to_new[head]
+
+
+
+
+
+
+
+
+
+
+
+        
         if not head:
             return None
         # Copy node
@@ -39,15 +70,6 @@ class Solution:
             cur = copy.next
         
         return dummy.next
-
-            
-
-
-
-
-
-
-
 
         # if not head:
         #     return None
