@@ -11,10 +11,8 @@ class Solution:
     def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
         if not head:
             return None
-        
         old_to_new = {}
         cur = head
-        # {A: A', B: B'. C: C'}
         while cur:
             old_to_new[cur] = Node(cur.val)
             cur = cur.next
@@ -26,7 +24,6 @@ class Solution:
             cur = cur.next
         
         return old_to_new[head]
-
 
 
         # Hash Map method
