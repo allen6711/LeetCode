@@ -9,6 +9,44 @@ class Node:
 
 class Solution:
     def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
+        if not head:
+            return None
+        cur = head
+        # A->A'->B->B'->C->C'
+        while cur:
+            copy = Node(cur.val)
+            copy.next = cur.next
+            cur.next = copy
+            cur = copy.next
+        
+        # Random
+        cur = head
+        while cur:
+            copy = cur.next
+            if cur.random:
+                copy.random = cur.random.next
+            
+            cur = copy.next
+        
+        # Split
+        cur = head
+        copy_head = head.next
+        while cur:
+            copy = cur.next
+            cur.next = copy.next
+            if cur.next:
+                copy.next = cur.next.next
+                
+            cur = cur.next
+        
+        return copy_head
+
+
+
+
+
+
+
         # Hash Map method
         # O(n)
         # O(n)
