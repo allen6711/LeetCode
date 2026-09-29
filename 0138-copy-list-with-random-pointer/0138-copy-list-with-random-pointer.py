@@ -35,7 +35,7 @@ class Solution:
             copy = cur.next
             cur.next = copy.next
             if cur.next:
-                copy.next = copy.next.next
+                copy.next = cur.next.next
                 
             cur = cur.next
         
