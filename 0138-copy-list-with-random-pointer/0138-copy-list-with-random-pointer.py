@@ -11,19 +11,33 @@ class Solution:
     def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
         if not head:
             return None
-        old_to_new = {}
-        cur = head
-        while cur:
-            old_to_new[cur] = Node(cur.val)
-            cur = cur.next
         
         cur = head
         while cur:
-            old_to_new[cur].next = old_to_new.get(cur.next)
-            old_to_new[cur].random = old_to_new.get(cur.random)
+            copy = Node(cur.val)
+            copy.next = cur.next
+            cur.next = copy
+            cur = copy.next
+        
+        cur = head
+        while cur:
+            copy = cur.next
+            if cur.random:
+                copy.random = cur.random.next
+            
+            cur = copy.next
+        
+        cur = head
+        new_head = head.next
+        while cur:
+            copy = cur.next
+            cur.next = copy.next
+            if copy.next:
+                copy.next = copy.next.next
+
             cur = cur.next
         
-        return old_to_new[head]
+        return new_head
 
 
         # Hash Map method
