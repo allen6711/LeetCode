@@ -13,6 +13,8 @@ class Solution:
         #     left += 1
         
         # return ans
+        # O(n)
+        # O(k)
         dq = deque()
         ans = []
         n = len(nums)
