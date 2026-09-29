@@ -1,5 +1,7 @@
 class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:
+        # O(n*2^n)
+        # O(n*2^n)
         result = []
         n = len(nums)
         def backtracking(start, path):
