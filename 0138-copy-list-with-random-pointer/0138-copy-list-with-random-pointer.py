@@ -19,25 +19,25 @@ class Solution:
             cur.next = copy
             cur = copy.next
         
+        # for random
         cur = head
         while cur:
             copy = cur.next
             if cur.random:
                 copy.random = cur.random.next
-            
             cur = copy.next
         
         cur = head
-        new_head = head.next
+        copy_head = head.next
         while cur:
             copy = cur.next
             cur.next = copy.next
             if copy.next:
                 copy.next = copy.next.next
-
             cur = cur.next
         
-        return new_head
+        return copy_head
+            
 
 
         # Hash Map method
