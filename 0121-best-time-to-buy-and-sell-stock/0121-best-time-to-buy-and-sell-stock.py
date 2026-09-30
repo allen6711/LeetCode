@@ -1,15 +1,29 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        left = 0
-        n = len(prices)
         max_profit = 0
-        for right in range(1, n):
+        n = len(prices)
+        left = 0
+        for right in range(n):
             if prices[right] < prices[left]:
                 left = right
+            
             else:
                 max_profit = max(max_profit, prices[right] - prices[left])
-        
+            
         return max_profit
+
+
+
+
+
+
+
+
+
+
+
+
+
         # O(n^2)
         # O(1)
         # n = len(prices)
