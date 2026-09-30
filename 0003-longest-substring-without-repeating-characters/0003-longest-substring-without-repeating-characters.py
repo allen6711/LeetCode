@@ -1,5 +1,32 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
+        visited = set()
+        left = 0
+        n = len(s)
+        best = 0
+        for right in range(n):
+            while s[right] in visited:
+                visited.remove(s[left])
+                left += 1
+
+            visited.add(s[right])
+            best = max(best, right - left + 1)
+        
+        return best
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         # O(n^3)
         # O(n)
         # n = len(s)
