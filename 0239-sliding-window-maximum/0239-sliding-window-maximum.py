@@ -1,5 +1,37 @@
 class Solution:
     def maxSlidingWindow(self, nums: list[int], k: int) -> list[int]:
+        # keep the max index on left
+        dq = deque()
+        ans = []
+        n = len(nums)
+        for i in range(n):
+            # remove the left once window is larger than k
+            if dq and i - k >= dq[0]:
+                dq.popleft()
+            
+            while dq and nums[i] > nums[dq[-1]]:
+                dq.pop()
+
+            dq.append(i)
+            if i - k + 1 >= 0:
+                ans.append(nums[dq[0]])
+        
+        return ans
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         dq = deque()
         ans = []
         n = len(nums)
