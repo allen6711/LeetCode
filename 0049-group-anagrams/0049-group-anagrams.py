@@ -9,7 +9,7 @@ class Solution:
             
             key = tuple(count)
             group_dict[key].append(s)
-        
+
         return [value for value in group_dict.values()]
             
 
