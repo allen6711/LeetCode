@@ -3,6 +3,35 @@ class Solution:
         """
         Do not return anything, modify nums1 in-place instead.
         """
+        left = m - 1
+        right = n - 1
+        middle = m + n - 1
+        while left >= 0 and right >= 0:
+            if nums2[right] > nums1[left]:
+                nums1[middle] = nums2[right]
+                right -= 1
+                
+            else:
+                nums1[middle] = nums1[left]
+                left -= 1
+                
+            middle -= 1
+        
+        while right >= 0:
+            nums1[middle] = nums2[right]
+            right -= 1
+            middle -= 1
+
+
+
+
+
+
+
+
+
+
+
         # O((m+n)log(m+n))
         # O(1)
         # for i in range(n):
@@ -11,21 +40,21 @@ class Solution:
         # nums1.sort()
         # O(m+n)
         # O(1)
-        left = m - 1
-        right = n - 1
-        middle = m + n - 1
-        while left >= 0 and right >= 0:
-            if nums1[left] > nums2[right]:
-                nums1[middle] = nums1[left]
-                left -= 1
-            else:
-                nums1[middle] = nums2[right]
-                right -= 1
-            middle -= 1
+        # left = m - 1
+        # right = n - 1
+        # middle = m + n - 1
+        # while left >= 0 and right >= 0:
+        #     if nums1[left] > nums2[right]:
+        #         nums1[middle] = nums1[left]
+        #         left -= 1
+        #     else:
+        #         nums1[middle] = nums2[right]
+        #         right -= 1
+        #     middle -= 1
         
-        # Only copy the remaining elements from nums2.
-        # Any remaining elements in nums1 are already in the correct position
-        while right >= 0:
-            nums1[middle] = nums2[right]
-            right -= 1
-            middle -= 1
+        # # Only copy the remaining elements from nums2.
+        # # Any remaining elements in nums1 are already in the correct position
+        # while right >= 0:
+        #     nums1[middle] = nums2[right]
+        #     right -= 1
+        #     middle -= 1
