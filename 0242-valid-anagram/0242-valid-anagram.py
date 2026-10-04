@@ -1,5 +1,7 @@
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
+        if len(s) != len(t):
+            return False
         count_s = [0] * 26
         count_t = [0] * 26
         for char_s in s:
@@ -11,7 +13,7 @@ class Solution:
 
 
 
-        if len(s) > len(t):
+        if len(s) != len(t):
             return False
         
         s_counter = Counter(s)
