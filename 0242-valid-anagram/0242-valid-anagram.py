@@ -1,5 +1,24 @@
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
+        if len(s) > len(t):
+            return False
+        
+        s_counter = Counter(s)
+        return Counter(t) == s_counter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         # O(nlogn)
         # O(n)
         # return sorted(s) == sorted(t)
