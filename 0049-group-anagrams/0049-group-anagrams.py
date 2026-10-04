@@ -1,12 +1,15 @@
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         ans = defaultdict(list)
-
         for s in strs:
-            key = tuple(sorted(s))
+            count = [0] * 26
+            for char in s:
+                count[ord(char) - ord('a')] += 1
+
+            key = tuple(count)
             ans[key].append(s)
-        
-        return [value for value in ans.values()]
+
+        return list(ans.values())
 
 
 
@@ -32,8 +35,7 @@ class Solution:
         # O(nklogk)
         # groups = defaultdict(list)
         # for str in strs:
-        #     count = Counter(str)
-        #     key = tuple(sorted(count.items()))
+        #     key = tuple(sorted(str))
         #     groups[key].append(str)
         
         # return list(groups.values())
