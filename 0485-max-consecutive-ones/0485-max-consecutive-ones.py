@@ -1,5 +1,7 @@
 class Solution:
     def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
+        # O(n)
+        # O(1)
         left = 0
         n = len(nums)
         max_count = 0
@@ -10,19 +12,6 @@ class Solution:
                 left = right + 1
         
         return max_count
-
-
-
-
-
-
-
-
-
-
-
-
-
         # O(n)
         # O(1)
         count = 0
