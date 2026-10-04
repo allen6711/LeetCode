@@ -1,5 +1,25 @@
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        ans = defaultdict(list)
+
+        for s in strs:
+            key = tuple(sorted(s))
+            ans[key].append(s)
+        
+        return [value for value in ans.values()]
+
+
+
+
+
+
+
+
+
+
+
+
+
         # O(klogk)
         # O(n*klogk)
         # groups = defaultdict(list)
