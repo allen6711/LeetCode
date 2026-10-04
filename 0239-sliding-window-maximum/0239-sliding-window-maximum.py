@@ -1,32 +1,5 @@
 class Solution:
     def maxSlidingWindow(self, nums: list[int], k: int) -> list[int]:
-        dq = deque()
-        left = 0
-        n = len(nums)
-        ans = []
-        for right in range(n):
-            if dq and dq[0] <= right - k:
-                dq.popleft()
-            
-            while dq and nums[dq[-1]] <= nums[right]:
-                dq.pop()
-            
-            dq.append(right)
-
-            if right >= k - 1:
-                ans.append(nums[dq[0]])
-
-        return ans
-
-
-
-
-
-
-
-
-
-
         # k: length of slice
         # O(nk)
         # O(k)
@@ -50,7 +23,7 @@ class Solution:
             while dq and dq[0] <= right - k:
                 dq.popleft()
             
-            #
+            # Maintain decreasing deque
             while dq and nums[dq[-1]] <= nums[right]:
                 dq.pop()
             
