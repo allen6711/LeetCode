@@ -3,7 +3,6 @@ class Solution:
         n = len(s)
         left = 0
         right = n - 1
-
         while left < right:
             while left < right and not s[left].isalnum():
                 left += 1
@@ -15,7 +14,7 @@ class Solution:
             
             left += 1
             right -= 1
-        
+
         return True
                 
 
