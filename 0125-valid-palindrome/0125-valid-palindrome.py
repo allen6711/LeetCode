@@ -1,35 +1,8 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        left, right = 0, len(s) - 1
-        while left < right:
-            while left < right and not s[left].isalnum():
-                left += 1
-            while left < right and not s[right].isalnum():
-                right -= 1
-            if s[left].lower() != s[right].lower():
-                return False
-            
-            left += 1
-            right -= 1
-        
-        return True
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        left, right = 0, len(s) - 1
+        n = len(s)
+        left = 0
+        right = n - 1
 
         while left < right:
             while left < right and not s[left].isalnum():
@@ -44,65 +17,33 @@ class Solution:
             right -= 1
         
         return True
+                
 
-        # left, right = 0, len(s) - 1
-        # while left < right:
-        #     while left < right and not s[left].isalnum():
-        #         left += 1
-        #     while left < right and not s[right].isalnum():
-        #         right -= 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+        # O(n)
+        # O(1)
+        left, right = 0, len(s) - 1
+        while left < right:
+            while left < right and not s[left].isalnum():
+                left += 1
+            while left < right and not s[right].isalnum():
+                right -= 1
+            if s[left].lower() != s[right].lower():
+                return False
             
-        #     if s[left].lower() != s[right].lower():
-        #         return False
-            
-        #     left += 1
-        #     right -= 1
+            left += 1
+            right -= 1
         
-        # return True
-
-        # left, right = 0, len(s) - 1
-
-        # while left < right:
-        #     while left < right and not s[left].isalpha() and not s[left].isdigit():
-        #         left += 1
-        #     while left < right and not s[right].isalpha() and not s[right].isdigit():
-        #         right -= 1
-            
-        #     if s[left].lower() != s[right].lower():
-        #         return False
-        #     left += 1
-        #     right -= 1
-        
-        # return True
-
-        # left, right = 0, len(s) - 1
-
-        # while left < right:
-        #     while left < right and not s[left].isalpha() and not s[left].isdigit():
-        #         left += 1
-            
-        #     while left < right and not s[right].isalpha() and not s[right].isdigit():
-        #         right -= 1
-            
-        #     if left < right and s[left].lower() != s[right].lower():
-        #         return False
-            
-        #     left += 1
-        #     right -= 1
-
-        # return True
-
-
-        # start, end = 0, len(s) - 1
-
-        # while start < end:
-        #     while start < end and not s[start].isalpha() and not s[start].isdigit():
-        #         start += 1
-        #     while start < end and not s[end].isalpha() and not s[end].isdigit():
-        #         end -= 1
-        #     if start < end and s[start].lower() != s[end].lower():
-        #         return False
-        #     start += 1
-        #     end -= 1
-        
-        # return True
+        return True
