@@ -6,8 +6,8 @@ class Solution:
         
         m, n = len(nums1), len(nums2)
         left = 0
-        right = m - 1
-        while left < right:
+        right = m
+        while left <= right:
             partition1 = (left + right) // 2
             partition2 = (m + n + 1) // 2 - partition1
 
