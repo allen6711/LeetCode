@@ -1,5 +1,7 @@
 class Solution:
     def searchRange(self, nums: list[int], target: int) -> list[int]:
+        # O(logn)
+        # O(1)
         n = len(nums)
 
         def find_left(nums: list[int], target: int) -> int:
