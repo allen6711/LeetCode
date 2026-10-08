@@ -1,6 +1,6 @@
 class Solution:
     def splitArray(self, nums: list[int], k: int) -> int:
-        # O(nlogn)
+        # O(nlog(sum(nums)))
         # O(1)
         left = max(nums)
         right = sum(nums)
