@@ -1,5 +1,9 @@
 class Solution:
     def nextGreaterElement(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        # O(n+m)
+        # O(n)
+        # n = length of nums2
+        # m = length of nums1
         stack = []
         next_greater = defaultdict(int)
         for num in nums2:
@@ -13,7 +17,6 @@ class Solution:
             next_greater[stack.pop()] = -1
         
         return [next_greater[num] for num in nums1]
-
 
 
 
