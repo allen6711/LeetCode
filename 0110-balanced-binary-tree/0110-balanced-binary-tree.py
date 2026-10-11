@@ -6,105 +6,19 @@
 #         self.right = right
 class Solution:
     def isBalanced(self, root: Optional[TreeNode]) -> bool:
-        balanced, _ = self.validate(root)
-
-        return balanced
-
-    
-    def validate(self, root):
-        if root is None:
-            return True, 0
-        
-        balanced, left_height = self.validate(root.left)
-        if not balanced:
-            return False, 0
-
-        balanced, right_height = self.validate(root.right)
-        if not balanced:
-            return False, 0
-
-        return abs(left_height - right_height) <= 1, max(left_height, right_height) + 1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    #     balanced, _ = self.validate(root)
-
-    #     return balanced
-
-    # def validate(self, root):
-    #     if root is None:
-    #         return True, 0
-        
-    #     balanced, left_h = self.validate(root.left)
-    #     if not balanced:
-    #         # return balanced, left_h
-    #                          # it's not important for the left height
-    #         return balanced, 0
-
-    #     balanced, right_h = self.validate(root.right)
-    #     if not balanced:
-    #         # return balanced, right_h
-    #                          # it's not important for the left height
-    #         return balanced, 0
-
-    #     return abs(left_h - right_h) <= 1, max(left_h, right_h) + 1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        # def height(node: Optional[TreeNode]):
-        #     if node is None:
-        #         return 0
+        def dfs(node):
+            if not node:
+                return 0
             
-        #     lh = height(node.left)
-        #     if lh == -1:
-        #         return -1
+            left = dfs(node.left)
+            right = dfs(node.right)
 
-        #     rh = height(node.right)
-        #     if rh == -1:
-        #         return -1
+            if left == -1 or right == -1:
+                return -1
+            
+            if abs(left - right) > 1:
+                return -1
 
-        #     if abs(lh - rh) > 1:
-        #         return -1
-
-        #     return 1 + max(lh, rh)
+            return 1 + max(left, right)
         
-        # return height(root) != -1
+        return dfs(root) != -1
