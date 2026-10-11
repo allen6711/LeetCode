@@ -7,6 +7,8 @@
 
 class Solution:
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+        # O(n)
+        # O(n)
         if not root:
             return []
         dq = deque([root])
