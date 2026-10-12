@@ -1,5 +1,8 @@
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
+        # O(m*n)
+        # O(m*n)
+        # DFS
         rows, cols = len(grid), len(grid[0])
         islands = 0
         def dfs(r: int, c: int):
@@ -20,9 +23,9 @@ class Solution:
                     dfs(i, j)
         
         return islands
-            
         # O(m*n)
         # O(m*n)
+        # BFS
         if not grid and not grid[0]:
             return 0
         
@@ -47,21 +50,3 @@ class Solution:
                             q.append((nx, ny))
         
         return islands
-        # DFS
-        # def dfs(row, col):
-        #     grid[row][col] = '0'
-        #     for dx, dy in zip(directions[:-1], directions[1:]):
-        #         new_row, new_col = row + dx, col + dy
-        #         if 0 <= new_row < rows and 0 <= new_col < cols and grid[new_row][new_col] == '1':
-        #             dfs(new_row, new_col)
-
-        # island_count = 0
-        # directions = [-1, 0, 1, 0, -1]
-        # rows, cols = len(grid), len(grid[0])
-        # for row in range(rows):
-        #     for col in range(cols):
-        #         if grid[row][col] == '1':
-        #             dfs(row, col)
-        #             island_count += 1
-        
-        # return island_count
