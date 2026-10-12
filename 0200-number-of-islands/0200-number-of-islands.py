@@ -9,6 +9,7 @@ class Solution:
                 
                 dq = deque([(i, j)])
                 islands += 1
+                grid[i][j] = '0'
             
                 while dq:
                     x, y = dq.popleft()
