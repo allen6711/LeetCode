@@ -1,31 +1,5 @@
 class Solution:
     def subarraySum(self, nums: List[int], k: int) -> int:
-        prefix_sum = 0
-        visited_prefix = defaultdict(int)
-        visited_prefix[0] = 1
-        count = 0
-        for num in nums:
-            prefix_sum += num
-            if prefix_sum - k in visited_prefix:
-                count += visited_prefix[prefix_sum - k]
-            visited_prefix[prefix_sum] += 1
-        
-        return count
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
         # O(n^2)
         # O(1)
         # n = len(nums)
