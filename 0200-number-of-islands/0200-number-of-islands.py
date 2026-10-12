@@ -1,43 +1,5 @@
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
-        rows, cols = len(grid), len(grid[0])
-        islands = 0
-        for i in range(rows):
-            for j in range(cols):
-                if grid[i][j] == '0':
-                    continue
-                
-                dq = deque([(i, j)])
-                islands += 1
-                grid[i][j] = '0'
-            
-                while dq:
-                    x, y = dq.popleft()
-                    for dx, dy in ((1, 0), (0, 1), (-1, 0), (0, -1)):
-                        nx, ny = x + dx, y + dy
-                        if 0 <= nx < rows and 0 <= ny < cols and grid[nx][ny] == '1':
-                            grid[nx][ny] = '0'
-                            dq.append((nx, ny))
-
-        return islands
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         # O(m*n)
         # O(m*n)
         if not grid and not grid[0]:
