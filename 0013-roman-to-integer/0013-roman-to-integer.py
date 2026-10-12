@@ -1,5 +1,7 @@
 class Solution:
     def romanToInt(self, s: str) -> int:
+        # O(n)
+        # O(1)
         values = {
             'I': 1,
             'V': 5,
