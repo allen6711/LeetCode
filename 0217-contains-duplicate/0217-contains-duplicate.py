@@ -5,8 +5,10 @@ class Solution:
             if num in visited:
                 return True
             visited.add(num)
-
+        
         return False
+
+
 
 
 
