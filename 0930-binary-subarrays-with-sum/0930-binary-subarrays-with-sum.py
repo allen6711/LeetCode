@@ -1,5 +1,7 @@
 class Solution:
     def numSubarraysWithSum(self, nums: list[int], goal: int) -> int:
+        # O(n)
+        # O(n)
         prefix_count = defaultdict(int)
         prefix_count[0] = 1
         prefixsum = 0
