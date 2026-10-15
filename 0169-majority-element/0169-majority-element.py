@@ -1,44 +1,19 @@
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
-        n = len(nums)
-        maj = n // 2
-        count = defaultdict(int)
-        for num in nums:
-            count[num] += 1
-            if count[num] > maj:
-                return num
-        
-        return -1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         # O(n)
         # O(n)
-        # freq = defaultdict(int)
-        # threshold = len(nums) // 2
+        # n = len(nums)
+        # maj = n // 2
+        # count = defaultdict(int)
         # for num in nums:
-        #     freq[num] += 1
-        #     if freq[num] > threshold:
+        #     count[num] += 1
+        #     if count[num] > maj:
         #         return num
         
         # return -1
         # O(n)
         # O(1)
+        # Boyer-Moore Voting Algorithm
         count = 0
         candidate = None
         for num in nums:
