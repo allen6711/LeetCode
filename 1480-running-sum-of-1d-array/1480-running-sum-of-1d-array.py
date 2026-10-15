@@ -1,25 +1,5 @@
 class Solution:
     def runningSum(self, nums: List[int]) -> List[int]:
-        ans = []
-        prefixsum = 0
-        for num in nums:
-            prefixsum += num
-            ans.append(prefixsum)
-        
-        return ans
-
-
-
-
-
-
-
-
-
-
-
-
-
         # O(n^2)
         # O(1)
         # n = len(nums)
@@ -30,7 +10,6 @@ class Solution:
         #         total += nums[j]
         #     ans.append(total)
         # return ans
-
         # O(n)
         # O(1)
         prefix = 0
