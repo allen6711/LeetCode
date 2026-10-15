@@ -2,18 +2,20 @@ class Solution:
     def numSubarraysWithSum(self, nums: list[int], goal: int) -> int:
         # O(n)
         # O(n)
-        # prefix_count = defaultdict(int)
-        # prefix_count[0] = 1
-        # prefixsum = 0
-        # ans = 0
-        # for num in nums:
-        #     prefixsum += num
-        #     if prefixsum - goal in prefix_count:
-        #         ans += prefix_count[prefixsum - goal]
-        #     prefix_count[prefixsum] += 1
+        prefix_count = defaultdict(int)
+        prefix_count[0] = 1
+        prefixsum = 0
+        ans = 0
+        for num in nums:
+            prefixsum += num
+            if prefixsum - goal in prefix_count:
+                ans += prefix_count[prefixsum - goal]
+            prefix_count[prefixsum] += 1
         
-        # return ans
+        return ans
         # O(n)
+        # O(1)
+        # Sliding Window
         def atMost(target: int) -> int:
             if target < 0:
                 return 0
