@@ -1,5 +1,7 @@
 class Logger:
-
+    # O(n)
+    # O(u)
+    # u: number of unique messafe
     def __init__(self):
         self.last_printed = {}
 
@@ -15,6 +17,18 @@ class Logger:
         else:
             return False
 
+        # Record Next Allowed Time
+        # 
+    # def __init__(self):
+    #     self.next_allowed = {}
+    
+    # def shouldPringMessage(self, timestamp: int, message: str) -> bool:
+    #     if timestamp < self.next_allowed.get(message, 0):
+    #         return False
+        
+    #     self.next_allowed[message] = timestamp + 10
+
+    #     return True
 
 # Your Logger object will be instantiated and called as such:
 # obj = Logger()
