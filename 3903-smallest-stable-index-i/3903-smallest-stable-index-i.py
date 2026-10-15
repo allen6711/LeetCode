@@ -1,5 +1,7 @@
 class Solution:
     def firstStableIndex(self, nums: list[int], k: int) -> int:
+        # O(n)
+        # O(n)
         n = len(nums)
         prefix_max = [float('-inf')] * n
         prefix_max[0] = nums[0]
