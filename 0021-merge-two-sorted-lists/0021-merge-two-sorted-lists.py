@@ -5,6 +5,8 @@
 #         self.next = next
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+        # O(m+n)
+        # O(1)
         dummy = ListNode(0)
         cur = dummy
         while list1 and list2:
