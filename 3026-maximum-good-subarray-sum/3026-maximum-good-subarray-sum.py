@@ -1,5 +1,7 @@
 class Solution:
     def maximumSubarraySum(self, nums: List[int], k: int) -> int:
+        # O(n)
+        # O(n)
         min_prefix = {}
         prefix = 0
         ans = float('-inf')
