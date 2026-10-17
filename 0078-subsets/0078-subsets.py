@@ -1,5 +1,8 @@
 class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:
+        # O(n2^2)
+        # Auxiliary: O(n)
+        # O(n2^2)
         path = []
         ans = []
         def backtrack(start):
