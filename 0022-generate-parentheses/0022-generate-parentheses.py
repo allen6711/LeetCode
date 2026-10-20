@@ -1,22 +1,25 @@
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
-        res = []
+        path = []
+        ans = []
 
-        def backtrack(path, open_count, close_count):
+        def backtrack(open_count, close_count):
             if len(path) == 2 * n:
-                res.append(path)
+                ans.append("".join(path))
                 return
             
             if open_count < n:
-                backtrack(path + "(", open_count + 1, close_count)
+                path.append("(")
+                backtrack(open_count + 1, close_count)
+                path.pop()
             
             if close_count < open_count:
-                backtrack(path + ")", open_count, close_count + 1)
+                path.append(")")
+                backtrack(open_count, close_count + 1)
+                path.pop()
             
-        backtrack("", 0, 0)
-
-        return res
-
+        backtrack(0, 0)
+        return ans
 
 
 
@@ -31,8 +34,8 @@ class Solution:
 
 
 
-        # O(n * C_n)
-        # O(n * C_n)
+        # O(n*C_n)
+        # O(n)
         results = []
         path = []
 
