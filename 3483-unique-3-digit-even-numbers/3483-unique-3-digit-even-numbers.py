@@ -2,7 +2,7 @@ class Solution:
     def totalNumbers(self, digits: List[int]) -> int:
         # Enumeration + Frequency Counting
         # O(n) + O(K) = O(n)
-        # O(K) = O(1)
+        # O(1)
         count = [0] * 10
         for digit in digits:
             count[digit] += 1
