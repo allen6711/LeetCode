@@ -50,8 +50,8 @@ class Solution:
 
         # return sorted(ans)
         # Enumeration + Frequency Counting
-        # O(K) = O(1)
-        # O(K) = O(1)
+        # O(n) + O(K) = O(n)
+        # O(K) = O(1)  ->  這題ans裡面有數組和3483. Unique 3-Digit Even Numbers 不太一樣
         count = [0] * 10
         for digit in digits:
             count[digit] += 1
