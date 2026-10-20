@@ -277,6 +277,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3010-divide-an-array-into-subarrays-with-minimum-cost-i](https://github.com/allen6711/LeetCode/tree/master/3010-divide-an-array-into-subarrays-with-minimum-cost-i) |
 | [3026-maximum-good-subarray-sum](https://github.com/allen6711/LeetCode/tree/master/3026-maximum-good-subarray-sum) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/allen6711/LeetCode/tree/master/3286-find-a-safe-walk-through-a-grid) |
+| [3483-unique-3-digit-even-numbers](https://github.com/allen6711/LeetCode/tree/master/3483-unique-3-digit-even-numbers) |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/allen6711/LeetCode/tree/master/3532-path-existence-queries-in-a-graph-i) |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/allen6711/LeetCode/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3620-network-recovery-pathways](https://github.com/allen6711/LeetCode/tree/master/3620-network-recovery-pathways) |
@@ -661,6 +662,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1816-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/allen6711/LeetCode/tree/master/1816-lowest-common-ancestor-of-a-binary-tree-iv) |
 | [2965-find-missing-and-repeated-values](https://github.com/allen6711/LeetCode/tree/master/2965-find-missing-and-repeated-values) |
 | [3026-maximum-good-subarray-sum](https://github.com/allen6711/LeetCode/tree/master/3026-maximum-good-subarray-sum) |
+| [3483-unique-3-digit-even-numbers](https://github.com/allen6711/LeetCode/tree/master/3483-unique-3-digit-even-numbers) |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/allen6711/LeetCode/tree/master/3532-path-existence-queries-in-a-graph-i) |
 | [3718-smallest-missing-multiple-of-k](https://github.com/allen6711/LeetCode/tree/master/3718-smallest-missing-multiple-of-k) |
 ## Stack
@@ -794,6 +796,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0025-reverse-nodes-in-k-group](https://github.com/allen6711/LeetCode/tree/master/0025-reverse-nodes-in-k-group) |
 | [0143-reorder-list](https://github.com/allen6711/LeetCode/tree/master/0143-reorder-list) |
 | [0206-reverse-linked-list](https://github.com/allen6711/LeetCode/tree/master/0206-reverse-linked-list) |
+| [3483-unique-3-digit-even-numbers](https://github.com/allen6711/LeetCode/tree/master/3483-unique-3-digit-even-numbers) |
 ## Doubly-Linked List
 |  |
 | ------- |
@@ -831,6 +834,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0829-consecutive-numbers-sum](https://github.com/allen6711/LeetCode/tree/master/0829-consecutive-numbers-sum) |
 | [1291-sequential-digits](https://github.com/allen6711/LeetCode/tree/master/1291-sequential-digits) |
 | [3010-divide-an-array-into-subarrays-with-minimum-cost-i](https://github.com/allen6711/LeetCode/tree/master/3010-divide-an-array-into-subarrays-with-minimum-cost-i) |
+| [3483-unique-3-digit-even-numbers](https://github.com/allen6711/LeetCode/tree/master/3483-unique-3-digit-even-numbers) |
 ## Union-Find
 |  |
 | ------- |
