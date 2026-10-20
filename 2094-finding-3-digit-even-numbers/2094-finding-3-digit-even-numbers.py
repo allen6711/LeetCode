@@ -22,4 +22,4 @@ class Solution:
         
         backtrack()
 
-        return sorted(list(ans))
+        return sorted(ans)
