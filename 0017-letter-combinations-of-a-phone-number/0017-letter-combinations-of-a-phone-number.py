@@ -12,6 +12,48 @@ class Solution:
             "8": "tuv",
             "9": "wxyz"
         }
+        path = []
+        ans = []
+        n = len(digits)
+        def backtrack(start):
+            if len(path) == n:
+                ans.append("".join(path))
+            for i in range(start, n):
+                for char in phone[digits[i]]:
+                    path.append(char)
+                    backtrack(i + 1)
+                    path.pop()
+        backtrack(0)
+        return ans
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        # O(n*4^n)
+        # O(n)
+        if not digits:
+            return []
+        phone = {
+            "2": "abc",
+            "3": "def",
+            "4": "ghi",
+            "5": "jkl",
+            "6": "mno",
+            "7": "pqrs",
+            "8": "tuv",
+            "9": "wxyz"
+        }
         res = []
         path = []
         def backtrack(index):
