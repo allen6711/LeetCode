@@ -30,22 +30,43 @@ class Solution:
         # Brute Force + Hash Set
         # O(n^3)
         # O(K) = O(1)
-        ans = set()
-        n = len(digits)
-        for i in range(n):
-            if digits[i] == 0:
-                continue
-            for j in range(n):
-                if j == i:
-                    continue
-                for k in range(n):
-                    if k == i or k == j:
-                        continue
+        # ans = set()
+        # n = len(digits)
+        # for i in range(n):
+        #     if digits[i] == 0:
+        #         continue
+        #     for j in range(n):
+        #         if j == i:
+        #             continue
+        #         for k in range(n):
+        #             if k == i or k == j:
+        #                 continue
                     
-                    if digits[k] % 2 != 0:
-                        continue
+        #             if digits[k] % 2 != 0:
+        #                 continue
                     
-                    num = digits[i] * 100 + digits[j] * 10 + digits[k]
-                    ans.add(num)
+        #             num = digits[i] * 100 + digits[j] * 10 + digits[k]
+        #             ans.add(num)
 
-        return sorted(ans)
+        # return sorted(ans)
+        # Enumeration + Frequency Counting
+        # O(K) = O(1)
+        # O(K) = O(1)
+        count = [0] * 10
+        for digit in digits:
+            count[digit] += 1
+        
+        ans = []
+
+        for num in range(100, 1000, 2):
+            required = [0] * 10
+            x = num
+
+            for _ in range(3):
+                required[x % 10] += 1
+                x //= 10
+            
+            if all(required[d] <= count[d] for d in range(10)):
+                ans.append(num)
+        
+        return ans
