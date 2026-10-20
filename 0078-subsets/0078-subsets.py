@@ -1,36 +1,5 @@
 class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:
-        path = []
-        ans = []
-        n = len(nums)
-        def backtrack(start, path):
-            ans.append(path[:])
-
-            for i in range(start, n):
-                path.append(nums[i])
-                backtrack(i + 1, path)
-                path.pop()
-        
-        backtrack(0, path)
-        
-        return ans
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         # O(n2^2)
         # Auxiliary: O(n)
         # O(n2^2)
