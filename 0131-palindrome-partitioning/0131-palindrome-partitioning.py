@@ -1,5 +1,8 @@
 class Solution:
     def partition(self, s: str) -> list[list[str]]:
+        # O(n*2^n)
+        # Auxiliary: O(n)
+        # O(n*2^n)
         ans = []
         path = []
         n = len(s)
