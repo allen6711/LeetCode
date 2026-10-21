@@ -398,6 +398,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0680-valid-palindrome-ii](https://github.com/allen6711/LeetCode/tree/master/0680-valid-palindrome-ii) |
 | [0752-open-the-lock](https://github.com/allen6711/LeetCode/tree/master/0752-open-the-lock) |
 | [0767-reorganize-string](https://github.com/allen6711/LeetCode/tree/master/0767-reorganize-string) |
+| [0940-distinct-subsequences-ii](https://github.com/allen6711/LeetCode/tree/master/0940-distinct-subsequences-ii) |
 | [0981-time-based-key-value-store](https://github.com/allen6711/LeetCode/tree/master/0981-time-based-key-value-store) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/allen6711/LeetCode/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1768-merge-strings-alternately](https://github.com/allen6711/LeetCode/tree/master/1768-merge-strings-alternately) |
@@ -826,6 +827,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0410-split-array-largest-sum](https://github.com/allen6711/LeetCode/tree/master/0410-split-array-largest-sum) |
 | [0516-longest-palindromic-subsequence](https://github.com/allen6711/LeetCode/tree/master/0516-longest-palindromic-subsequence) |
 | [0542-01-matrix](https://github.com/allen6711/LeetCode/tree/master/0542-01-matrix) |
+| [0940-distinct-subsequences-ii](https://github.com/allen6711/LeetCode/tree/master/0940-distinct-subsequences-ii) |
 | [1259-handshakes-that-dont-cross](https://github.com/allen6711/LeetCode/tree/master/1259-handshakes-that-dont-cross) |
 | [2571-minimum-operations-to-reduce-an-integer-to-0](https://github.com/allen6711/LeetCode/tree/master/2571-minimum-operations-to-reduce-an-integer-to-0) |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/allen6711/LeetCode/tree/master/3534-path-existence-queries-in-a-graph-ii) |
