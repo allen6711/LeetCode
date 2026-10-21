@@ -1,5 +1,21 @@
 class Solution:
     def distinctSubseqII(self, s: str) -> int:
+        # O(n)
+        # O(1)
+        MOD = 10 ** 9 + 7
+        last = [0] * 26
+        total = 1
+
+        for ch in s:
+            idx = ord(ch) - ord('a')
+
+            prev = total
+            total = (2 * total - last[idx]) % MOD
+            last[idx] = prev
+        
+        return (total - 1) % MOD
+        # O(n)
+        # O(n)
         n = len(s)
         MOD = 10 ** 9 + 7
 
