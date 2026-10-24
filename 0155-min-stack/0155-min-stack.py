@@ -1,110 +1,59 @@
 class MinStack:
     def __init__(self):
         self.stack = []
-        self.minimum = []
+        self.min_stack = []
     
-    def push(self, val: int) -> None:
-        self.stack.append(val)
-        if not self.minimum or val <= self.minimum[-1]:
-            self.minimum.append(val)
+    def push(self, value: int) -> None:
+        self.stack.append(value)
+        if not self.min_stack:
+            self.min_stack.append(value)
+        
+        else:
+            self.min_stack.append(min(self.min_stack[-1], value))
     
     def pop(self) -> None:
-        main = self.stack.pop()
-        if main == self.minimum[-1]:
-            self.minimum.pop()
+        self.stack.pop()
+        self.min_stack.pop()
     
     def top(self) -> int:
         return self.stack[-1]
     
     def getMin(self) -> int:
-        return self.minimum[-1]
+        return self.min_stack[-1]
+
+
+
+
+
+    # O(1)
+    # O(n)
+    def __init__(self):
+        self.stack = []
+        self.min_stack = []
+
+    def push(self, value: int) -> None:
+        self.stack.append(value)
+
+        if not self.min_stack:
+            self.min_stack.append(value)
+        else:
+            self.min_stack.append(min(self.min_stack[-1], value))
+
+    def pop(self) -> None:
+        self.stack.pop()
+        self.min_stack.pop()
+
+    def top(self) -> int:
+        return self.stack[-1]
+
+    def getMin(self) -> int:
+        return self.min_stack[-1]
         
-    # def __init__(self):
-    #     self.stack = []
-    #     self.minimum = []
-
-    # def push(self, val: int) -> None:
-    #     self.stack.append(val)
-    #     if not self.minimum or val <= self.minimum[-1]:
-    #         self.minimum.append(val)
-    
-    # def pop(self) -> None:
-    #     main = self.stack.pop()
-    #     if main == self.minimum[-1]:
-    #         self.minimum.pop()
-    
-    # def top(self) -> int:
-    #     return self.stack[-1]
-    
-    # def getMin(self) -> int:
-    #     return self.minimum[-1]
-
-    # def __init__(self):
-    #     self.stack = []
-    #     self.minimum = []
-    
-    # def push(self, val: int) -> None:
-    #     self.stack.append(val)
-    #     if not self.minimum or val <= self.minimum[-1]:
-    #         self.minimum.append(val)
-
-    # def pop(self) -> None:
-    #     main = self.stack.pop()
-    #     if main == self.minimum[-1]:
-    #         self.minimum.pop()
-        
-    # def top(self) -> int:
-    #     return self.stack[-1]
-    
-    # def getMin(self) -> int:
-    #     return self.minimum[-1]
-
-
-    # def __init__(self):
-    #     self.stack = []
-    #     self.minimum = []
-    
-    # def push(self, val):
-    #     self.stack.append(val)
-    #     if not self.minimum or val <= self.minimum[-1]:
-    #         self.minimum.append(val)
-
-    # def pop(self):
-    #     main = self.stack.pop()
-    #     if main == self.minimum[-1]:
-    #         self.minimum.pop()
-    
-    # def top(self):
-    #     return self.stack[-1]
-    
-    # def getMin(self):
-    #     return self.minimum[-1]
-
-
-    # def __init__(self):
-    #     self.stack = []
-    #     self.minimum = []
-
-    # def push(self, val: int) -> None:
-    #     self.stack.append(val)
-    #     if not self.minimum or val <= self.minimum[-1]:
-    #         self.minimum.append(val)
-
-    # def pop(self) -> None:
-    #     main = self.stack.pop()
-    #     if main == self.minimum[-1]:
-    #         self.minimum.pop()
-
-    # def top(self) -> int:
-    #     return self.stack[-1]
-
-    # def getMin(self) -> int:
-    #     return self.minimum[-1]
 
 
 # Your MinStack object will be instantiated and called as such:
 # obj = MinStack()
-# obj.push(val)
+# obj.push(value)
 # obj.pop()
 # param_3 = obj.top()
 # param_4 = obj.getMin()
