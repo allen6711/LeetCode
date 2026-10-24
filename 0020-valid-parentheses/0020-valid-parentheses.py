@@ -1,31 +1,5 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        pairs = {")": "(", "]": "[", "}": "{"}
-        stack = []
-        for char in s:
-            if char in "([{":
-                stack.append(char)
-            else:
-                if not stack or stack[-1] != pairs[char]:
-                    return False
-                else:
-                    stack.pop()
-        
-        return len(stack) == 0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         # O(n)
         # O(n)
         # 因為括號要遵守：最後打開的括號，要最先被關閉。
