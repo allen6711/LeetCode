@@ -1,32 +1,5 @@
 class Solution:
     def reverseParentheses(self, s: str) -> str:
-        stack = []
-        for char in s:
-            temp = []
-            if char == ")":
-                while stack and stack[-1] != "(":
-                    temp.append(stack.pop())
-                stack.pop()  # pop "("
-                stack.extend(temp)
-            else:
-                stack.append(char)
-        
-        return "".join(stack)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         # Parentheses Matching + Direction Switching
         # O(n)
         # O(n)
