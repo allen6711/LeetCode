@@ -269,6 +269,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1480-running-sum-of-1d-array](https://github.com/allen6711/LeetCode/tree/master/1480-running-sum-of-1d-array) |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/allen6711/LeetCode/tree/master/1658-minimum-operations-to-reduce-x-to-zero) |
 | [1929-concatenation-of-array](https://github.com/allen6711/LeetCode/tree/master/1929-concatenation-of-array) |
+| [1944-number-of-visible-people-in-a-queue](https://github.com/allen6711/LeetCode/tree/master/1944-number-of-visible-people-in-a-queue) |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/allen6711/LeetCode/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
 | [2045-cutting-ribbons](https://github.com/allen6711/LeetCode/tree/master/2045-cutting-ribbons) |
 | [2094-finding-3-digit-even-numbers](https://github.com/allen6711/LeetCode/tree/master/2094-finding-3-digit-even-numbers) |
@@ -692,6 +693,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0883-car-fleet](https://github.com/allen6711/LeetCode/tree/master/0883-car-fleet) |
 | [0901-online-stock-span](https://github.com/allen6711/LeetCode/tree/master/0901-online-stock-span) |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/allen6711/LeetCode/tree/master/1190-reverse-substrings-between-each-pair-of-parentheses) |
+| [1944-number-of-visible-people-in-a-queue](https://github.com/allen6711/LeetCode/tree/master/1944-number-of-visible-people-in-a-queue) |
 | [2866-beautiful-towers-ii](https://github.com/allen6711/LeetCode/tree/master/2866-beautiful-towers-ii) |
 ## Database
 |  |
@@ -725,6 +727,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0739-daily-temperatures](https://github.com/allen6711/LeetCode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/allen6711/LeetCode/tree/master/0883-car-fleet) |
 | [0901-online-stock-span](https://github.com/allen6711/LeetCode/tree/master/0901-online-stock-span) |
+| [1944-number-of-visible-people-in-a-queue](https://github.com/allen6711/LeetCode/tree/master/1944-number-of-visible-people-in-a-queue) |
 | [2866-beautiful-towers-ii](https://github.com/allen6711/LeetCode/tree/master/2866-beautiful-towers-ii) |
 ## Divide and Conquer
 |  |
