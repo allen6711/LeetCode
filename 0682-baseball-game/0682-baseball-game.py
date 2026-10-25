@@ -1,16 +1,19 @@
 class Solution:
     def calPoints(self, operations: list[str]) -> int:
+        # O(n)
+        # O(n)
         stack = []
-        for char in operations:
-            if char not in "CD+":
-                stack.append(int(char))
+        for op in operations:
+            if op == "+":
+                stack.append(stack[-1] + stack[-2])
+            
+            elif op == "D":
+                stack.append(2 * stack[-1])
+            
+            elif op == "C":
+                stack.pop()
             
             else:
-                if char == "C":
-                   stack.pop()
-                elif char == "D":
-                    stack.append(2 * stack[-1])
-                else:
-                    stack.append(stack[-1] + stack[-2])
-        
+                stack.append(int(op))
+            
         return sum(stack)
