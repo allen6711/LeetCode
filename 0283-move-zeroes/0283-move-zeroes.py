@@ -5,19 +5,11 @@ class Solution:
         """
         n = len(nums)
         left = 0
-        for right in range(left + 1, n):
-            if nums[left] == 0:
-                if nums[right] != 0:
-                    nums[left], nums[right] = nums[right], nums[left]
-                    left += 1
-                    right += 1
-                else:
-                    right += 1
-            else:
+        for right in range(n):
+            if nums[right] != 0:
+                nums[left], nums[right] = nums[right], nums[left]
                 left += 1
-                right += 1
         
-    
 
 
 
