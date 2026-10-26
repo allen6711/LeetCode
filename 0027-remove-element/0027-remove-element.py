@@ -1,15 +1,5 @@
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
-        n = len(nums)
-        left = 0
-        ans = 0
-        for right in range(n):
-            if nums[right] != val:
-                nums[left], nums[right] = nums[right], nums[left]
-                left += 1
-                ans += 1
-        
-        return ans
 
 
 
@@ -34,9 +24,26 @@ class Solution:
         # return len(temp)
         # O(n)
         # O(1)
-        write = 0
-        for read in range(len(nums)):
-            if nums[read] != val:
-                nums[write] = nums[read]
-                write += 1
-        return write 
+        # n = len(nums)
+        # left = 0
+        # # ans = 0
+        # for right in range(n):
+        #     if nums[right] != val:
+        #         nums[left], nums[right] = nums[right], nums[left]
+        #         left += 1
+        #         # ans += 1
+        
+        # return left
+        # Two Pointers, Swap with End
+        # O(n)
+        # O(1)
+        n = len(nums)
+        left, right = 0, n
+        while left < right:
+            if nums[left] == val:
+                nums[left] = nums[right - 1]
+                right -= 1
+            else:
+                left += 1
+        
+        return right
