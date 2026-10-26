@@ -24,17 +24,18 @@ class Solution:
         # return len(temp)
         # O(n)
         # O(1)
-        # n = len(nums)
-        # left = 0
-        # # ans = 0
-        # for right in range(n):
-        #     if nums[right] != val:
-        #         nums[left], nums[right] = nums[right], nums[left]
-        #         left += 1
-        #         # ans += 1
+        n = len(nums)
+        left = 0
+        # ans = 0
+        for right in range(n):
+            if nums[right] != val:
+                nums[left], nums[right] = nums[right], nums[left]
+                left += 1
+                # ans += 1
         
-        # return left
+        return left
         # Two Pointers, Swap with End
+        # Exclusive right: right 指向尚未處理範圍的右邊界之外，因此使用 <，最後直接回傳 right
         # O(n)
         # O(1)
         n = len(nums)
