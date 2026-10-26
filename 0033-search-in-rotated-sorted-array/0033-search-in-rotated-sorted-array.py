@@ -1,5 +1,7 @@
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
+        # O(logn)
+        # O(1)
         n = len(nums)
         left, right = 0, n - 1
 
