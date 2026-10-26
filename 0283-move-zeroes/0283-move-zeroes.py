@@ -3,6 +3,35 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
+        n = len(nums)
+        left = 0
+        for right in range(left + 1, n):
+            if nums[left] == 0:
+                if nums[right] != 0:
+                    nums[left], nums[right] = nums[right], nums[left]
+                    left += 1
+                    right += 1
+                else:
+                    right += 1
+            else:
+                left += 1
+                right += 1
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         # O(n^2)
         # O(1)
         # left = 0
@@ -28,9 +57,9 @@ class Solution:
         
         # O(n)
         # O(1)
-        # left = 0
-        # n = len(nums)
-        # for i in range(n):
-        #     if nums[i] != 0:
-        #         nums[left], nums[i] = nums[i], nums[left]
-        #         left += 1
+        left = 0
+        n = len(nums)
+        for i in range(n):
+            if nums[i] != 0:
+                nums[left], nums[i] = nums[i], nums[left]
+                left += 1
