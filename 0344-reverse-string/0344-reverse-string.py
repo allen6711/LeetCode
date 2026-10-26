@@ -3,6 +3,8 @@ class Solution:
         """
         Do not return anything, modify s in-place instead.
         """
+        # O(n)
+        # O(1)
         n = len(s)
         left, right = 0, n - 1
         while left < right:
