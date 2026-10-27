@@ -79,6 +79,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0437-path-sum-iii](https://github.com/allen6711/LeetCode/tree/master/0437-path-sum-iii) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/allen6711/LeetCode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/allen6711/LeetCode/tree/master/0637-average-of-levels-in-binary-tree) |
+| [0778-swim-in-rising-water](https://github.com/allen6711/LeetCode/tree/master/0778-swim-in-rising-water) |
 | [1376-time-needed-to-inform-all-employees](https://github.com/allen6711/LeetCode/tree/master/1376-time-needed-to-inform-all-employees) |
 | [1485-clone-binary-tree-with-random-pointer](https://github.com/allen6711/LeetCode/tree/master/1485-clone-binary-tree-with-random-pointer) |
 | [1490-clone-n-ary-tree](https://github.com/allen6711/LeetCode/tree/master/1490-clone-n-ary-tree) |
@@ -118,6 +119,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0542-01-matrix](https://github.com/allen6711/LeetCode/tree/master/0542-01-matrix) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/allen6711/LeetCode/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0752-open-the-lock](https://github.com/allen6711/LeetCode/tree/master/0752-open-the-lock) |
+| [0778-swim-in-rising-water](https://github.com/allen6711/LeetCode/tree/master/0778-swim-in-rising-water) |
 | [0909-snakes-and-ladders](https://github.com/allen6711/LeetCode/tree/master/0909-snakes-and-ladders) |
 | [0994-rotting-oranges](https://github.com/allen6711/LeetCode/tree/master/0994-rotting-oranges) |
 | [1036-rotting-oranges](https://github.com/allen6711/LeetCode/tree/master/1036-rotting-oranges) |
@@ -253,6 +255,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0704-binary-search](https://github.com/allen6711/LeetCode/tree/master/0704-binary-search) |
 | [0739-daily-temperatures](https://github.com/allen6711/LeetCode/tree/master/0739-daily-temperatures) |
 | [0752-open-the-lock](https://github.com/allen6711/LeetCode/tree/master/0752-open-the-lock) |
+| [0778-swim-in-rising-water](https://github.com/allen6711/LeetCode/tree/master/0778-swim-in-rising-water) |
 | [0786-search-in-a-sorted-array-of-unknown-size](https://github.com/allen6711/LeetCode/tree/master/0786-search-in-a-sorted-array-of-unknown-size) |
 | [0792-binary-search](https://github.com/allen6711/LeetCode/tree/master/0792-binary-search) |
 | [0875-koko-eating-bananas](https://github.com/allen6711/LeetCode/tree/master/0875-koko-eating-bananas) |
@@ -313,6 +316,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0212-word-search-ii](https://github.com/allen6711/LeetCode/tree/master/0212-word-search-ii) |
 | [0302-smallest-rectangle-enclosing-black-pixels](https://github.com/allen6711/LeetCode/tree/master/0302-smallest-rectangle-enclosing-black-pixels) |
 | [0542-01-matrix](https://github.com/allen6711/LeetCode/tree/master/0542-01-matrix) |
+| [0778-swim-in-rising-water](https://github.com/allen6711/LeetCode/tree/master/0778-swim-in-rising-water) |
 | [0909-snakes-and-ladders](https://github.com/allen6711/LeetCode/tree/master/0909-snakes-and-ladders) |
 | [0994-rotting-oranges](https://github.com/allen6711/LeetCode/tree/master/0994-rotting-oranges) |
 | [1036-rotting-oranges](https://github.com/allen6711/LeetCode/tree/master/1036-rotting-oranges) |
@@ -442,6 +446,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0410-split-array-largest-sum](https://github.com/allen6711/LeetCode/tree/master/0410-split-array-largest-sum) |
 | [0658-find-k-closest-elements](https://github.com/allen6711/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0704-binary-search](https://github.com/allen6711/LeetCode/tree/master/0704-binary-search) |
+| [0778-swim-in-rising-water](https://github.com/allen6711/LeetCode/tree/master/0778-swim-in-rising-water) |
 | [0786-search-in-a-sorted-array-of-unknown-size](https://github.com/allen6711/LeetCode/tree/master/0786-search-in-a-sorted-array-of-unknown-size) |
 | [0792-binary-search](https://github.com/allen6711/LeetCode/tree/master/0792-binary-search) |
 | [0875-koko-eating-bananas](https://github.com/allen6711/LeetCode/tree/master/0875-koko-eating-bananas) |
@@ -564,6 +569,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0347-top-k-frequent-elements](https://github.com/allen6711/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0658-find-k-closest-elements](https://github.com/allen6711/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0767-reorganize-string](https://github.com/allen6711/LeetCode/tree/master/0767-reorganize-string) |
+| [0778-swim-in-rising-water](https://github.com/allen6711/LeetCode/tree/master/0778-swim-in-rising-water) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/allen6711/LeetCode/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/allen6711/LeetCode/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/allen6711/LeetCode/tree/master/3286-find-a-safe-walk-through-a-grid) |
@@ -887,6 +893,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0130-surrounded-regions](https://github.com/allen6711/LeetCode/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/allen6711/LeetCode/tree/master/0200-number-of-islands) |
 | [0399-evaluate-division](https://github.com/allen6711/LeetCode/tree/master/0399-evaluate-division) |
+| [0778-swim-in-rising-water](https://github.com/allen6711/LeetCode/tree/master/0778-swim-in-rising-water) |
 | [1970-last-day-where-you-can-still-cross](https://github.com/allen6711/LeetCode/tree/master/1970-last-day-where-you-can-still-cross) |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/allen6711/LeetCode/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [2685-count-the-number-of-complete-components](https://github.com/allen6711/LeetCode/tree/master/2685-count-the-number-of-complete-components) |
@@ -991,4 +998,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0207-course-schedule](https://github.com/allen6711/LeetCode/tree/master/0207-course-schedule) |
+## Minimax
+|  |
+| ------- |
+| [0778-swim-in-rising-water](https://github.com/allen6711/LeetCode/tree/master/0778-swim-in-rising-water) |
+## Dijkstra's Algorithm
+|  |
+| ------- |
+| [0778-swim-in-rising-water](https://github.com/allen6711/LeetCode/tree/master/0778-swim-in-rising-water) |
 <!---LeetCode Topics End-->
