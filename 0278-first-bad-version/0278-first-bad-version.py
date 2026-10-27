@@ -3,6 +3,8 @@
 
 class Solution:
     def firstBadVersion(self, n: int) -> int:
+        # O(logn)
+        # O(1)
         left, right = 1, n
         while left < right:
             mid = (left + right) // 2
