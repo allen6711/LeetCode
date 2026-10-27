@@ -1,38 +1,14 @@
 class Solution:
     def findMin(self, nums: List[int]) -> int:
-        if not nums:
-            return -1
-        left, right = 0, len(nums) - 1
-        while left + 1 < right:
+        # O(logn)
+        # O(1)
+        n = len(nums)
+        left, right = 0, n - 1
+        while left < right:
             mid = (left + right) // 2
-            if nums[mid] <= nums[-1]:
-                right = mid
+            if nums[mid] > nums[right]:
+                left = mid + 1
             else:
-                left = mid
-        
-        return min(nums[left], nums[right])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        left, right = 0, len(nums) - 1
-        while left + 1 < right:
-            mid = (left + right) // 2
-            if nums[mid] <= nums[-1]:
                 right = mid
-            else:
-                left = mid
         
-        return min(nums[left], nums[right])
+        return nums[right]
