@@ -84,6 +84,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1490-clone-n-ary-tree](https://github.com/allen6711/LeetCode/tree/master/1490-clone-n-ary-tree) |
 | [1780-lowest-common-ancestor-of-a-binary-tree-ii](https://github.com/allen6711/LeetCode/tree/master/1780-lowest-common-ancestor-of-a-binary-tree-ii) |
 | [1816-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/allen6711/LeetCode/tree/master/1816-lowest-common-ancestor-of-a-binary-tree-iv) |
+| [1970-last-day-where-you-can-still-cross](https://github.com/allen6711/LeetCode/tree/master/1970-last-day-where-you-can-still-cross) |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/allen6711/LeetCode/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [2685-count-the-number-of-complete-components](https://github.com/allen6711/LeetCode/tree/master/2685-count-the-number-of-complete-components) |
 ## Breadth-First Search
@@ -124,6 +125,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1376-time-needed-to-inform-all-employees](https://github.com/allen6711/LeetCode/tree/master/1376-time-needed-to-inform-all-employees) |
 | [1485-clone-binary-tree-with-random-pointer](https://github.com/allen6711/LeetCode/tree/master/1485-clone-binary-tree-with-random-pointer) |
 | [1490-clone-n-ary-tree](https://github.com/allen6711/LeetCode/tree/master/1490-clone-n-ary-tree) |
+| [1970-last-day-where-you-can-still-cross](https://github.com/allen6711/LeetCode/tree/master/1970-last-day-where-you-can-still-cross) |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/allen6711/LeetCode/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [2685-count-the-number-of-complete-components](https://github.com/allen6711/LeetCode/tree/master/2685-count-the-number-of-complete-components) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/allen6711/LeetCode/tree/master/2812-find-the-safest-path-in-a-grid) |
@@ -274,6 +276,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1929-concatenation-of-array](https://github.com/allen6711/LeetCode/tree/master/1929-concatenation-of-array) |
 | [1944-number-of-visible-people-in-a-queue](https://github.com/allen6711/LeetCode/tree/master/1944-number-of-visible-people-in-a-queue) |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/allen6711/LeetCode/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
+| [1970-last-day-where-you-can-still-cross](https://github.com/allen6711/LeetCode/tree/master/1970-last-day-where-you-can-still-cross) |
 | [2045-cutting-ribbons](https://github.com/allen6711/LeetCode/tree/master/2045-cutting-ribbons) |
 | [2094-finding-3-digit-even-numbers](https://github.com/allen6711/LeetCode/tree/master/2094-finding-3-digit-even-numbers) |
 | [2149-rearrange-array-elements-by-sign](https://github.com/allen6711/LeetCode/tree/master/2149-rearrange-array-elements-by-sign) |
@@ -313,6 +316,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0994-rotting-oranges](https://github.com/allen6711/LeetCode/tree/master/0994-rotting-oranges) |
 | [1036-rotting-oranges](https://github.com/allen6711/LeetCode/tree/master/1036-rotting-oranges) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/allen6711/LeetCode/tree/master/1091-shortest-path-in-binary-matrix) |
+| [1970-last-day-where-you-can-still-cross](https://github.com/allen6711/LeetCode/tree/master/1970-last-day-where-you-can-still-cross) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/allen6711/LeetCode/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [2965-find-missing-and-repeated-values](https://github.com/allen6711/LeetCode/tree/master/2965-find-missing-and-repeated-values) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/allen6711/LeetCode/tree/master/3286-find-a-safe-walk-through-a-grid) |
@@ -445,6 +449,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1185-find-in-mountain-array](https://github.com/allen6711/LeetCode/tree/master/1185-find-in-mountain-array) |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/allen6711/LeetCode/tree/master/1658-minimum-operations-to-reduce-x-to-zero) |
 | [1802-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/allen6711/LeetCode/tree/master/1802-maximum-value-at-a-given-index-in-a-bounded-array) |
+| [1970-last-day-where-you-can-still-cross](https://github.com/allen6711/LeetCode/tree/master/1970-last-day-where-you-can-still-cross) |
 | [2045-cutting-ribbons](https://github.com/allen6711/LeetCode/tree/master/2045-cutting-ribbons) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/allen6711/LeetCode/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/allen6711/LeetCode/tree/master/3532-path-existence-queries-in-a-graph-i) |
@@ -878,6 +883,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0130-surrounded-regions](https://github.com/allen6711/LeetCode/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/allen6711/LeetCode/tree/master/0200-number-of-islands) |
 | [0399-evaluate-division](https://github.com/allen6711/LeetCode/tree/master/0399-evaluate-division) |
+| [1970-last-day-where-you-can-still-cross](https://github.com/allen6711/LeetCode/tree/master/1970-last-day-where-you-can-still-cross) |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/allen6711/LeetCode/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [2685-count-the-number-of-complete-components](https://github.com/allen6711/LeetCode/tree/master/2685-count-the-number-of-complete-components) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/allen6711/LeetCode/tree/master/2812-find-the-safest-path-in-a-grid) |
