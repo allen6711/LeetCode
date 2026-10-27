@@ -250,6 +250,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0560-subarray-sum-equals-k](https://github.com/allen6711/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 | [0658-find-k-closest-elements](https://github.com/allen6711/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0682-baseball-game](https://github.com/allen6711/LeetCode/tree/master/0682-baseball-game) |
+| [0704-binary-search](https://github.com/allen6711/LeetCode/tree/master/0704-binary-search) |
 | [0739-daily-temperatures](https://github.com/allen6711/LeetCode/tree/master/0739-daily-temperatures) |
 | [0752-open-the-lock](https://github.com/allen6711/LeetCode/tree/master/0752-open-the-lock) |
 | [0786-search-in-a-sorted-array-of-unknown-size](https://github.com/allen6711/LeetCode/tree/master/0786-search-in-a-sorted-array-of-unknown-size) |
@@ -440,6 +441,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0349-intersection-of-two-arrays](https://github.com/allen6711/LeetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0410-split-array-largest-sum](https://github.com/allen6711/LeetCode/tree/master/0410-split-array-largest-sum) |
 | [0658-find-k-closest-elements](https://github.com/allen6711/LeetCode/tree/master/0658-find-k-closest-elements) |
+| [0704-binary-search](https://github.com/allen6711/LeetCode/tree/master/0704-binary-search) |
 | [0786-search-in-a-sorted-array-of-unknown-size](https://github.com/allen6711/LeetCode/tree/master/0786-search-in-a-sorted-array-of-unknown-size) |
 | [0792-binary-search](https://github.com/allen6711/LeetCode/tree/master/0792-binary-search) |
 | [0875-koko-eating-bananas](https://github.com/allen6711/LeetCode/tree/master/0875-koko-eating-bananas) |
