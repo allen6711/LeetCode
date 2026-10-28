@@ -39,6 +39,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1376-time-needed-to-inform-all-employees](https://github.com/allen6711/LeetCode/tree/master/1376-time-needed-to-inform-all-employees) |
 | [1485-clone-binary-tree-with-random-pointer](https://github.com/allen6711/LeetCode/tree/master/1485-clone-binary-tree-with-random-pointer) |
 | [1490-clone-n-ary-tree](https://github.com/allen6711/LeetCode/tree/master/1490-clone-n-ary-tree) |
+| [1676-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/allen6711/LeetCode/tree/master/1676-lowest-common-ancestor-of-a-binary-tree-iv) |
 | [1780-lowest-common-ancestor-of-a-binary-tree-ii](https://github.com/allen6711/LeetCode/tree/master/1780-lowest-common-ancestor-of-a-binary-tree-ii) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/allen6711/LeetCode/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
 | [1816-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/allen6711/LeetCode/tree/master/1816-lowest-common-ancestor-of-a-binary-tree-iv) |
@@ -84,6 +85,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1376-time-needed-to-inform-all-employees](https://github.com/allen6711/LeetCode/tree/master/1376-time-needed-to-inform-all-employees) |
 | [1485-clone-binary-tree-with-random-pointer](https://github.com/allen6711/LeetCode/tree/master/1485-clone-binary-tree-with-random-pointer) |
 | [1490-clone-n-ary-tree](https://github.com/allen6711/LeetCode/tree/master/1490-clone-n-ary-tree) |
+| [1676-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/allen6711/LeetCode/tree/master/1676-lowest-common-ancestor-of-a-binary-tree-iv) |
 | [1780-lowest-common-ancestor-of-a-binary-tree-ii](https://github.com/allen6711/LeetCode/tree/master/1780-lowest-common-ancestor-of-a-binary-tree-ii) |
 | [1816-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/allen6711/LeetCode/tree/master/1816-lowest-common-ancestor-of-a-binary-tree-iv) |
 | [1970-last-day-where-you-can-still-cross](https://github.com/allen6711/LeetCode/tree/master/1970-last-day-where-you-can-still-cross) |
@@ -167,6 +169,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0637-average-of-levels-in-binary-tree](https://github.com/allen6711/LeetCode/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0701-insert-into-a-binary-search-tree](https://github.com/allen6711/LeetCode/tree/master/0701-insert-into-a-binary-search-tree) |
 | [1485-clone-binary-tree-with-random-pointer](https://github.com/allen6711/LeetCode/tree/master/1485-clone-binary-tree-with-random-pointer) |
+| [1676-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/allen6711/LeetCode/tree/master/1676-lowest-common-ancestor-of-a-binary-tree-iv) |
 | [1780-lowest-common-ancestor-of-a-binary-tree-ii](https://github.com/allen6711/LeetCode/tree/master/1780-lowest-common-ancestor-of-a-binary-tree-ii) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/allen6711/LeetCode/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
 | [1816-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/allen6711/LeetCode/tree/master/1816-lowest-common-ancestor-of-a-binary-tree-iv) |
@@ -703,6 +706,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1485-clone-binary-tree-with-random-pointer](https://github.com/allen6711/LeetCode/tree/master/1485-clone-binary-tree-with-random-pointer) |
 | [1490-clone-n-ary-tree](https://github.com/allen6711/LeetCode/tree/master/1490-clone-n-ary-tree) |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/allen6711/LeetCode/tree/master/1658-minimum-operations-to-reduce-x-to-zero) |
+| [1676-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/allen6711/LeetCode/tree/master/1676-lowest-common-ancestor-of-a-binary-tree-iv) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/allen6711/LeetCode/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
 | [1816-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/allen6711/LeetCode/tree/master/1816-lowest-common-ancestor-of-a-binary-tree-iv) |
 | [2094-finding-3-digit-even-numbers](https://github.com/allen6711/LeetCode/tree/master/2094-finding-3-digit-even-numbers) |
@@ -1001,10 +1005,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/allen6711/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
+| [1676-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/allen6711/LeetCode/tree/master/1676-lowest-common-ancestor-of-a-binary-tree-iv) |
 ## Lowest Common Ancestor
 |  |
 | ------- |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/allen6711/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
+| [1676-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/allen6711/LeetCode/tree/master/1676-lowest-common-ancestor-of-a-binary-tree-iv) |
 ## Boyer–Moore Majority Vote Algorithm
 |  |
 | ------- |
