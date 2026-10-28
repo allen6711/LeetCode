@@ -15,3 +15,28 @@ class Solution:
             root.right = self.insertIntoBST(root.right, val)
         
         return root
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        # O(h)
+        # O(h)
+        if not root:
+            return TreeNode(val)
+        
+        if val < root.val:
+            root.left = self.insertIntoBST(root.left, val)
+        else:
+            root.right = self.insertIntoBST(root.right, val)
+        
+        return root
