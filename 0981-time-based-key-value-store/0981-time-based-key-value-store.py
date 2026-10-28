@@ -1,4 +1,6 @@
 class TimeMap:
+    # O(n^2logn)
+    # O(n^2)
 
     def __init__(self):
         self.store = defaultdict(list)
