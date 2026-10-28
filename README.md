@@ -588,6 +588,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0007-reverse-integer](https://github.com/allen6711/LeetCode/tree/master/0007-reverse-integer) |
 | [0012-integer-to-roman](https://github.com/allen6711/LeetCode/tree/master/0012-integer-to-roman) |
 | [0013-roman-to-integer](https://github.com/allen6711/LeetCode/tree/master/0013-roman-to-integer) |
+| [0050-powx-n](https://github.com/allen6711/LeetCode/tree/master/0050-powx-n) |
 | [0069-sqrtx](https://github.com/allen6711/LeetCode/tree/master/0069-sqrtx) |
 | [0070-climbing-stairs](https://github.com/allen6711/LeetCode/tree/master/0070-climbing-stairs) |
 | [0149-max-points-on-a-line](https://github.com/allen6711/LeetCode/tree/master/0149-max-points-on-a-line) |
@@ -848,6 +849,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0002-add-two-numbers](https://github.com/allen6711/LeetCode/tree/master/0002-add-two-numbers) |
 | [0021-merge-two-sorted-lists](https://github.com/allen6711/LeetCode/tree/master/0021-merge-two-sorted-lists) |
 | [0025-reverse-nodes-in-k-group](https://github.com/allen6711/LeetCode/tree/master/0025-reverse-nodes-in-k-group) |
+| [0050-powx-n](https://github.com/allen6711/LeetCode/tree/master/0050-powx-n) |
 | [0143-reorder-list](https://github.com/allen6711/LeetCode/tree/master/0143-reorder-list) |
 | [0206-reverse-linked-list](https://github.com/allen6711/LeetCode/tree/master/0206-reverse-linked-list) |
 | [2094-finding-3-digit-even-numbers](https://github.com/allen6711/LeetCode/tree/master/2094-finding-3-digit-even-numbers) |
