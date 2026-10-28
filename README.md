@@ -35,6 +35,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0437-path-sum-iii](https://github.com/allen6711/LeetCode/tree/master/0437-path-sum-iii) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/allen6711/LeetCode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/allen6711/LeetCode/tree/master/0637-average-of-levels-in-binary-tree) |
+| [0701-insert-into-a-binary-search-tree](https://github.com/allen6711/LeetCode/tree/master/0701-insert-into-a-binary-search-tree) |
 | [1376-time-needed-to-inform-all-employees](https://github.com/allen6711/LeetCode/tree/master/1376-time-needed-to-inform-all-employees) |
 | [1485-clone-binary-tree-with-random-pointer](https://github.com/allen6711/LeetCode/tree/master/1485-clone-binary-tree-with-random-pointer) |
 | [1490-clone-n-ary-tree](https://github.com/allen6711/LeetCode/tree/master/1490-clone-n-ary-tree) |
@@ -164,6 +165,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0437-path-sum-iii](https://github.com/allen6711/LeetCode/tree/master/0437-path-sum-iii) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/allen6711/LeetCode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/allen6711/LeetCode/tree/master/0637-average-of-levels-in-binary-tree) |
+| [0701-insert-into-a-binary-search-tree](https://github.com/allen6711/LeetCode/tree/master/0701-insert-into-a-binary-search-tree) |
 | [1485-clone-binary-tree-with-random-pointer](https://github.com/allen6711/LeetCode/tree/master/1485-clone-binary-tree-with-random-pointer) |
 | [1780-lowest-common-ancestor-of-a-binary-tree-ii](https://github.com/allen6711/LeetCode/tree/master/1780-lowest-common-ancestor-of-a-binary-tree-ii) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/allen6711/LeetCode/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
@@ -641,6 +643,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0230-kth-smallest-element-in-a-bst](https://github.com/allen6711/LeetCode/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/allen6711/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/allen6711/LeetCode/tree/master/0530-minimum-absolute-difference-in-bst) |
+| [0701-insert-into-a-binary-search-tree](https://github.com/allen6711/LeetCode/tree/master/0701-insert-into-a-binary-search-tree) |
 ## Hash Table
 |  |
 | ------- |
