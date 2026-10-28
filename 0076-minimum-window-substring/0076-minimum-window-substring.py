@@ -1,5 +1,53 @@
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
+        need = Counter(t)
+        window = defaultdict(int)
+
+        required = len(need)
+        formed = 0
+
+        left = 0
+        min_len = float('inf')
+        start = 0
+
+        for right in range(len(s)):
+            char = s[right]
+
+            if char in need:
+                window[char] += 1
+                if window[char] == need[char]:
+                    formed += 1
+            
+            while formed == required:
+                if right - left + 1 < min_len:
+                    min_len = right - left + 1
+                    start = left
+                
+                char = s[left]
+                if char in need:
+                    window[char] -= 1
+                    
+                    if window[char] < need[char]:
+                        formed -= 1
+                left += 1
+        
+        if min_len == float('inf'):
+            return ""
+        
+        return s[start:start + min_len]
+
+
+
+
+
+
+
+
+
+
+
+
+
         # O(n^3)
         # O(k)
         # if not s or not t:
