@@ -6,14 +6,25 @@
 #         self.right = right
 class Solution:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
-        # DFS
+        # DFS: Top-Down, swap first, then recurse
+        # if not root:
+        #     return None
+
+        # root.left, root.right = root.right, root.left
+
+        # self.invertTree(root.left)
+        # self.invertTree(root.right)
+
+        # return root
+        # DFS: Bottom-Up, recurse first, then swap
         if not root:
             return None
-        root.left, root.right = root.right, root.left
+        
+        left = self.invertTree(root.left)
+        right = self.invertTree(root.right)
 
-        self.invertTree(root.left)
-        self.invertTree(root.right)
-
+        root.left = right
+        root.right = left
         return root
         # BFS
         from collections import deque
@@ -30,15 +41,6 @@ class Solution:
                 q.append(node.right)
         
         return root
-
-
-
-
-
-
-
-
-
 
         # # DFS
         # if not root:
