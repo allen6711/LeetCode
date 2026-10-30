@@ -7,7 +7,7 @@
 
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
-        # O(h)
+        # O(h), Balanced BST: O(logn), Skewed BST: O(n)
         # O(1)
         # Irerative BST Search
         while root:
@@ -19,6 +19,8 @@ class Solution:
 
             else:
                 return root
+        
+        return None
         # O(h)
         # O(h)
         # DFS
