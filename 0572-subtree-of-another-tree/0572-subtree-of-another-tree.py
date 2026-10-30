@@ -6,7 +6,12 @@
 #         self.right = right
 class Solution:
     def isSubtree(self, root: TreeNode | None, subRoot: TreeNode | None) -> bool:
-        
+        # N = number of root's nodes
+        # M = number of subRoot's nodes
+        # H1 = root's height
+        # H2 = subRoot's height
+        # O(N*M)
+        # O(H1+H2)
         def isSameTree(p, q):
             if p is None and q is None:
                 return True
