@@ -7,6 +7,8 @@
 class Solution:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         # DFS
+        # O(n)
+        # O(h)
         if p is None and q is None:
             return True
         if p is None or q is None:
@@ -16,6 +18,8 @@ class Solution:
         
         return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
         # BFS
+        # O(n)
+        # O(n)
         from collections import deque
         pq = deque([(p, q)])
         while pq:
