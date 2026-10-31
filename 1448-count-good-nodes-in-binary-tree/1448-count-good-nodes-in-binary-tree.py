@@ -6,6 +6,10 @@
 #         self.right = right
 class Solution:
     def goodNodes(self, root: TreeNode) -> int:
+        # BFS
+        # O(N)
+        # Auxiliary Space: O(W)
+        # Total Space: O(W)
         from collections import deque
 
         if root is None:
@@ -20,12 +24,12 @@ class Solution:
             if node.val >= max_so_far:
                 count += 1
                
-            new_max = max(max_so_far, node.val)
+            max_so_far = max(max_so_far, node.val)
             
             if node.left:
-                queue.append((node.left, new_max))
+                queue.append((node.left, max_so_far))
             
             if node.right:
-                queue.append((node.right, new_max))
+                queue.append((node.right, max_so_far))
         
         return count
