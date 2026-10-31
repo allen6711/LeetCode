@@ -7,24 +7,43 @@
 
 class Solution:
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+        # BFS
         # O(n)
         # Auxiliart Space: O(w)
         # Total Space: O(n)
-        if root is None:
-            return []
-        dq = deque([root])
-        ans = []
+        # if root is None:
+        #     return []
+        # dq = deque([root])
+        # ans = []
 
-        while dq:
-            level = []
-            for _ in range(len(dq)):
-                node = dq.popleft()
-                level.append(node.val)
-                if node.left:
-                    dq.append(node.left)
-                if node.right:
-                    dq.append(node.right)
+        # while dq:
+        #     level = []
+        #     for _ in range(len(dq)):
+        #         node = dq.popleft()
+        #         level.append(node.val)
+        #         if node.left:
+        #             dq.append(node.left)
+        #         if node.right:
+        #             dq.append(node.right)
             
-            ans.append(level)
+        #     ans.append(level)
         
+        # return ans
+        # DFS
+        # O()
+        # O()
+        ans = []
+        def dfs(node, depth):
+            if not node:
+                return
+            if depth == len(ans):
+                ans.append([])
+            
+            ans[depth].append(node.val)
+
+            dfs(node.left, depth + 1)
+            dfs(node.right, depth + 1)
+        
+        dfs(root, 0)
+
         return ans
