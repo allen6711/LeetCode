@@ -7,40 +7,21 @@
 class Solution:
     def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
         from collections import deque
-        if not root:
+        if root is None:
             return []
-        q = deque([root])
+        
+        queue = deque([root])
         ans = []
-        while q:
-            size = len(q)
-            for _ in range(size):
-                node = q.popleft()
+        
+        while queue:
+            level_size = len(queue)
+            for i in range(level_size):
+                node = queue.popleft()
+                if i == level_size - 1:
+                    ans.append(node.val)
                 if node.left:
-                    q.append(node.left)
+                    queue.append(node.left)
                 if node.right:
-                    q.append(node.right)
-            
-            ans.append(node.val)
+                    queue.append(node.right)
         
         return ans
-
-        
-        # from collections import deque
-        # if not root:
-        #     return []
-        
-        # ans = []
-        # q = deque([root])
-        # while q:
-        #     size = len(q)
-        #     for i in range(size):
-        #         node = q.popleft()
-        #         # if i == size - 1:
-        #         #     ans.append(node.val)
-        #         if node.left:
-        #             q.append(node.left)
-        #         if node.right:
-        #             q.append(node.right)
-        #     ans.append(node.val)
-        
-        # return ans
