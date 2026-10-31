@@ -11,27 +11,28 @@ class Solution:
         # O(n)
         # Auxiliart Space: O(w)
         # Total Space: O(n)
-        # if root is None:
-        #     return []
-        # dq = deque([root])
-        # ans = []
+        if root is None:
+            return []
+        dq = deque([root])
+        ans = []
 
-        # while dq:
-        #     level = []
-        #     for _ in range(len(dq)):
-        #         node = dq.popleft()
-        #         level.append(node.val)
-        #         if node.left:
-        #             dq.append(node.left)
-        #         if node.right:
-        #             dq.append(node.right)
+        while dq:
+            level = []
+            for _ in range(len(dq)):
+                node = dq.popleft()
+                level.append(node.val)
+                if node.left:
+                    dq.append(node.left)
+                if node.right:
+                    dq.append(node.right)
             
-        #     ans.append(level)
+            ans.append(level)
         
         # return ans
         # DFS
-        # O()
-        # O()
+        # O(n)
+        # Auxiliary Space: O(h)
+        # Total S[ace: O(n)
         ans = []
         def dfs(node, depth):
             if not node:
