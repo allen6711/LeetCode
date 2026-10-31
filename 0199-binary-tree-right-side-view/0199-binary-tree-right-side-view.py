@@ -6,13 +6,17 @@
 #         self.right = right
 class Solution:
     def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
+        # BFS
+        # O(n)
+        # Auxiliary Space: O(w)
+        # Total Space: O(h)
         from collections import deque
         if root is None:
             return []
         
         queue = deque([root])
         ans = []
-        
+
         while queue:
             level_size = len(queue)
             for i in range(level_size):
