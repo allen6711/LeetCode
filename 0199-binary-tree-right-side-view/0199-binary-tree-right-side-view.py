@@ -10,22 +10,40 @@ class Solution:
         # O(n)
         # Auxiliary Space: O(w)
         # Total Space: O(h)
-        from collections import deque
-        if root is None:
-            return []
+        # from collections import deque
+        # if root is None:
+        #     return []
         
-        queue = deque([root])
+        # queue = deque([root])
+        # ans = []
+
+        # while queue:
+        #     level_size = len(queue)
+        #     for i in range(level_size):
+        #         node = queue.popleft()
+        #         if i == level_size - 1:
+        #             ans.append(node.val)
+        #         if node.left:
+        #             queue.append(node.left)
+        #         if node.right:
+        #             queue.append(node.right)
+        
+        # return ans
+        # DFS
+        # 
+        # 
+        # 
         ans = []
 
-        while queue:
-            level_size = len(queue)
-            for i in range(level_size):
-                node = queue.popleft()
-                if i == level_size - 1:
-                    ans.append(node.val)
-                if node.left:
-                    queue.append(node.left)
-                if node.right:
-                    queue.append(node.right)
+        def dfs(node, depth):
+            if node is None:
+                return
+            
+            if depth == len(ans):
+                ans.append(node.val)
+            
+            dfs(node.right, depth + 1)
+            dfs(node.left, depth + 1)
         
+        dfs(root, 0)
         return ans
