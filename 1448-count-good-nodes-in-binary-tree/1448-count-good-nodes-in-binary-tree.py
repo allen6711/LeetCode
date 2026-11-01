@@ -6,6 +6,30 @@
 #         self.right = right
 class Solution:
     def goodNodes(self, root: TreeNode) -> int:
+        # DFS
+        # O(H)
+        # Auxiliary Space: O(H)
+        # Total Space: O(H)
+        def dfs(node, max_so_far):
+            if node is None:
+                return 0
+            
+            # Check whether the current node is good
+            if node.val >= max_so_far:
+                good = 1
+            else:
+                good = 0
+            
+            max_so_far = max(max_so_far, node.val)
+
+            # Count good nodes in both subtrees
+            left = dfs(node.left, max_so_far)
+            right = dfs(node.right, max_so_far)
+
+            return good + left + right
+        
+        return dfs(root, float('-inf'))
+
         # BFS
         # O(N)
         # Auxiliary Space: O(W)
