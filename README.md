@@ -256,6 +256,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0304-range-sum-query-2d-immutable](https://github.com/allen6711/LeetCode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0347-top-k-frequent-elements](https://github.com/allen6711/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0349-intersection-of-two-arrays](https://github.com/allen6711/LeetCode/tree/master/0349-intersection-of-two-arrays) |
+| [0370-range-addition](https://github.com/allen6711/LeetCode/tree/master/0370-range-addition) |
 | [0380-insert-delete-getrandom-o1](https://github.com/allen6711/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0399-evaluate-division](https://github.com/allen6711/LeetCode/tree/master/0399-evaluate-division) |
 | [0410-split-array-largest-sum](https://github.com/allen6711/LeetCode/tree/master/0410-split-array-largest-sum) |
@@ -833,6 +834,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0253-meeting-rooms-ii](https://github.com/allen6711/LeetCode/tree/master/0253-meeting-rooms-ii) |
 | [0303-range-sum-query-immutable](https://github.com/allen6711/LeetCode/tree/master/0303-range-sum-query-immutable) |
 | [0304-range-sum-query-2d-immutable](https://github.com/allen6711/LeetCode/tree/master/0304-range-sum-query-2d-immutable) |
+| [0370-range-addition](https://github.com/allen6711/LeetCode/tree/master/0370-range-addition) |
 | [0410-split-array-largest-sum](https://github.com/allen6711/LeetCode/tree/master/0410-split-array-largest-sum) |
 | [0523-continuous-subarray-sum](https://github.com/allen6711/LeetCode/tree/master/0523-continuous-subarray-sum) |
 | [0525-contiguous-array](https://github.com/allen6711/LeetCode/tree/master/0525-contiguous-array) |
