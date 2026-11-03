@@ -1,5 +1,9 @@
 class Solution:
     def corpFlightBookings(self, bookings: list[list[int]], n: int) -> list[int]:
+        # m: length of bookings
+        # n: length of n
+        # O(m+n)
+        # O(n)
         nums = [0] * n
         df = self.Difference(nums)
 
