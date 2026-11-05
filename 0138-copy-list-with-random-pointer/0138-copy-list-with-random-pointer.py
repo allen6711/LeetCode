@@ -16,25 +16,25 @@ class Solution:
     def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
         # O(n)
         # O(n)
-        # originToClone = {}
-        # # First traverse, clone all nodes
-        # cur = head
-        # while cur:
-        #     if cur not in originToClone:
-        #         originToClone[cur] = Node(cur.val)
+        originToClone = {}
+        # First traverse, clone all nodes
+        cur = head
+        while cur:
+            if cur not in originToClone:
+                originToClone[cur] = Node(cur.val)
             
-        #     cur = cur.next
-        # # Second traverse, link all clone nodes
-        # cur = head
-        # while cur:
-        #     if cur.next:
-        #         originToClone[cur].next = originToClone[cur.next]
-        #     if cur.random:
-        #         originToClone[cur].random = originToClone[cur.random]
+            cur = cur.next
+        # Second traverse, link all clone nodes
+        cur = head
+        while cur:
+            if cur.next:
+                originToClone[cur].next = originToClone[cur.next]
+            if cur.random:
+                originToClone[cur].random = originToClone[cur.random]
             
-        #     cur = cur.next
+            cur = cur.next
         
-        # return originToClone.get(head)
+        return originToClone.get(head)
 
         # Interweaving
         # O(n)
