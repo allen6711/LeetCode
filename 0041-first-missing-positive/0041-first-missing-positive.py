@@ -1,5 +1,28 @@
 class Solution:
     def firstMissingPositive(self, nums: List[int]) -> int:
+        visited = set()
+        n = len(nums)
+        for num in nums:
+            visited.add(num)
+        
+        for i in range(1, n + 1):
+            if i > 0 and i not in visited:
+                return i
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         # O(n)
         # O(n)
         # num_set = set(nums)
