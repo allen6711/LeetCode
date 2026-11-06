@@ -1,13 +1,32 @@
 class Solution:
     def firstUniqChar(self, s: str) -> int:
+        count = Counter(s)
+        for i, char in enumerate(s):
+            if count[char] == 1:
+                return i
+        
+        return -1
+
+
+
+
+
+
+
+
+
+
+
+
+
         # O(n)
         # O(n)
-        # count = Counter(s)
-        # for i, char in enumerate(s):
-        #     if count[char] == 1:
-        #         return i
+        count = Counter(s)
+        for i, char in enumerate(s):
+            if count[char] == 1:
+                return i
             
-        # return -1
+        return -1
         # O(n)
         # O(1)
         freq = [0] * 26
