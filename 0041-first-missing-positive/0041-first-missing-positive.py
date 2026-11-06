@@ -5,7 +5,7 @@ class Solution:
         for num in nums:
             visited.add(num)
         
-        for i in range(1, n + 1):
+        for i in range(1, n + 2):
             if i > 0 and i not in visited:
                 return i
 
