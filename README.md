@@ -276,6 +276,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0704-binary-search](https://github.com/allen6711/LeetCode/tree/master/0704-binary-search) |
 | [0713-subarray-product-less-than-k](https://github.com/allen6711/LeetCode/tree/master/0713-subarray-product-less-than-k) |
 | [0724-find-pivot-index](https://github.com/allen6711/LeetCode/tree/master/0724-find-pivot-index) |
+| [0729-my-calendar-i](https://github.com/allen6711/LeetCode/tree/master/0729-my-calendar-i) |
 | [0739-daily-temperatures](https://github.com/allen6711/LeetCode/tree/master/0739-daily-temperatures) |
 | [0752-open-the-lock](https://github.com/allen6711/LeetCode/tree/master/0752-open-the-lock) |
 | [0778-swim-in-rising-water](https://github.com/allen6711/LeetCode/tree/master/0778-swim-in-rising-water) |
@@ -476,6 +477,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0658-find-k-closest-elements](https://github.com/allen6711/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0704-binary-search](https://github.com/allen6711/LeetCode/tree/master/0704-binary-search) |
 | [0713-subarray-product-less-than-k](https://github.com/allen6711/LeetCode/tree/master/0713-subarray-product-less-than-k) |
+| [0729-my-calendar-i](https://github.com/allen6711/LeetCode/tree/master/0729-my-calendar-i) |
 | [0778-swim-in-rising-water](https://github.com/allen6711/LeetCode/tree/master/0778-swim-in-rising-water) |
 | [0786-search-in-a-sorted-array-of-unknown-size](https://github.com/allen6711/LeetCode/tree/master/0786-search-in-a-sorted-array-of-unknown-size) |
 | [0792-binary-search](https://github.com/allen6711/LeetCode/tree/master/0792-binary-search) |
@@ -792,6 +794,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0341-flatten-nested-list-iterator](https://github.com/allen6711/LeetCode/tree/master/0341-flatten-nested-list-iterator) |
 | [0359-logger-rate-limiter](https://github.com/allen6711/LeetCode/tree/master/0359-logger-rate-limiter) |
 | [0380-insert-delete-getrandom-o1](https://github.com/allen6711/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
+| [0729-my-calendar-i](https://github.com/allen6711/LeetCode/tree/master/0729-my-calendar-i) |
 | [0901-online-stock-span](https://github.com/allen6711/LeetCode/tree/master/0901-online-stock-span) |
 | [0933-number-of-recent-calls](https://github.com/allen6711/LeetCode/tree/master/0933-number-of-recent-calls) |
 | [0981-time-based-key-value-store](https://github.com/allen6711/LeetCode/tree/master/0981-time-based-key-value-store) |
@@ -1085,4 +1088,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0341-flatten-nested-list-iterator](https://github.com/allen6711/LeetCode/tree/master/0341-flatten-nested-list-iterator) |
+## Segment Tree
+|  |
+| ------- |
+| [0729-my-calendar-i](https://github.com/allen6711/LeetCode/tree/master/0729-my-calendar-i) |
+## Ordered Set
+|  |
+| ------- |
+| [0729-my-calendar-i](https://github.com/allen6711/LeetCode/tree/master/0729-my-calendar-i) |
 <!---LeetCode Topics End-->
