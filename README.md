@@ -251,6 +251,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0271-encode-and-decode-strings](https://github.com/allen6711/LeetCode/tree/master/0271-encode-and-decode-strings) |
 | [0274-h-index](https://github.com/allen6711/LeetCode/tree/master/0274-h-index) |
 | [0283-move-zeroes](https://github.com/allen6711/LeetCode/tree/master/0283-move-zeroes) |
+| [0284-peeking-iterator](https://github.com/allen6711/LeetCode/tree/master/0284-peeking-iterator) |
 | [0287-find-the-duplicate-number](https://github.com/allen6711/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0288-unique-word-abbreviation](https://github.com/allen6711/LeetCode/tree/master/0288-unique-word-abbreviation) |
 | [0302-smallest-rectangle-enclosing-black-pixels](https://github.com/allen6711/LeetCode/tree/master/0302-smallest-rectangle-enclosing-black-pixels) |
@@ -788,6 +789,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0208-implement-trie-prefix-tree](https://github.com/allen6711/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/allen6711/LeetCode/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0271-encode-and-decode-strings](https://github.com/allen6711/LeetCode/tree/master/0271-encode-and-decode-strings) |
+| [0284-peeking-iterator](https://github.com/allen6711/LeetCode/tree/master/0284-peeking-iterator) |
 | [0288-unique-word-abbreviation](https://github.com/allen6711/LeetCode/tree/master/0288-unique-word-abbreviation) |
 | [0303-range-sum-query-immutable](https://github.com/allen6711/LeetCode/tree/master/0303-range-sum-query-immutable) |
 | [0304-range-sum-query-2d-immutable](https://github.com/allen6711/LeetCode/tree/master/0304-range-sum-query-2d-immutable) |
@@ -1087,6 +1089,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Iterator
 |  |
 | ------- |
+| [0284-peeking-iterator](https://github.com/allen6711/LeetCode/tree/master/0284-peeking-iterator) |
 | [0341-flatten-nested-list-iterator](https://github.com/allen6711/LeetCode/tree/master/0341-flatten-nested-list-iterator) |
 ## Segment Tree
 |  |
