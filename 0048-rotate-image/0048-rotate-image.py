@@ -13,8 +13,8 @@ class Solution:
                 matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
         
         # Reverse
-        for i in range(n):
-            self.reverse(matrix[i])
+        for row in matrix:
+            self.reverse(row)
         
     def reverse(self, arr):
         i, j = 0, len(arr) - 1
