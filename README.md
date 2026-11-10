@@ -207,6 +207,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0042-trapping-rain-water](https://github.com/allen6711/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/allen6711/LeetCode/tree/master/0045-jump-game-ii) |
 | [0046-permutations](https://github.com/allen6711/LeetCode/tree/master/0046-permutations) |
+| [0048-rotate-image](https://github.com/allen6711/LeetCode/tree/master/0048-rotate-image) |
 | [0049-group-anagrams](https://github.com/allen6711/LeetCode/tree/master/0049-group-anagrams) |
 | [0053-maximum-subarray](https://github.com/allen6711/LeetCode/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/allen6711/LeetCode/tree/master/0055-jump-game) |
@@ -338,6 +339,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/allen6711/LeetCode/tree/master/0036-valid-sudoku) |
+| [0048-rotate-image](https://github.com/allen6711/LeetCode/tree/master/0048-rotate-image) |
 | [0074-search-a-2d-matrix](https://github.com/allen6711/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0079-word-search](https://github.com/allen6711/LeetCode/tree/master/0079-word-search) |
 | [0130-surrounded-regions](https://github.com/allen6711/LeetCode/tree/master/0130-surrounded-regions) |
@@ -622,6 +624,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0007-reverse-integer](https://github.com/allen6711/LeetCode/tree/master/0007-reverse-integer) |
 | [0012-integer-to-roman](https://github.com/allen6711/LeetCode/tree/master/0012-integer-to-roman) |
 | [0013-roman-to-integer](https://github.com/allen6711/LeetCode/tree/master/0013-roman-to-integer) |
+| [0048-rotate-image](https://github.com/allen6711/LeetCode/tree/master/0048-rotate-image) |
 | [0050-powx-n](https://github.com/allen6711/LeetCode/tree/master/0050-powx-n) |
 | [0069-sqrtx](https://github.com/allen6711/LeetCode/tree/master/0069-sqrtx) |
 | [0070-climbing-stairs](https://github.com/allen6711/LeetCode/tree/master/0070-climbing-stairs) |
