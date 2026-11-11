@@ -210,6 +210,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/allen6711/LeetCode/tree/master/0048-rotate-image) |
 | [0049-group-anagrams](https://github.com/allen6711/LeetCode/tree/master/0049-group-anagrams) |
 | [0053-maximum-subarray](https://github.com/allen6711/LeetCode/tree/master/0053-maximum-subarray) |
+| [0054-spiral-matrix](https://github.com/allen6711/LeetCode/tree/master/0054-spiral-matrix) |
 | [0055-jump-game](https://github.com/allen6711/LeetCode/tree/master/0055-jump-game) |
 | [0068-text-justification](https://github.com/allen6711/LeetCode/tree/master/0068-text-justification) |
 | [0074-search-a-2d-matrix](https://github.com/allen6711/LeetCode/tree/master/0074-search-a-2d-matrix) |
@@ -340,6 +341,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0036-valid-sudoku](https://github.com/allen6711/LeetCode/tree/master/0036-valid-sudoku) |
 | [0048-rotate-image](https://github.com/allen6711/LeetCode/tree/master/0048-rotate-image) |
+| [0054-spiral-matrix](https://github.com/allen6711/LeetCode/tree/master/0054-spiral-matrix) |
 | [0074-search-a-2d-matrix](https://github.com/allen6711/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0079-word-search](https://github.com/allen6711/LeetCode/tree/master/0079-word-search) |
 | [0130-surrounded-regions](https://github.com/allen6711/LeetCode/tree/master/0130-surrounded-regions) |
@@ -940,6 +942,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [0054-spiral-matrix](https://github.com/allen6711/LeetCode/tree/master/0054-spiral-matrix) |
 | [0068-text-justification](https://github.com/allen6711/LeetCode/tree/master/0068-text-justification) |
 | [0412-fizz-buzz](https://github.com/allen6711/LeetCode/tree/master/0412-fizz-buzz) |
 | [0682-baseball-game](https://github.com/allen6711/LeetCode/tree/master/0682-baseball-game) |
