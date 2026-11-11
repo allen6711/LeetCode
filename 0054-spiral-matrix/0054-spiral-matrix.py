@@ -1,5 +1,8 @@
 class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+        # Four Boundaries
+        # O(m*n)
+        # O(1)
         m, n = len(matrix), len(matrix[0])
         result = []
         top, bottom = 0, m - 1
