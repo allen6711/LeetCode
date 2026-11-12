@@ -6,6 +6,40 @@
 
 class Solution:
     def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+        # k: len(lists)
+        # N: total number of nodes in Linked Lists
+        # O(Nlogk)
+        # Auxiliary Space: O(k)
+        # O(1)
+        if not lists:
+            return None
+        dummy = ListNode(0)
+        cur = dummy
+        pq = []
+        
+        for i, head in enumerate(lists):
+            if head is not None:
+                heapq.heappush(pq, (head.val, i, head))
+
+        while pq:
+            val, i, node = heapq.heappop(pq)
+            cur.next = node
+            if node.next is not None:
+                heapq.heappush(pq, (node.next.val, i, node.next))
+            
+            cur = cur.next
+        
+        return dummy.next
+
+
+
+
+
+
+
+
+
+
         # O(nlogn)
         # O(n)
         # vals = []
