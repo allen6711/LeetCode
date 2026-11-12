@@ -3,6 +3,16 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
+        slow, fast = 0, 0
+        n = len(nums)
+        while fast < n:
+            if nums[fast] != 0:
+                nums[slow] = nums[fast]
+                slow += 1
+            fast += 1
+        
+        for i in range(slow, n):
+            nums[i] = 0
         # O(n^2)
         # O(1)
         # left = 0
