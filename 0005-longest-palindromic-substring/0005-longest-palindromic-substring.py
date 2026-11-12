@@ -3,40 +3,41 @@ class Solution:
         # Brute Force
         # O(n^3)
         # O(1)
-        n = len(s)
-        start = 0
-        max_length = 0
-        def isPalindrome(left, right) -> bool:
-            while left < right:
-                if s[left] != s[right]:
-                    return False
-                left += 1
-                right -= 1
-            return True
+        # n = len(s)
+        # start = 0
+        # max_length = 0
+        # def isPalindrome(left, right) -> bool:
+        #     while left < right:
+        #         if s[left] != s[right]:
+        #             return False
+        #         left += 1
+        #         right -= 1
+        #     return True
         
-        for i in range(n):
-            for j in range(i, n):
-                length = j - i + 1
+        # for i in range(n):
+        #     for j in range(i, n):
+        #         length = j - i + 1
 
-                if length > max_length and isPalindrome(i, j):
-                    start = i
-                    max_length = length
+        #         if length > max_length and isPalindrome(i, j):
+        #             start = i
+        #             max_length = length
         
-        return s[start:start + max_length]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        # return s[start:start + max_length]
+        # O(n^2)
+        # O(n)
+        res = ""
+        for i in range(len(s)):
+            s1 = self.palindrome(s, i, i)
+            s2 = self.palindrome(s, i, i + 1)
+            res = res if len(res) >= len(s1) else s1
+            res = res if len(res) >= len(s2) else s2
+        
+        return res
+    def palindrome(self, s: str, left: int, right: int) -> str:
+        while left >= 0 and right < len(s) and s[left] == s[right]:
+            left -= 1
+            right += 1
+        return s[left + 1:right]
         # DP
         # O(n^2)
         # O(n^2)
@@ -65,7 +66,7 @@ class Solution:
                     max_len = length
         
         return s[start:start + max_len]
-        # O(n)
+        # O(n^2)
         # O(1)
         max_length = 0
         n = len(s)
@@ -87,7 +88,7 @@ class Solution:
         
         return s[start:start + max_length]
 
-        # O(n)
+        # O(n^2)
         # O(n)
         max_len = 0
         n = len(s)
