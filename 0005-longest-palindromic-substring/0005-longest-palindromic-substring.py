@@ -1,8 +1,45 @@
 class Solution:
     def longestPalindrome(self, s: str) -> str:
+        # Brute Force
+        # O(n^3)
+        # O(1)
+        n = len(s)
+        start = 0
+        max_length = 0
+        def isPalindrome(left, right) -> bool:
+            while left < right:
+                if s[left] != s[right]:
+                    return False
+                left += 1
+                right -= 1
+            return True
+        
+        for i in range(n):
+            for j in range(i, n):
+                length = j - i + 1
+
+                if length > max_length and isPalindrome(i, j):
+                    start = i
+                    max_length = length
+        
+        return s[start:start + max_length]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         # DP
-        #
-        #
+        # O(n^2)
+        # O(n^2)
         n = len(s)
         # is dp[i][j] = s[i:j + 1] palindrome
         dp = [[False] * n for _ in range(n)]
