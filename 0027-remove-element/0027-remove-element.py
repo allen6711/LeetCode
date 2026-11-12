@@ -1,5 +1,7 @@
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
+        # O(n)
+        # O(1)
         slow, fast = 0, 0
         n = len(nums)
         while fast < n:
@@ -9,18 +11,6 @@ class Solution:
             fast += 1
         
         return slow
-
-
-
-
-
-
-
-
-
-
-
-
         # O(n)
         # O(n)
         # temp = []
