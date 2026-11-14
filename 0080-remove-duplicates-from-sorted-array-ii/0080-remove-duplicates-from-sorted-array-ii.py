@@ -1,5 +1,8 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
+        # Intuitive approach, but with more code.
+        # O(n)
+        # O(1)
         slow, fast = 0, 0
         n = len(nums)
         limit = 0
@@ -17,19 +20,6 @@ class Solution:
                 limit = 0
         
         return slow + 1
-
-
-
-
-
-
-
-
-
-
-
-
-
         # O(n)
         # O(1)
         if len(nums) <= 2:
