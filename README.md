@@ -214,6 +214,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0055-jump-game](https://github.com/allen6711/LeetCode/tree/master/0055-jump-game) |
 | [0068-text-justification](https://github.com/allen6711/LeetCode/tree/master/0068-text-justification) |
 | [0074-search-a-2d-matrix](https://github.com/allen6711/LeetCode/tree/master/0074-search-a-2d-matrix) |
+| [0075-sort-colors](https://github.com/allen6711/LeetCode/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/allen6711/LeetCode/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/allen6711/LeetCode/tree/master/0079-word-search) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/allen6711/LeetCode/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
@@ -524,6 +525,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/allen6711/LeetCode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0031-next-permutation](https://github.com/allen6711/LeetCode/tree/master/0031-next-permutation) |
 | [0042-trapping-rain-water](https://github.com/allen6711/LeetCode/tree/master/0042-trapping-rain-water) |
+| [0075-sort-colors](https://github.com/allen6711/LeetCode/tree/master/0075-sort-colors) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/allen6711/LeetCode/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0082-remove-duplicates-from-sorted-list-ii](https://github.com/allen6711/LeetCode/tree/master/0082-remove-duplicates-from-sorted-list-ii) |
 | [0086-partition-list](https://github.com/allen6711/LeetCode/tree/master/0086-partition-list) |
@@ -581,6 +583,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0016-3sum-closest](https://github.com/allen6711/LeetCode/tree/master/0016-3sum-closest) |
 | [0018-4sum](https://github.com/allen6711/LeetCode/tree/master/0018-4sum) |
 | [0049-group-anagrams](https://github.com/allen6711/LeetCode/tree/master/0049-group-anagrams) |
+| [0075-sort-colors](https://github.com/allen6711/LeetCode/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/allen6711/LeetCode/tree/master/0088-merge-sorted-array) |
 | [0169-majority-element](https://github.com/allen6711/LeetCode/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/allen6711/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
@@ -1119,4 +1122,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0142-linked-list-cycle-ii](https://github.com/allen6711/LeetCode/tree/master/0142-linked-list-cycle-ii) |
+## Quicksort
+|  |
+| ------- |
+| [0075-sort-colors](https://github.com/allen6711/LeetCode/tree/master/0075-sort-colors) |
+## Bubble Sort
+|  |
+| ------- |
+| [0075-sort-colors](https://github.com/allen6711/LeetCode/tree/master/0075-sort-colors) |
 <!---LeetCode Topics End-->
